@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
 import {useState} from 'react';
-import TestComponent from './testComp';
+
+const TestComponent = React.lazy(() => import('./testComp'));
 
 function App() {
 	const [test, setTest] = useState(false);
@@ -14,7 +15,9 @@ function App() {
 				</p>
 				<button onClick={() => setTest(!test)}>test</button>
 				{test && (
-					<TestComponent />
+					<Suspense fallback={<div>Loading...</div>}>
+						<TestComponent />
+					</Suspense>
 				)}
 			</header>
 		</div>
