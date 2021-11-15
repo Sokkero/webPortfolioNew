@@ -1,4 +1,5 @@
 git config core.filemode false
+sudo chmod -R -f 777 .
 
 # Getting Started with Create React App
 
