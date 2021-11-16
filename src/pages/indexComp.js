@@ -11,7 +11,9 @@ function testComp() {
 			<button
 				onClick={() => dispatch({ type: 'SET_PAGE_TO_TEST01' })}
 				value='Test Page 01'
-			/>
+			>
+				Switch to test site 01
+			</button>
 		</div>
 	);
 }
