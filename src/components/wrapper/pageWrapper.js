@@ -1,6 +1,7 @@
 import React, { Suspense, useContext } from 'react';
 import { FormContext } from '../../Store';
-import TopBlockWrapper from './TopBlockWrapper';
+import TopBlockWrapper from './HeaderBlockWrapper';
+import styles from '../../styles/css/wrapper/pageWrapper.scss';
 
 
 function PageWrapper() {
@@ -8,7 +9,20 @@ function PageWrapper() {
 	
 	return (
 		<div>
-			<TopBlockWrapper />
+			<div>
+				<div className={styles.blockHeader}>
+					<TopBlockWrapper />
+				</div>
+				<div className={styles.blockAboutMe}>
+
+				</div>
+				<div className={styles.blockProjects}>
+
+				</div>
+				<div className={styles.blockGetInContact}>
+
+				</div>
+			</div>
 		</div>
 	);
 }
