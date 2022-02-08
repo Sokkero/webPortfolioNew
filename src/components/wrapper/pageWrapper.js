@@ -1,15 +1,16 @@
 import React, { Suspense, useContext } from 'react';
 import { FormContext } from '../../Store';
+import TopBlockWrapper from './TopBlockWrapper';
 
 
-function App() {
+function PageWrapper() {
 	const [state, dispatch] = useContext(FormContext);
 	
 	return (
 		<div>
-
+			<TopBlockWrapper />
 		</div>
 	);
 }
 
-export default App;
+export default PageWrapper;
