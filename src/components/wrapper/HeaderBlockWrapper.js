@@ -8,6 +8,12 @@ function HeaderBlockWrapper() {
 	
 	return (
 		<div className={styles.headerWrapper}>
+			<div className={styles.leftText}>
+
+			</div>
+			<div className={styles.rightImage}>
+
+			</div>
 		</div>
 	);
 }
