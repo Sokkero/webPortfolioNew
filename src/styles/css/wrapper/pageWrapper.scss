@@ -1,34 +1,24 @@
-.blockHeader {
+.contentBlock {
 	width: 100vw;
 	height: 100vh;
 	min-height: 400px;
+	z-index: 1;
+	position: relative;
+}
+
+.blockHeader {
 	background-color: red;
 	z-index: -1;
 }
 
 .blockAboutMe {
-	width: 100vw;
-	height: 100vh;
-	min-height: 400px;
 	background-color: green;
-	position: relative;
-	z-index: 1;
 }
 
 .blockProjects {
-	width: 100vw;
-	height: 100vh;
-	min-height: 400px;
 	background-color: blue;
-	position: relative;
-	z-index: 1;
 }
 
 .blockGetInContact {
-	width: 100vw;
-	height: 100vh;
-	min-height: 400px;
 	background-color: yellow;
-	position: relative;
-	z-index: 1;
 }
