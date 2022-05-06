@@ -9,12 +9,12 @@
 
 .leftText {
 	background-color: black;
-	color: white;
-	transform-style: preserve-3d;
-	box-shadow: 0px 0px 10px 10px black;
-	z-index: 1;
-	font-family: Nunito;
-	height: 100vh;
+    color: white;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 10px 10px black;
+    z-index: 1;
+    font-family: Nunito;
+    height: 100vh;
 }
 
 .leftText::before {
@@ -45,27 +45,43 @@
 
 .leftText .headerText {
 	text-align: center;
-	width: 80%;
-	margin: 0.67em 0 0.67em 10%;
-    margin-left: 10%;
-    height: calc(25% - (0.67em * 2));
-	font-size: 4.5em;
+    width: 80%;
+    margin: 0 0 0 10%;
+    height: auto;
+    position: absolute;
+    top: 12vh;
 }
 
 .leftText .headerText h1 {
+	margin: 0;
+    padding: 0.67em 0;
+    font-size: 4em;
+    text-shadow: 
+		0 0 30px #e04646,
+		0 0 55px #e04646,
+		0 0 60px #e04646;
 }
 
 .leftText .aboutMeText {
 	text-align: center;
-	width: 80%;
-    margin: 0.67em 0 0.67em 10%;
-    position: absolute;
-    line-height: 1.2em;
-    font-size: 1.2em;
-    height: calc(55% - (0.67em * 2));
+    width: 80%;
+    margin: 5vh 0 5vh 10%;
+    height: 55vh;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 
 .leftText p {
+	line-height: 1.2em;
+    font-size: 1.2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 
+		0 0 15px #267528,
+		0 0 25px #267528,
+		0 0 30px #267528;
 }
 
 .rightImage {
