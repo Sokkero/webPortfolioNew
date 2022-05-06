@@ -31,6 +31,34 @@ module.exports = function(mode) {
 					exclude: /node_modules/,
 					use: ['babel-loader'],
 				},
+				{
+					test: /\.(png|jpe?g|gif|ico|svg)$/i,
+					use: [
+						'file-loader',
+						{
+							loader: 'image-webpack-loader',
+							options: {
+								mozjpeg: {
+									progressive: true,
+									quality: 65,
+									quantTable: 4,
+								},
+								// optipng.enabled: false will disable optipng
+								optipng: {
+									enabled: false,
+								},
+								pngquant: {
+									quality: [0.7, 0.9],
+									speed: 4,
+									strip: true,
+								},
+								gifsicle: {
+									interlaced: false,
+								}
+							}
+						},
+					],
+				},
 			],
 		},
 		plugins: [HTMLWebpackPluginConfig],
