@@ -6,4 +6,9 @@
 :global(html, body) {
 	height: 100%;
 	width: 100%;
+	display: inline;
+}
+
+:global(div#root) {
+	display: inline;
 }

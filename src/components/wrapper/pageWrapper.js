@@ -16,20 +16,18 @@ function PageWrapper() {
 	// }
 
 	return (
-		<div>
-			<div>
-				<div ref={headerRef} className={`${styles.blockHeader} ${styles.contentBlock}`}>
-					<TopBlockWrapper />
-				</div>
-				<div ref={aboutRef} className={`${styles.blockAboutMe} ${styles.contentBlock}`}>
+		<div className={styles.wrapper}>
+			<div ref={headerRef} className={`${styles.blockHeader} ${styles.contentBlock}`}>
+				<TopBlockWrapper />
+			</div>
+			<div ref={aboutRef} className={`${styles.blockAboutMe} ${styles.contentBlock}`}>
 
-				</div>
-				<div ref={projectsRef} className={`${styles.blockProjects} ${styles.contentBlock}`}>
+			</div>
+			<div ref={projectsRef} className={`${styles.blockProjects} ${styles.contentBlock}`}>
 
-				</div>
-				<div ref={contactRef} className={`${styles.blockGetInContact} ${styles.contentBlock}`}>
+			</div>
+			<div ref={contactRef} className={`${styles.blockGetInContact} ${styles.contentBlock}`}>
 
-				</div>
 			</div>
 		</div>
 	);
