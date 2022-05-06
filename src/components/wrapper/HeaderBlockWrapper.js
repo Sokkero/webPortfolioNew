@@ -1,6 +1,7 @@
 import React, { Suspense, useContext } from 'react';
 import { FormContext } from '../../Store';
 import styles from '../../styles/css/wrapper/headerBlockWrapper.scss';
+import personImage from '../../images/PersonTestImageTransparent.png';
 
 
 function HeaderBlockWrapper() {
@@ -12,7 +13,9 @@ function HeaderBlockWrapper() {
 
 			</div>
 			<div className={styles.rightImage}>
-
+				<img 
+					src={personImage}
+				/>
 			</div>
 		</div>
 	);

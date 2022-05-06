@@ -11,9 +11,9 @@ function PageWrapper() {
 	const projectsRef = useRef();
 	const contactRef = useRef();
 
-	function handleBackClick() {
-		headerRef.current.scrollIntoView({ behavior: 'smooth'});
-	}
+	// function handleBackClick() {
+	// 	headerRef.current.scrollIntoView({ behavior: 'smooth'});
+	// }
 
 	return (
 		<div>
@@ -31,7 +31,6 @@ function PageWrapper() {
 
 				</div>
 			</div>
-			<button onClick={handleBackClick}>awdawdawdawdawdawd</button>
 		</div>
 	);
 }
