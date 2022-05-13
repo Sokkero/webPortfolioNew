@@ -12,6 +12,7 @@
 		"test": "react-scripts test"
 	},
 	"dependencies": {
+		"prop-types": "^15.8.1",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-scripts": "4.0.3"
@@ -23,11 +24,11 @@
 		"@testing-library/jest-dom": "^5.15.0",
 		"@testing-library/react": "^11.2.7",
 		"@testing-library/user-event": "^12.8.3",
-		"file-loader": "^6.1.1",
 		"babel-loader": "^8.1.0",
 		"eslint": "^7.32.0",
 		"eslint-plugin-react": "^7.27.0",
 		"eslint-plugin-vue": "^8.0.3",
+		"file-loader": "^6.1.1",
 		"image-webpack-loader": "^8.1.0",
 		"sass": "^1.43.4",
 		"sass-loader": "^10.2.0",

@@ -1,4 +1,3 @@
-
 .headerWrapper {
 	width: 100%;
     height: 100%;
@@ -7,40 +6,45 @@
     grid-template-rows: 1fr;
 }
 
+.headerWrapper::before {
+	display: block;
+    content: "";
+    position: absolute;
+    width: 4px;
+    left: 55.5vw;
+    height: 100vh;
+    background-color: #d19b4f;
+}
+
 .leftText {
-	background-color: black;
+	background-color: #16161A;
     color: white;
     transform-style: preserve-3d;
-    box-shadow: 0px 0px 10px 10px black;
     z-index: 1;
     font-family: Nunito;
     height: 100vh;
 }
 
-.leftText::before {
-	display: block;
+.leftText::before,
+.leftText::after {
+    display: block;
     content: "";
     position: absolute;
     width: 2000px;
-    bottom: -275px;
     right: -800px;
     height: 500px;
-    background-color: black;
+    background-color: #16161A;
+	border: 4px solid #d19b4f;
+}
+
+.leftText::before {
+    bottom: -275px;
     transform: rotateZ(22deg) translateZ(-1px);
-	box-shadow: 0px 0px 10px 10px black;
 }
 
 .leftText::after {
-	display: block;
-    content: "";
-    position: absolute;
-    width: 2000px;
     top: -275px;
-    right: -800px;
-    height: 500px;
-    background-color: black;
     transform: rotateZ(-22deg) translateZ(-1px);
-	box-shadow: 0px 0px 10px 10px black;
 }
 
 .leftText .headerText {
@@ -57,9 +61,9 @@
     padding: 0.67em 0;
     font-size: 4em;
     text-shadow: 
-		0 0 30px #e04646,
-		0 0 55px #e04646,
-		0 0 60px #e04646;
+		0 0 30px #001858,
+		0 0 55px #001858,
+		0 0 60px #001858;
 }
 
 .leftText .aboutMeText {
@@ -78,36 +82,52 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    text-shadow: 
-		0 0 15px #267528,
-		0 0 25px #267528,
-		0 0 30px #267528;
+}
+
+.leftText .buttonWrapper{
+	text-align: center;
+	margin-top: 150px;
 }
 
 .rightImage {
     background-color: grey;
+	text-align: center;
+}
+
+.rightImage::before,
+.rightImage::after {
+	content: "";
+    display: block;
+    position: relative;
+}
+
+.rightImage::before {
+    background-color: #16161A;
+    width: 150px;
+    height: 150px;
+    top: calc(50vh - 83px);
+    left: -85px;
+    transform: rotateZ(45deg) skew(30deg, 30deg);
+	border: 8px solid #d19b4f;
 }
 
 .rightImage::after {
-    content: "";
-    display: block;
-    position: relative;
-    background-color: black;
-    width: 150px;
-    height: 150px;
-    top: calc(50vh - 75px);
-    left: -70px;
-    transform: rotateZ(45deg) skew(30deg, 30deg);
+	background: linear-gradient(180deg, #d19b4f, #be782b);
+    width: 25px;
+    height: 25px;
+    transform: rotateZ(45deg);
+    border-radius: 4px;
+    top: calc(50vh - 178px);
+    left: 50px;
 }
 
 .rightImage img {
-	max-height: 500px;
-    height: 80vh;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5vw;
+	position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 7%;
+    width: 25%;
     border: 2px solid white;
     border-radius: 25%;
-    z-index: 1;
 }
