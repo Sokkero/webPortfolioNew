@@ -1,4 +1,14 @@
+:root {
+	/* -- Global --*/
+	--fontFam01: Nunito;
+	/* -- headerBlock vars -- */
+	--headerBackgroundColor01:#16161A;
+	--headerBackgroundColor02:grey;
+	--headerMainColor01:#001858;
+	--headerMainColor02:#d19b4f;
+}
+
 @font-face {
 	font-family: Nunito;
-	src: url('../fonts/Nunito-VariableFont_wght.ttf');
+	src: '../fonts/Nunito-VariableFont_wght.ttf';
 }

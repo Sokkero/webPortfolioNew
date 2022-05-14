@@ -19,7 +19,16 @@ function HeaderBlockWrapper() {
 				</div>
 				<div className={styles.buttonWrapper}>
 					<NeonButton 
-						onClickFunction={() => {}}
+						onClickFunction={() => {
+							const elem = document.getElementById('aboutMeBlock');
+							if(elem !== null){
+								elem.scrollIntoView({
+									behavior: "smooth",
+									block: "center",
+									inline: "center"
+								});
+							}
+						}}
 						style='headerButton'
 						buttonLabel='Lorem ipsum'
 					/>
