@@ -15,7 +15,12 @@ function HeaderBlockWrapper() {
 					<h1>Paul Sohns<br/>Portfolio</h1>
 				</div>
 				<div className={styles.aboutMeText}>
-					<p>About me text here Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+					<p>
+						About me text here Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+						sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+						sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+					</p>
 				</div>
 				<div className={styles.buttonWrapper}>
 					<NeonButton 
@@ -42,7 +47,5 @@ function HeaderBlockWrapper() {
 		</div>
 	);
 }
-
-// rgb(209 155 79 / 40%)
 
 export default HeaderBlockWrapper;
