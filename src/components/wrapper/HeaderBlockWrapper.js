@@ -10,8 +10,11 @@ function HeaderBlockWrapper() {
 	
 	return (
 		<div className={styles.headerWrapper}>
+			<div className={`${styles.headerText} ${styles.headerTextSmall}`}>
+				<h1>Paul Sohns - Portfolio</h1>
+			</div>
 			<div className={styles.leftText}>
-				<div className={styles.headerText}>
+				<div className={`${styles.headerText} ${styles.headerTextNormal}`}>
 					<h1>Paul Sohns<br/>Portfolio</h1>
 				</div>
 				<div className={styles.aboutMeText}>
