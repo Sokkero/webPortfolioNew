@@ -87,7 +87,7 @@
     position: relative;
 }
 
-.leftText p {
+.leftText .aboutMeText p {
 	line-height: 1.2em;
     font-size: 1.2em;
     position: relative;
@@ -183,7 +183,21 @@
 	}
 
 	.leftText .aboutMeText {
-		margin: -10% 10% 0 10%;
+		margin: auto;
+		transform: unset;
+		top: unset;
+		height: unset;
+	}
+
+	.leftText .aboutMeText p {
+		transform: unset;
+		top: unset;
+		line-height: 1.1em;
+		margin-bottom: 0;
+	}
+
+	.leftText .buttonWrapper {
+		margin: unset;
 	}
 
 	.rightImage {
@@ -200,7 +214,9 @@
 		transform: rotateZ(45deg) skew(-20deg, -20deg) translateZ(-1px);
 		top: -50px;
 		left: calc(50% - 50px);
-		border: 4px solid var(--headerMainColor02)
+		border: 4px solid var(--headerMainColor02);
+
+		display: none;
 	}
 	
 	.rightImage::before {
@@ -210,9 +226,9 @@
 		width: 1000px;
 		height: 150px;
 		background-color: var(--headerBackgroundColor01);
-		top: 450px;
+		top: 250px;
 		left: -600px;
-		transform: rotateZ(22deg) translateZ(-10px);
+		transform: rotateZ(30deg);
 		border: 4px solid var(--headerMainColor02)
 	}
 
@@ -223,9 +239,9 @@
 		width: 1000px;
 		height: 150px;
 		background-color: var(--headerBackgroundColor01);
-		top: 450px;
+		top: 250px;
 		right: -605px;
-		transform: rotateZ(-22deg) translateZ(-10px);
+		transform: rotateZ(-30deg);
 		border: 4px solid var(--headerMainColor02)
 	}
 
