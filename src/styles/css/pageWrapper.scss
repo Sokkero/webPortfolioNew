@@ -1,0 +1,34 @@
+
+.wrapper {
+	overflow-y: scroll;
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+}
+
+.contentBlock {
+	width: 100%;
+	min-height: 100vh;
+	z-index: 1;
+	position: relative;
+	scroll-snap-align: start;
+}
+
+.blockHome {
+	background-color: var(--homeBackgroundColor);
+}
+
+.aboutMeBlock {
+	background-color: green;
+}
+
+.portfolioBlock {
+	background-color: blue;
+}
+
+.contactBlock {
+	background-color: yellow;
+}
+
+.blogBlock {
+	background-color: green;
+}

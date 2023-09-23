@@ -1,0 +1,122 @@
+.headerWrapper {
+  background-image: url(https://istanbul-react.vercel.app/img/fullscreendark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+
+  .contentTable {
+    display: table;
+    width: auto;
+    height: 100vh;
+    margin-left: 50vw;
+    max-width: 20vw;
+
+    .content {
+      vertical-align: middle;
+      position: relative;
+      display: table-cell;
+      color: white;
+
+      .textWrapper {
+        .p {
+          line-height: 32px;
+        }
+      }
+
+      .ctaWrapper {
+        .link {
+          cursor: pointer;
+          box-shadow: none !important;
+          border-radius: 26px;
+          font-weight: 500;
+          height: 46px;
+          line-height: 46px;
+          font-size: 15px;
+          text-transform: uppercase;
+          color: #fff;
+          padding: 0 33px;
+          outline: none !important;
+          overflow: hidden;
+          display: inline-block;
+          position: relative;
+          font-family: 'Poppins', sans-serif;
+          letter-spacing: .5px;
+          border: 0;
+        }
+
+        .aboutMeLink {
+          margin-right: 20px;
+          background-color: #ffb400;
+
+          .linkText {
+            position: relative;
+            z-index: 100;
+          }
+
+          .linkText:before {
+            content: "\f007";
+          }
+        }
+
+        .aboutMeLink:hover {
+          color: #fff;
+        }
+
+        .aboutMeLink:after {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 102%;
+          left: -25%;
+          width: 0%;
+          background: linear-gradient(90deg, rgba(85,85,85,1) 65%, rgba(85,85,85,0) 100%);
+          transform: skew(-22deg);
+          transition-duration: 1s;
+          z-index: 1;
+        }
+
+        .aboutMeLink:hover:after {
+          width: 200%;
+        }
+
+        .portfolioLink {
+          border: 1px solid #ffb400;
+          background: transparent;
+
+          .linkText {
+            position: relative;
+            z-index: 100;
+          }
+
+          .linkText:before {
+            content: "\f007";
+          }
+        }
+
+        .portfolioLink:hover {
+          color: #fff;
+        }
+
+        .portfolioLink:after {
+          position: absolute;
+          content: "";
+          top: 0;
+          height: 102%;
+          right: -200%;
+          width: 200%;
+          background: linear-gradient(90deg, rgba(255,180,0,0) 0%, rgba(255,180,0,1) 35%);
+          //transform: skew(-22deg);
+          transition-duration: 1s;
+          z-index: 1;
+        }
+
+        .portfolioLink:hover:after {
+          right:0%;
+        }
+      }
+    }
+  }
+}

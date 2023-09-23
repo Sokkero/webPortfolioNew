@@ -1,26 +1,24 @@
-import React, { Suspense, useContext, useRef } from 'react';
-import { FormContext } from '../../Store';
-import TopBlockWrapper from './HeaderBlockWrapper';
-import styles from '../../styles/css/wrapper/pageWrapper.scss';
-
+import React from 'react';
+import styles from '../../styles/css/pageWrapper.scss';
+import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 
 function PageWrapper() {
-	const [state, dispatch] = useContext(FormContext);
 
 	return (
 		<div className={styles.wrapper}>
-			<div id='headerBlock' className={`${styles.blockHeader} ${styles.contentBlock}`}>
-				<TopBlockWrapper />
-			</div>
-			<div id='aboutMeBlock' className={`${styles.blockAboutMe} ${styles.contentBlock}`}>
+			<HomeBlockWrapper />
+			<section id='aboutMeBlock' className={`${styles.aboutMeBlock} ${styles.contentBlock}`}>
 
-			</div>
-			<div id='projectsBlock' className={`${styles.blockProjects} ${styles.contentBlock}`}>
+			</section>
+			<section id='portfolioBlock' className={`${styles.portfolioBlock} ${styles.contentBlock}`}>
 
-			</div>
-			<div id='contactBlock' className={`${styles.blockGetInContact} ${styles.contentBlock}`}>
+			</section>
+			<section id='contactBlock' className={`${styles.contactBlock} ${styles.contentBlock}`}>
 
-			</div>
+			</section>
+			<section id='blogBlock' className={`${styles.blogBlock} ${styles.contentBlock}`}>
+
+			</section>
 		</div>
 	);
 }
