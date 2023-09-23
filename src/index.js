@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PageWrapper from './components/wrapper/PageWrapper';
-import Store from './Store';
-import '../src/styles/css/variables.scss';
-import '../src/styles/css/global.scss';
+import './resources/scss/variables.scss';
+import './resources/scss/global.scss';
+import PageWrapper from "./components/wrapper/pageWrapper";
 
 ReactDOM.render(
-	<Store>
-		<PageWrapper />
-	</Store>,
+	<PageWrapper />,
 	document.getElementById('root')
 );

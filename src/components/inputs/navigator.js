@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/css/navigator.scss';
+import styles from '../../resources/scss/navigator.scss';
 
 function Navigator() {
 

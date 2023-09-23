@@ -1,6 +1,6 @@
 import React, { Suspense, useContext } from 'react';
 import { FormContext } from '../../Store';
-import styles from '../../styles/css/inputs/simpleNavbar.scss';
+import styles from '../../resources/scss/inputs/simpleNavbar.scss';
 
 
 function HeaderBlockWrapper() {

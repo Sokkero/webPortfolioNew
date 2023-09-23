@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/css/homeBlockWrapper.scss';
+import styles from '../../resources/scss/homeBlockWrapper.scss';
 
 function HomeBlockWrapper() {
 	return (

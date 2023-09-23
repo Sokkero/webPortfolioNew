@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/css/pageWrapper.scss';
+import styles from '../../resources/scss/pageWrapper.scss';
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 
 function PageWrapper() {
