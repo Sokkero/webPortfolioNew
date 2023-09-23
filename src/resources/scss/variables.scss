@@ -9,5 +9,10 @@
 
 @font-face {
 	font-family: Nunito;
-	src: '../fonts/Nunito-VariableFont_wght.ttf';
+	src: url('../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: FontAwesome;
+	src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
 }

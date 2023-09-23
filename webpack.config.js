@@ -32,7 +32,7 @@ module.exports = function(mode) {
 					use: ['babel-loader'],
 				},
 				{
-					test: /\.(png|jpe?g|gif|ico|svg)$/i,
+					test: /\.(png|jpe?g|gif|ico|svg|ttf)$/i,
 					use: [
 						'file-loader',
 						{
