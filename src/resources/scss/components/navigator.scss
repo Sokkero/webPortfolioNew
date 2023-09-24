@@ -1,0 +1,343 @@
+
+.navWrapper *{
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgba(255,255,255,.9);
+  font-size: 62.5%;
+}
+
+.cdStretchyNav {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  left: 40px;
+}
+.cdStretchyNav .stretchyNavBg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #333;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: height 0.2s, box-shadow 0.2s;
+  -moz-transition: height 0.2s, box-shadow 0.2s;
+  transition: height 0.2s, box-shadow 0.2s;
+}
+.cdStretchyNav.navIsVisible .stretchyNavBg {
+  height: 100%;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cdStretchyNav.navIsVisible {
+  padding-bottom:20px;
+}
+
+.cdNavTrigger {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  cursor: pointer;
+}
+.cdNavTrigger span,
+.cdNavTrigger span::after,
+.cdNavTrigger span::before {
+  position: absolute;
+  pointer-events: none;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+}
+.cdNavTrigger span {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.cdNavTrigger span::after,
+.cdNavTrigger span::before {
+  content: "";
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+.cdNavTrigger span::before {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.cdNavTrigger span::after {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.navIsVisible .cdNavTrigger span {
+  background-color: transparent;
+}
+.navIsVisible .cdNavTrigger span::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.navIsVisible .cdNavTrigger span::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cdStretchyNav ul {
+  position: relative;
+  z-index: 2;
+  list-style: none;
+  padding: 60px 0 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0.3s;
+  -moz-transition: visibility 0.3s;
+  transition: visibility 0.3s;
+  text-align: left;
+}
+.cdStretchyNav ul a {
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0  1em 0 calc(1em + 50px);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.6rem;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.cdStretchyNav ul a::after {
+  content: "\f167";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 22px;
+  top: 8px;
+  text-align: center;
+  -webkit-transform: translateY(-50%) scale(0);
+  -moz-transform: translateY(-50%) scale(0);
+  -ms-transform: translateY(-50%) scale(0);
+  -o-transform: translateY(-50%) scale(0);
+  transform: translateY(-50%) scale(0);
+  opacity: .6;
+  font-family: "FontAwesome";
+}
+.cdStretchyNav ul a::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  top: 50%;
+  left: 54px;
+  -webkit-transform: translateX(3px) translateY(-50%) scaleY(0);
+  -moz-transform: translateX(3px) translateY(-50%) scaleY(0);
+  -ms-transform: translateX(3px) translateY(-50%) scaleY(0);
+  -o-transform: translateX(3px) translateY(-50%) scaleY(0);
+  transform: translateX(3px) translateY(-50%) scaleY(0);
+  background-color: rgba(255,255,255,.9);
+}
+.cdStretchyNav ul li:first-of-type a::after {
+  background-position: -32px 0;
+}
+.cdStretchyNav ul li:nth-of-type(2) a::after {
+  background-position: -64px 0;
+}
+.cdStretchyNav ul li:nth-of-type(3) a::after {
+  background-position: -48px 0;
+}
+.cdStretchyNav ul li:nth-of-type(4) a::after {
+  background-position: 0 0;
+}
+.cdStretchyNav ul li:nth-of-type(5) a::after {
+  background-position: -16px 0;
+}
+.cdStretchyNav ul span {
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
+  transform: translateX(-25px);
+}
+.cdStretchyNav.navIsVisible ul {
+  visibility: visible;
+}
+.cdStretchyNav.navIsVisible ul a::after {
+  -webkit-transform: translateY(-50%) scale(1);
+  -moz-transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  -o-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  -webkit-animation: scaleIn 0.15s backwards;
+  -moz-animation: scaleIn 0.15s backwards;
+  animation: scaleIn 0.15s backwards;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cdStretchyNav.navIsVisible ul a.active {
+  color: #ff5d56;
+}
+.cdStretchyNav.navIsVisible ul a.active::after {
+  opacity: 1;
+}
+.cdStretchyNav.navIsVisible ul a.active::before {
+  -webkit-transform: translateX(3px) translateY(-50%) scaleY(1);
+  -moz-transform: translateX(3px) translateY(-50%) scaleY(1);
+  -ms-transform: translateX(3px) translateY(-50%) scaleY(1);
+  -o-transform: translateX(3px) translateY(-50%) scaleY(1);
+  transform: translateX(3px) translateY(-50%) scaleY(1);
+  -webkit-transition: -webkit-transform 0.15s 0.3s;
+  -moz-transition: -moz-transform 0.15s 0.3s;
+  transition: transform 0.15s 0.3s;
+  background-color: #ff5d56;
+}
+
+.cdStretchyNav.navIsVisible ul a.active span {
+  color: #ff5d56;
+}
+
+.cdStretchyNav.navIsVisible ul span {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: slideIn 0.15s backwards;
+  -moz-animation: slideIn 0.15s backwards;
+  animation: slideIn 0.15s backwards;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+.cdStretchyNav.navIsVisible ul li:first-of-type a::after,
+.cdStretchyNav.navIsVisible ul li:first-of-type span {
+  -webkit-animation-delay: 50ms;
+  -moz-animation-delay: 50ms;
+  animation-delay: 50ms;
+}
+.cdStretchyNav.navIsVisible ul li:nth-of-type(2) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(2) span {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.cdStretchyNav.navIsVisible ul li:nth-of-type(3) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(3) span {
+  -webkit-animation-delay: 0.15s;
+  -moz-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.cdStretchyNav.navIsVisible ul li:nth-of-type(4) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(4) span {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.cdStretchyNav.navIsVisible ul li:nth-of-type(5) a::after,
+.cdStretchyNav.navIsVisible ul li:nth-of-type(5) span {
+  -webkit-animation-delay: 0.25s;
+  -moz-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+@-webkit-keyframes scaleIn {
+  from {
+    -webkit-transform: translateY(-50%) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) scale(1);
+  }
+}
+@-moz-keyframes scaleIn {
+  from {
+    -moz-transform: translateY(-50%) scale(0);
+  }
+  to {
+    -moz-transform: translateY(-50%) scale(1);
+  }
+}
+@keyframes scaleIn {
+  from {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+}
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  from {
+    opacity: 0;
+    -moz-transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-25px);
+    -moz-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -o-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../../resources/scss/homeBlockWrapper.scss';
+import styles from '../../resources/scss/components/homeBlockWrapper.scss';
 
 function HomeBlockWrapper() {
 	return (
-		<section className={styles.headerWrapper}>
+		<section id='homeBlock' className={`${styles.headerWrapper} contentBlock`}>
 			<div className={styles.contentTable}>
 				<div className={styles.content}>
 					<div className={styles.textWrapper}>
