@@ -1,10 +1,15 @@
 :root {
 	/* -- Global --*/
-	--fontFam01: Nunito;
-	/* -- headerBlock vars -- */
-	--homeBackgroundColor:#222;
-	--homeMainColor01:#001858;
-	--homeMainColor02:#d19b4f;
+	--fontFam01: Nunito, sans-serif;
+	--fontFamIcons: "FontAwesome";
+
+	--mainColor01: #ff5d56;
+	--mainColor02: #222;
+	--mainColor03: #333;
+	--mainColor04: #444;
+
+	--textColor01: #fff;
+	--textColor02: #eee;
 }
 
 @font-face {

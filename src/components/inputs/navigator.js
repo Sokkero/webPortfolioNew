@@ -11,7 +11,7 @@ function Navigator() {
 
     useEffect(() => {
         //Make nav links scroll smoothly
-        const navLinks = document.querySelectorAll(`header nav ul li a`);
+        const navLinks = document.querySelectorAll(`a`);
         for (let n in navLinks) {
             if (Object.prototype.hasOwnProperty.call(navLinks, n)) {
                 navLinks[n].addEventListener("click", (e) => {
@@ -68,11 +68,11 @@ function Navigator() {
                     <span aria-hidden="true"></span>
                 </a>
                 <ul>
-                    <li><a id={`block0`} href="#homeBlock" className={styles.active}><span>Home</span></a></li>
-                    <li><a id={`block1`} href="#aboutMeBlock"><span>About me</span></a></li>
-                    <li><a id={`block2`} href="#portfolioBlock"><span>Portfolio</span></a></li>
-                    <li><a id={`block3`} href="#contactBlock"><span>Contact me</span></a></li>
-                    <li><a id={`block4`} href="#blogBlock"><span>Blog</span></a></li>
+                    <li><a id={`block0`} href="#homeBlock" className={`${styles.homeLink} ${styles.active}`}><span>Home</span></a></li>
+                    <li><a id={`block1`} href="#aboutMeBlock" className={styles.aboutMeLink}><span>About me</span></a></li>
+                    <li><a id={`block2`} href="#portfolioBlock" className={styles.portfolioLink}><span>Portfolio</span></a></li>
+                    <li><a id={`block3`} href="#contactBlock" className={styles.contactLink}><span>Contact me</span></a></li>
+                    <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
                 </ul>
                 <span aria-hidden="true" className={styles.stretchyNavBg}></span>
             </nav>

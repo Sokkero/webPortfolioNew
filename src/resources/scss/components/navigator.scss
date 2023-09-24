@@ -1,7 +1,7 @@
 
 .navWrapper *{
-  font-family: "Source Sans Pro", sans-serif;
-  color: rgba(255,255,255,.9);
+  font-family: var(--fontFam01);
+  color: var(--textColor01);
   font-size: 62.5%;
 }
 
@@ -19,7 +19,7 @@
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background: #333;
+  background: var(--mainColor03);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition: height 0.2s, box-shadow 0.2s;
   -moz-transition: height 0.2s, box-shadow 0.2s;
@@ -54,7 +54,7 @@
   pointer-events: none;
   width: 16px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--textColor01);
 }
 .cdNavTrigger span {
   left: 50%;
@@ -116,7 +116,7 @@
   position: relative;
   z-index: 2;
   list-style: none;
-  padding: 60px 0 0;
+  padding: 50px 0 0;
   visibility: hidden;
   -webkit-transition: visibility 0.3s;
   -moz-transition: visibility 0.3s;
@@ -129,14 +129,22 @@
   height: 50px;
   line-height: 50px;
   padding: 0  1em 0 calc(1em + 50px);
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--textColor01);
   font-size: 1.6rem;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   transition: color 0.2s;
 }
+
+.cdStretchyNav ul a:hover {
+  color: var(--mainColor01);
+}
+
+.cdStretchyNav ul a:hover span {
+  color: var(--mainColor01);
+}
+
 .cdStretchyNav ul a::after {
-  content: "\f167";
   position: absolute;
   height: 16px;
   width: 16px;
@@ -149,8 +157,26 @@
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   opacity: .6;
-  font-family: "FontAwesome";
+  font-family: var(--fontFamIcons);
+  font-size: 17px;
 }
+
+.cdStretchyNav ul a.homeLink::after {
+  content: "\f015";
+}
+.cdStretchyNav ul a.aboutMeLink::after {
+  content: "\f007";
+}
+.cdStretchyNav ul a.portfolioLink::after {
+  content: "\f0b1";
+}
+.cdStretchyNav ul a.contactLink::after {
+  content: "\f0e6";
+}
+.cdStretchyNav ul a.blogLink::after {
+  content: "\f2b6";
+}
+
 .cdStretchyNav ul a::before {
   content: "";
   position: absolute;
@@ -163,22 +189,7 @@
   -ms-transform: translateX(3px) translateY(-50%) scaleY(0);
   -o-transform: translateX(3px) translateY(-50%) scaleY(0);
   transform: translateX(3px) translateY(-50%) scaleY(0);
-  background-color: rgba(255,255,255,.9);
-}
-.cdStretchyNav ul li:first-of-type a::after {
-  background-position: -32px 0;
-}
-.cdStretchyNav ul li:nth-of-type(2) a::after {
-  background-position: -64px 0;
-}
-.cdStretchyNav ul li:nth-of-type(3) a::after {
-  background-position: -48px 0;
-}
-.cdStretchyNav ul li:nth-of-type(4) a::after {
-  background-position: 0 0;
-}
-.cdStretchyNav ul li:nth-of-type(5) a::after {
-  background-position: -16px 0;
+  background-color: var(--textColor01);
 }
 .cdStretchyNav ul span {
   display: block;
@@ -206,7 +217,7 @@
   transition: opacity 0.2s;
 }
 .cdStretchyNav.navIsVisible ul a.active {
-  color: #ff5d56;
+  color: var(--mainColor01);
 }
 .cdStretchyNav.navIsVisible ul a.active::after {
   opacity: 1;
@@ -220,11 +231,11 @@
   -webkit-transition: -webkit-transform 0.15s 0.3s;
   -moz-transition: -moz-transform 0.15s 0.3s;
   transition: transform 0.15s 0.3s;
-  background-color: #ff5d56;
+  background-color: var(--mainColor01);
 }
 
 .cdStretchyNav.navIsVisible ul a.active span {
-  color: #ff5d56;
+  color: var(--mainColor01);
 }
 
 .cdStretchyNav.navIsVisible ul span {
