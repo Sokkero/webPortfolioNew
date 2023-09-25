@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 import {SizeContext} from "../../Store";
-import styles from '../../resources/scss/components/navigator.scss';
+import normalStyles from '../../resources/scss/components/inputs/normalNav.scss';
+import mobileStyles from '../../resources/scss/components/inputs/mobileNav.scss';
 
 function Navigator() {
 
@@ -16,7 +17,10 @@ function Navigator() {
         //Make nav links scroll smoothly
         const navLinks = document.querySelectorAll(`a`);
         for (let n in navLinks) {
-            if (Object.prototype.hasOwnProperty.call(navLinks, n)) {
+            if (
+                Object.prototype.hasOwnProperty.call(navLinks, n) &&
+                navLinks[n].hasAttribute("href")
+            ) {
                 navLinks[n].addEventListener("click", (e) => {
                     e.preventDefault();
                     document.querySelector(navLinks[n].hash).scrollIntoView({
@@ -40,18 +44,20 @@ function Navigator() {
                 ) {
                     const id = sections[s].id;
                     let currBlock = document.querySelector(`nav ul a[href*=${id}]`);
-                    if(!currBlock.classList.contains(styles.active)) {
-                        document.querySelector(`nav ul a.${styles.active}`).classList.remove(styles.active);
-                        currBlock.classList.add(styles.active);
+                    let activeStyle = width < 700 && width < height ? mobileStyles.active : normalStyles.active;
+                    if(!currBlock.classList.contains(activeStyle)) {
+                        document.querySelector(`nav ul a.${activeStyle}`)?.classList.remove(activeStyle);
+                        currBlock.classList.add(activeStyle);
                     }
                     return;
                 }
         };
         document.querySelector("#root div").addEventListener("scroll", scrollUpdate);
+        scrollUpdate();
 
         // Close navbar on document clicks
         const handleDocumentClick = (event) => {
-            if (!event.target.classList.contains(styles.cdNavTrigger)) {
+            if (!event.target.classList.contains(normalStyles.cdNavTrigger)) {
                 setIsNavVisible(false);
             }
         };
@@ -63,24 +69,35 @@ function Navigator() {
         };
     }, []);
 
-    return (
-        <header className={`${styles.navWrapper}`}>
-            <nav className={`${styles.cdStretchyNav}  ${isNavVisible ? styles.navIsVisible : ''}`}>
-                <a className={styles.cdNavTrigger} onClick={handleNavToggle}>
-                    Menu
-                    <span aria-hidden="true"></span>
-                </a>
-                <ul>
-                    <li><a id={`block0`} href="#homeBlock" className={`${styles.homeLink} ${styles.active}`}><span>Home</span></a></li>
-                    <li><a id={`block1`} href="#aboutMeBlock" className={styles.aboutMeLink}><span>About me</span></a></li>
-                    <li><a id={`block2`} href="#portfolioBlock" className={styles.portfolioLink}><span>Portfolio</span></a></li>
-                    <li><a id={`block3`} href="#contactBlock" className={styles.contactLink}><span>Contact me</span></a></li>
-                    <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
-                </ul>
-                <span aria-hidden="true" className={styles.stretchyNavBg}></span>
-            </nav>
-        </header>
-    );
+    const getNormalNav = () => {
+        return (
+            <header className={`${normalStyles.navWrapper}`}>
+                <nav className={`${normalStyles.cdStretchyNav}  ${isNavVisible ? normalStyles.navIsVisible : ''}`}>
+                    <a className={normalStyles.cdNavTrigger} onClick={handleNavToggle}>
+                        Menu
+                        <span aria-hidden="true"></span>
+                    </a>
+                    <ul>
+                        <li><a id={`block0`} href="#homeBlock" className={`${normalStyles.homeLink}`}><span>Home</span></a></li>
+                        <li><a id={`block1`} href="#aboutMeBlock" className={normalStyles.aboutMeLink}><span>About me</span></a></li>
+                        <li><a id={`block2`} href="#portfolioBlock" className={normalStyles.portfolioLink}><span>Portfolio</span></a></li>
+                        <li><a id={`block3`} href="#contactBlock" className={normalStyles.contactLink}><span>Contact me</span></a></li>
+                        <li><a id={`block4`} href="#blogBlock" className={normalStyles.blogLink}><span>Blog</span></a></li>
+                    </ul>
+                    <span aria-hidden="true" className={normalStyles.stretchyNavBg}></span>
+                </nav>
+            </header>
+        );
+    };
+
+    const getMobileNav = () => {
+        return (
+            <header className={`${normalStyles.navWrapper}`}>
+            </header>
+        );
+    };
+
+    return width < 700 && width < height ? getMobileNav() : getNormalNav();
 }
 
 export default Navigator;

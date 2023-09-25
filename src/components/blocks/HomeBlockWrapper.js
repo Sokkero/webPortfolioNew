@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import styles from '../../resources/scss/components/homeBlockWrapper.scss';
+import styles from '../../resources/scss/components/blocks/homeBlockWrapper.scss';
 import {SizeContext} from "../../Store";
 
 function HomeBlockWrapper() {
