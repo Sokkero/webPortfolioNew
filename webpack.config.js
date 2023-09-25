@@ -37,25 +37,6 @@ module.exports = function(mode) {
 						'file-loader',
 						{
 							loader: 'image-webpack-loader',
-							options: {
-								mozjpeg: {
-									progressive: true,
-									quality: 65,
-									quantTable: 4,
-								},
-								// optipng.enabled: false will disable optipng
-								optipng: {
-									enabled: false,
-								},
-								pngquant: {
-									quality: [0.7, 0.9],
-									speed: 4,
-									strip: true,
-								},
-								gifsicle: {
-									interlaced: false,
-								}
-							}
 						},
 					],
 				},

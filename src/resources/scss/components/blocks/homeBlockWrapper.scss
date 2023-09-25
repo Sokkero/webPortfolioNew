@@ -1,20 +1,19 @@
 .homeWrapper {
-  background-image: url(https://istanbul-react.vercel.app/img/fullscreendark.jpg);
-  background-color: var(--mainColor02);
+  background-color: var(--mainColor03);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   scroll-snap-align: start;
 }
 
 .homeWrapper .contentTable {
   display: table;
-  width: auto;
-  height: 100vh;
-  margin-left: 50vw;
-  max-width: 30vw;
+  width: 500px;
+  height: 100%;
+  margin-left: 23vw;
 }
 
 .homeWrapper .contentTable .content {
@@ -126,4 +125,27 @@
 
 .homeWrapper .contentTable .content .ctaWrapper .portfolioLink:hover:after {
   right:0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .homeWrapper {
+    background-position: center right 36%;
+  }
+
+  .homeWrapper .contentTable {
+    margin-left: 3vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .homeWrapper {
+    background-position: bottom 100% right 34%;
+    background-size: inherit;
+  }
+
+  .homeWrapper .contentTable {
+    display: block;
+    padding: 30px;
+    width: 400px;
+  }
 }

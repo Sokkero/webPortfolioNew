@@ -5,6 +5,13 @@
 	scroll-snap-type: y proximity;
 }
 
+.seperator {
+	display: block;
+	background-color: var(--mainColor01);
+	height: 3px;
+	width: 100%;
+}
+
 .contentBlock {
 	width: 100%;
 	min-height: 100vh;

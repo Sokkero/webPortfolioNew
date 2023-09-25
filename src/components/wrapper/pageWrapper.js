@@ -14,16 +14,14 @@ function PageWrapper() {
 		<div className={styles.wrapper}>
 			{width < 700 && width < height ? <MobileNav /> : <NormalNav />}
 			<HomeBlockWrapper />
+			<span className={styles.seperator}/>
 			<AboutMeBlockWrapper />
-			<section id='portfolioBlock' className={`${styles.portfolioBlock} ${styles.contentBlock} contentBlock`}>
-
-			</section>
-			<section id='contactBlock' className={`${styles.contactBlock} ${styles.contentBlock} contentBlock`}>
-
-			</section>
-			<section id='blogBlock' className={`${styles.blogBlock} ${styles.contentBlock} contentBlock`}>
-
-			</section>
+			<span className={styles.seperator}/>
+			<section id='portfolioBlock' className={`${styles.portfolioBlock} ${styles.contentBlock} contentBlock`} />
+			<span className={styles.seperator}/>
+			<section id='contactBlock' className={`${styles.contactBlock} ${styles.contentBlock} contentBlock`} />
+			<span className={styles.seperator}/>
+			<section id='blogBlock' className={`${styles.blogBlock} ${styles.contentBlock} contentBlock`} />
 		</div>
 	);
 }
