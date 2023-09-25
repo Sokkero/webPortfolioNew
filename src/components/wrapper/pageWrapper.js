@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import styles from '../../resources/scss/components/pageWrapper.scss';
-import Navigator from "../inputs/navigator";
+import NormalNav from "../inputs/normalNav";
+import MobileNav from "../inputs/mobileNav";
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 import AboutMeBlockWrapper from "../blocks/AboutMeBlockWrapper";
 import {SizeContext} from "../../Store";
@@ -11,8 +12,8 @@ function PageWrapper() {
 
 	return (
 		<div className={styles.wrapper}>
-			<Navigator />
-			{/*<HomeBlockWrapper/>*/}
+			{width < 700 && width < height ? <MobileNav /> : <NormalNav />}
+			<HomeBlockWrapper />
 			<AboutMeBlockWrapper />
 			<section id='portfolioBlock' className={`${styles.portfolioBlock} ${styles.contentBlock} contentBlock`}>
 

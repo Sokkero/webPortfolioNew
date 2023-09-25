@@ -136,11 +136,8 @@
   transition: color 0.2s;
 }
 
-.cdStretchyNav ul a:hover {
-  color: var(--mainColor01);
-}
-
-.cdStretchyNav ul a:hover span {
+.cdStretchyNav ul a:hover,
+.cdStretchyNav ul a:hover span{
   color: var(--mainColor01);
 }
 

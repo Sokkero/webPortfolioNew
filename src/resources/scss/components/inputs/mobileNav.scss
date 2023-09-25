@@ -1,0 +1,118 @@
+
+.navWrapper *{
+  font-family: var(--fontFam01);
+  color: var(--textColor01);
+  font-size: 62.5%;
+}
+
+.cdStretchyNav {
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: calc(35vw / 2 - 5px);
+}
+
+.cdStretchyNav ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  width: 65vw;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--mainColor03);
+  border: 1px solid var(--mainColor01);
+  border-radius: 10em;
+  padding: 0 5px;
+}
+
+.cdStretchyNav ul li {
+  font-size: 33px;
+  width: 100%;
+  display: flex;
+}
+
+.cdStretchyNav ul li a {
+  position: relative;
+  width: 100%;
+  padding: 24px 0 8px;
+  transition: 0.6s;
+}
+
+.cdStretchyNav ul li a span {
+  transition: 0.6s;
+}
+
+.cdStretchyNav ul li a.active {
+  color: var(--mainColor01);
+}
+
+.cdStretchyNav ul li a:hover,
+.cdStretchyNav ul li a:hover span{
+  color: var(--mainColor01);
+}
+
+.cdStretchyNav ul li a.active span {
+  color: var(--mainColor01);
+}
+
+.cdStretchyNav ul li a::before {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  opacity: .6;
+  font-family: var(--fontFamIcons);
+  font-size: 17px;
+  left: calc(50% - 7.5px);
+  top: 11px;
+}
+
+.cdStretchyNav ul li a.homeLink::before {
+  content: "\f015";
+  font-size: 19px;
+}
+.cdStretchyNav ul li a.aboutMeLink::before {
+  content: "\f007";
+  font-size: 19px;
+}
+.cdStretchyNav ul li a.portfolioLink::before {
+  content: "\f0b1";
+}
+.cdStretchyNav ul li a.contactLink::before {
+  content: "\f0e6";
+  font-size: 19px;
+  top: 10px;
+}
+.cdStretchyNav ul li a.blogLink::before {
+  content: "\f2b6";
+}
+
+.cdStretchyNav ul li:nth-child(1)::after,
+.cdStretchyNav ul li:nth-child(2)::after,
+.cdStretchyNav ul li:nth-child(3)::after,
+.cdStretchyNav ul li:nth-child(4)::after {
+  content: "";
+  position: relative;
+  height: 40px;
+  width: 2px;
+  opacity: .6;
+  background-color: var(--mainColor01);
+  top: 10px;
+  right: 0;
+}
+
+.cdStretchyNav ul li a.active::before {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 620px) {
+  .cdStretchyNav {
+    left: calc(15vw / 2 - 15px);
+  }
+
+  .cdStretchyNav ul {
+    width: 85vw;
+    padding: 0 15px;
+  }
+}
