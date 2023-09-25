@@ -1,0 +1,48 @@
+
+.aboutMeWrapper {
+  background-color: var(--mainColor02);
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+.aboutMeWrapper .header {
+  text-align: center;
+  padding: 55px 0;
+  text-transform: uppercase;
+}
+
+.aboutMeWrapper .header h2 {
+  color: var(--textColor01);
+  margin: 0;
+  font-size: 55px;
+}
+
+.aboutMeWrapper .header h2 > span {
+  color: var(--mainColor01);
+  font-size: 55px;
+}
+
+.aboutMeWrapper div.header > span {
+  color: var(--textColor02);
+  font-size: 15px;
+  position: relative;
+}
+
+.aboutMeWrapper div.header > span::before,
+.aboutMeWrapper div.header > span::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 11px;
+  width: 30px;
+  background-color: var(--mainColor01);
+}
+
+.aboutMeWrapper div.header > span::before {
+  left: -50px;
+}
+
+.aboutMeWrapper div.header > span::after {
+  right: -50px;
+}

@@ -1,4 +1,4 @@
-.headerWrapper {
+.homeWrapper {
   background-image: url(https://istanbul-react.vercel.app/img/fullscreendark.jpg);
   background-color: var(--mainColor02);
   background-size: cover;
@@ -9,7 +9,7 @@
   scroll-snap-align: start;
 }
 
-.headerWrapper .contentTable {
+.homeWrapper .contentTable {
   display: table;
   width: auto;
   height: 100vh;
@@ -17,22 +17,22 @@
   max-width: 30vw;
 }
 
-.headerWrapper .contentTable .content {
+.homeWrapper .contentTable .content {
   vertical-align: middle;
   position: relative;
   display: table-cell;
   color: var(--textColor02);
 }
 
-.headerWrapper .contentTable .content .textWrapper p {
+.homeWrapper .contentTable .content .textWrapper p {
   line-height: 32px;
 }
 
-.headerWrapper .contentTable .content .textWrapper h1 {
+.homeWrapper .contentTable .content .textWrapper h1 {
   color: var(--textColor01);
 }
 
-.headerWrapper .contentTable .content .ctaWrapper a {
+.homeWrapper .contentTable .content .ctaWrapper a {
   cursor: pointer;
   box-shadow: none !important;
   border-radius: 26px;
@@ -52,31 +52,31 @@
   border: 0;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper a span::before {
+.homeWrapper .contentTable .content .ctaWrapper a span::before {
   font-family: var(--fontFamIcons);
   margin-left: -10px;
   padding-right: 8px;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink {
   margin-right: 20px;
   background-color: var(--mainColor01);
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink span {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink span {
   position: relative;
   z-index: 100;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink span:before {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink span:before {
   content: "\f007";
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover {
   color: var(--textColor01);
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink:after {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:after {
   position: absolute;
   content: "";
   top: 0;
@@ -89,29 +89,29 @@
   z-index: 1;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover:after {
+.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover:after {
   width: 200%;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink {
   border: 1px solid var(--mainColor01);
   background: transparent;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink span {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink span {
   position: relative;
   z-index: 100;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink span:before {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink span:before {
   content: "\f0b1";
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink:hover {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:hover {
   color: var(--textColor01);
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink:after {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:after {
   position: absolute;
   content: "";
   top: -10%;
@@ -124,6 +124,6 @@
   z-index: 1;
 }
 
-.headerWrapper .contentTable .content .ctaWrapper .portfolioLink:hover:after {
+.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:hover:after {
   right:0;
 }

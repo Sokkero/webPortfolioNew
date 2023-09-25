@@ -3,7 +3,7 @@ import styles from '../../resources/scss/components/homeBlockWrapper.scss';
 
 function HomeBlockWrapper() {
 	return (
-		<section id='homeBlock' className={`${styles.headerWrapper} contentBlock`}>
+		<section id='homeBlock' className={`${styles.homeWrapper} contentBlock`}>
 			<div className={styles.contentTable}>
 				<div className={styles.content}>
 					<div className={styles.textWrapper}>
