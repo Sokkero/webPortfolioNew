@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from '../../resources/scss/components/homeBlockWrapper.scss';
+import {SizeContext} from "../../Store";
 
 function HomeBlockWrapper() {
+	const width = useContext(SizeContext)[0];
+	const height = useContext(SizeContext)[1];
+
 	return (
 		<section id='homeBlock' className={`${styles.homeWrapper} contentBlock`}>
 			<div className={styles.contentTable}>

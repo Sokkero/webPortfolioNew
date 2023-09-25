@@ -1,12 +1,12 @@
 import React, {createContext, useEffect, useState} from 'react';
 
-export const WidthContext = createContext(window.innerWidth);
+export const SizeContext = createContext([window.innerWidth, window.innerHeight]);
 
 const Store = ({ children }) => {
-	const [getWidth, setWidth] = useState(window.innerWidth);
+	const [getSize, setSize] = useState([window.innerWidth, window.innerHeight]);
 
 	const updateWidth = () => {
-		setWidth(window.innerWidth);
+		setSize([window.innerWidth, window.innerHeight]);
 	};
 
 	useEffect(() => {
@@ -14,9 +14,9 @@ const Store = ({ children }) => {
 	}, []);
 
 	return (
-		<WidthContext.Provider value={getWidth}>
+		<SizeContext.Provider value={getSize}>
 			{children}
-		</WidthContext.Provider>
+		</SizeContext.Provider>
 	);
 };
 
