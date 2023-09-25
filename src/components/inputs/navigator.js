@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, useContext} from 'react';
+import {WidthContext} from "../../Store";
 import styles from '../../resources/scss/components/navigator.scss';
 
 function Navigator() {
 
+    const width = useContext(WidthContext);
     const [isNavVisible, setIsNavVisible] = useState(false);
 
     const handleNavToggle = () => {

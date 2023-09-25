@@ -1,5 +1,7 @@
-git config core.filemode false
-sudo chmod -R -f 777 .
+git config core.filemode false<br>
+sudo chmod -R -f 777 .<br>
+
+Browser width < 700 = mobile design
 
 # Getting Started with Create React App
 

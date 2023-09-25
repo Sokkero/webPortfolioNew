@@ -5,7 +5,6 @@ import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 import AboutMeBlockWrapper from "../blocks/AboutMeBlockWrapper";
 
 function PageWrapper() {
-
 	return (
 		<div className={styles.wrapper}>
 			<Navigator />

@@ -1,30 +1,23 @@
-import React, {createContext, useReducer} from 'react';
-import PropTypes from 'prop-types';
-import Reducer from './Reducer';
+import React, {createContext, useEffect, useState} from 'react';
 
-export const PAGE_TYPES = {
-	INDEX: 'index',
-	TEST01: 'test01',
-	TEST02: 'test02',
-};
-
-const initialState = {
-	currentSite: 'index',
-};
-
-export const FormContext = createContext(initialState);
+export const WidthContext = createContext(window.innerWidth);
 
 const Store = ({ children }) => {
-	const [state, dispatch] = useReducer(Reducer, initialState);
-	return (
-		<FormContext.Provider value={[state, dispatch]}>
-			{children}
-		</FormContext.Provider>
-	);
-};
+	const [getWidth, setWidth] = useState(window.innerWidth);
 
-Store.propTypes = {
-	children: PropTypes.element.isRequired,
+	const updateWidth = () => {
+		setWidth(window.innerWidth);
+	};
+
+	useEffect(() => {
+		window.addEventListener("resize", updateWidth);
+	}, []);
+
+	return (
+		<WidthContext.Provider value={getWidth}>
+			{children}
+		</WidthContext.Provider>
+	);
 };
 
 export default Store;
