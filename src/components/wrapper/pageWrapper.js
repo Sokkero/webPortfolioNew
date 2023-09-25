@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from '../../resources/scss/components/pageWrapper.scss';
 import Navigator from "../inputs/navigator";
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';

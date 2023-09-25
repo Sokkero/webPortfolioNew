@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from '../../resources/scss/components/aboutMeBlockWrapper.scss';
 import {SizeContext} from "../../Store";
 
