@@ -1,4 +1,14 @@
 
+.seperator {
+  display: block;
+  background-color: var(--textColor02);
+  height: 1px;
+  width: 100%;
+  opacity: 0.5;
+  max-width: 90vw;
+  margin: auto;
+}
+
 .aboutMeWrapper {
   background-color: var(--mainColor03);
   width: 100%;
@@ -8,6 +18,7 @@
 
 .aboutMeWrapper .contentWrapper {
   width: 45%;
+  min-width: 1100px;
   margin: auto;
 }
 
@@ -59,6 +70,7 @@
   justify-content: space-around;
   align-items: center;
   color: var(--textColor02);
+  padding-bottom: 80px;
 }
 
 .aboutMeWrapper .contentWrapper .myInfo .imageContainer {
@@ -125,4 +137,34 @@
 
 .aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoBottom {
   flex: 0 0 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .aboutMeWrapper .contentWrapper {
+    min-width: unset;
+    width: 60%;
+  }
+
+  .aboutMeWrapper .contentWrapper .myInfo {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  .aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper {
+    justify-content: center;
+    column-gap: 50px;
+  }
+
+  .aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn {
+    flex: 0 0 40%;
+    max-width: fit-content;
+  }
+
+  .aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoBottom {
+    text-align: center;
+  }
+
+  .aboutMeWrapper .contentWrapper .myInfo {
+    padding-bottom: 50px;
+  }
 }

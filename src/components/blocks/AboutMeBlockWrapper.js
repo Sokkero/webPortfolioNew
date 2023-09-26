@@ -86,7 +86,6 @@ function AboutMeBlockWrapper() {
 							</ul>
 						</div>
 						<div className={styles.myInfoBottom}>
-							{/*TODO: make a buttons a class*/ }
 							<ButtonA
 								href={'https://www.google.com/'}
 								text={"&#xf007; Download my CV"}
@@ -96,6 +95,7 @@ function AboutMeBlockWrapper() {
 						</div>
 					</div>
 				</div>
+				<span className={styles.seperator}/>
 			</div>
 		</section>
 	);
