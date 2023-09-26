@@ -1,5 +1,5 @@
 .homeWrapper {
-  background-color: var(--mainColor03);
+  background-color: var(--mainColor02);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -41,7 +41,7 @@
   font-size: 15px;
   text-transform: uppercase;
   color: var(--textColor02);
-  padding: 0 33px;
+  padding: 0 26px 0 33px;
   outline: none !important;
   overflow: hidden;
   display: inline-block;
@@ -134,18 +134,33 @@
 
   .homeWrapper .contentTable {
     margin-left: 3vw;
+    width: 420px;
   }
 }
 
 @media only screen and (max-width: 700px) {
+  @media only screen and (max-height: 1000px) {
+    .homeWrapper {
+      background-position: calc(69%) calc(-30%) !important;
+      background-size: inherit;
+    }
+  }
+
   .homeWrapper {
-    background-position: bottom 100% right 34%;
-    background-size: inherit;
+    background-position: bottom right;
   }
 
   .homeWrapper .contentTable {
     display: block;
     padding: 30px;
-    width: 400px;
+    width: 390px;
+  }
+
+  .homeWrapper .contentTable .content .ctaWrapper .aboutMeLink {
+    margin-bottom: 1vh;
+  }
+
+  .homeWrapper .contentTable .content .ctaWrapper a {
+    padding: 0 22px 0 30px;
   }
 }
