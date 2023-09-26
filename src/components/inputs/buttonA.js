@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import styles from '../../resources/scss/components/inputs/buttonA.scss';
 import {MakeSmoothScroll} from "./navigatorLogic";
 
@@ -8,17 +8,22 @@ export const ButtonTypes = {
 }
 
 function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
+    const linkRef = useRef(null);
+
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
 
     useEffect(() => {
         if(isNavigator) {
-            let elements = document.querySelectorAll(`a.${styles.linkElem}`);
-            MakeSmoothScroll(elements);
+            MakeSmoothScroll(linkRef);
         }
     }, []);
 
     return (
-        <a href={href} className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}>
+        <a
+            href={href}
+            className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}
+            ref={linkRef}
+        >
             <span
                 dangerouslySetInnerHTML={{__html: text}}
             />
