@@ -1,15 +1,14 @@
 
 //Make nav links scroll smoothly
-export function SmoothScroll() {
-    const navLinks = document.querySelectorAll(`a`);
-    for (let n in navLinks) {
+export function MakeSmoothScroll(elements) {
+    for (let n in elements) {
         if (
-            Object.prototype.hasOwnProperty.call(navLinks, n) &&
-            navLinks[n].hasAttribute("href")
+            Object.prototype.hasOwnProperty.call(elements, n) &&
+            elements[n].hasAttribute("href")
         ) {
-            navLinks[n].addEventListener("click", (e) => {
+            elements[n].addEventListener("click", (e) => {
                 e.preventDefault();
-                document.querySelector(navLinks[n].hash).scrollIntoView({
+                document.querySelector(elements[n].hash).scrollIntoView({
                     behavior: "smooth",
                     block: "center",
                     inline: "center"

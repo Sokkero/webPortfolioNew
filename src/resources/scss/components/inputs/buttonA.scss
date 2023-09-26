@@ -1,0 +1,86 @@
+
+.linkElem {
+  cursor: pointer;
+  box-shadow: none !important;
+  border-radius: 26px;
+  font-weight: 500;
+  height: 46px;
+  line-height: 46px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--textColor02);
+  padding: 0 33px;
+  outline: none !important;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-family: var(--fontFam01), var(--fontFamIcons);
+  letter-spacing: .5px;
+}
+
+.linkElem.lightButton  {
+  background-color: var(--mainColor01);
+}
+
+.linkElem.lightButton:hover {
+  color: var(--textColor01);
+}
+
+.linkElem.lightButton:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 102%;
+  left: -25%;
+  width: 0;
+  background: linear-gradient(90deg, rgba(85,85,85,1) 65%, rgba(85,85,85,0) 100%);
+  transform: skew(-22deg);
+  transition-duration: 0.8s;
+  z-index: 1;
+}
+
+.linkElem.lightButton:hover:after {
+  width: 200%;
+}
+
+.linkElem.lightButton span {
+  position: relative;
+  z-index: 100;
+}
+
+.linkElem.darkButton  {
+  border: 1px solid var(--mainColor01);
+  background: transparent;
+}
+
+.linkElem.darkButton:hover {
+  color: var(--textColor01);
+}
+
+.linkElem.darkButton:after {
+  position: absolute;
+  content: "";
+  top: -10%;
+  height: 200%;
+  right: -200%;
+  width: 200%;
+  background: linear-gradient(90deg, rgba(255, 93, 86,0) 0%, rgba(255, 93, 86,1) 35%);
+  transform: skew(-22deg);
+  transition-duration: 0.8s;
+  z-index: 1;
+}
+
+.linkElem.darkButton:hover:after {
+  right:0;
+}
+
+.linkElem.darkButton span {
+  position: relative;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 700px) {
+  .linkElem {
+    padding: 0 22px;
+  }
+}

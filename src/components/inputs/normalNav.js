@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {SpyScrolling, SmoothScroll} from "./navigatorLogic";
+import {SpyScrolling, MakeSmoothScroll} from "./navigatorLogic";
 import styles from '../../resources/scss/components/inputs/normalNav.scss';
 
 function NormalNav() {
@@ -11,7 +11,9 @@ function NormalNav() {
 
     useEffect(() => {
         SpyScrolling(styles.active);
-        SmoothScroll();
+
+        let elements = document.querySelectorAll(`header.${styles.navWrapper} nav ul a`);
+        MakeSmoothScroll(elements);
 
         document.querySelector("#root div").addEventListener(
             "scroll",

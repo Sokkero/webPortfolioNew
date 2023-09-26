@@ -6,31 +6,36 @@
   scroll-snap-align: start;
 }
 
-.aboutMeWrapper .header {
+.aboutMeWrapper .contentWrapper {
+  width: 45%;
+  margin: auto;
+}
+
+.aboutMeWrapper .contentWrapper .header {
   text-align: center;
   padding: 55px 0;
   text-transform: uppercase;
 }
 
-.aboutMeWrapper .header h2 {
+.aboutMeWrapper .contentWrapper .header h2 {
   color: var(--textColor01);
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 55px;
 }
 
-.aboutMeWrapper .header h2 > span {
+.aboutMeWrapper .contentWrapper .header h2 > span {
   color: var(--mainColor01);
   font-size: 55px;
 }
 
-.aboutMeWrapper div.header > span {
+.aboutMeWrapper .contentWrapper div.header > span {
   color: var(--textColor02);
   font-size: 15px;
   position: relative;
 }
 
-.aboutMeWrapper div.header > span::before,
-.aboutMeWrapper div.header > span::after {
+.aboutMeWrapper .contentWrapper div.header > span::before,
+.aboutMeWrapper .contentWrapper div.header > span::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -39,10 +44,85 @@
   background-color: var(--mainColor01);
 }
 
-.aboutMeWrapper div.header > span::before {
+.aboutMeWrapper .contentWrapper div.header > span::before {
   left: -50px;
 }
 
-.aboutMeWrapper div.header > span::after {
+.aboutMeWrapper .contentWrapper div.header > span::after {
   right: -50px;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--textColor02);
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .imageContainer {
+  width: auto;
+  max-width: 440px;
+  height: 100%;
+  margin: 0 auto;
+  flex: 0 0 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .imageContainer::before {
+  border: 6px solid var(--mainColor01);
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 25px;
+  left: 25px;
+  box-sizing: border-box;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: left;
+  flex: 0 0 50%;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn {
+  flex: 0 0 50%;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn ul {
+  list-style: none;
+  padding: unset;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn li {
+  margin: 35px 0;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn ul h5,
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn ul span,
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn ul a{
+  font-size: 16px;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoColumn ul span {
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+.aboutMeWrapper .contentWrapper .myInfo .myInfoWrapper .myInfoBottom {
+  flex: 0 0 100%;
 }

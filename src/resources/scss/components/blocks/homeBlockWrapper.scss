@@ -31,100 +31,8 @@
   color: var(--textColor01);
 }
 
-.homeWrapper .contentTable .content .ctaWrapper a {
-  cursor: pointer;
-  box-shadow: none !important;
-  border-radius: 26px;
-  font-weight: 500;
-  height: 46px;
-  line-height: 46px;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: var(--textColor02);
-  padding: 0 26px 0 33px;
-  outline: none !important;
-  overflow: hidden;
-  display: inline-block;
-  position: relative;
-  font-family: var(--fontFam01);
-  letter-spacing: .5px;
-  border: 0;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper a span::before {
-  font-family: var(--fontFamIcons);
-  margin-left: -10px;
-  padding-right: 8px;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink {
+.aboutMeExtraStyle {
   margin-right: 20px;
-  background-color: var(--mainColor01);
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink span {
-  position: relative;
-  z-index: 100;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink span:before {
-  content: "\f007";
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover {
-  color: var(--textColor01);
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  height: 102%;
-  left: -25%;
-  width: 0;
-  background: linear-gradient(90deg, rgba(85,85,85,1) 65%, rgba(85,85,85,0) 100%);
-  transform: skew(-22deg);
-  transition-duration: 0.8s;
-  z-index: 1;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .aboutMeLink:hover:after {
-  width: 200%;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink {
-  border: 1px solid var(--mainColor01);
-  background: transparent;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink span {
-  position: relative;
-  z-index: 100;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink span:before {
-  content: "\f0b1";
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:hover {
-  color: var(--textColor01);
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:after {
-  position: absolute;
-  content: "";
-  top: -10%;
-  height: 200%;
-  right: -200%;
-  width: 200%;
-  background: linear-gradient(90deg, rgba(255, 93, 86,0) 0%, rgba(255, 93, 86,1) 35%);
-  transform: skew(-22deg);
-  transition-duration: 0.8s;
-  z-index: 1;
-}
-
-.homeWrapper .contentTable .content .ctaWrapper .portfolioLink:hover:after {
-  right:0;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -158,9 +66,5 @@
 
   .homeWrapper .contentTable .content .ctaWrapper .aboutMeLink {
     margin-bottom: 1vh;
-  }
-
-  .homeWrapper .contentTable .content .ctaWrapper a {
-    padding: 0 22px 0 30px;
   }
 }

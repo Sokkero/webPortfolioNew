@@ -1,12 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import styles from '../../resources/scss/components/blocks/homeBlockWrapper.scss';
-import {SizeContext} from "../../Store";
 import bgImage from "../../resources/images/fullscreendarkFlipped.jpg"
+import ButtonA, {ButtonTypes} from "../inputs/buttonA";
 
 function HomeBlockWrapper() {
-	const width = useContext(SizeContext)[0];
-	const height = useContext(SizeContext)[1];
-
 	return (
 		<section id='homeBlock' style={{backgroundImage: `url(${bgImage})`}} className={`${styles.homeWrapper} contentBlock`}>
 			<div className={styles.contentTable}>
@@ -17,12 +14,19 @@ function HomeBlockWrapper() {
 						<p>A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine.</p>
 					</div>
 					<div className={styles.ctaWrapper}>
-						<a href='#aboutMeBlock' className={styles.aboutMeLink}>
-							<span>More about me</span>
-						</a>
-						<a href='#portfolioBlock' className={styles.portfolioLink}>
-							<span>My portfolio</span>
-						</a>
+						<ButtonA
+							href={'#aboutMeBlock'}
+							text={"&#xf007; More about me"}
+							buttonType={ButtonTypes.LightButton}
+							extraStyle={styles.aboutMeExtraStyle}
+							isNavigator={true}
+						/>
+						<ButtonA
+							href={'#portfolioBlock'}
+							text={"&#xf0b1; Portfolio"}
+							buttonType={ButtonTypes.DarkButton}
+							isNavigator={true}
+						/>
 					</div>
 				</div>
 			</div>
