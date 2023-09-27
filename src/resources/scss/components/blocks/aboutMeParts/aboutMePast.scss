@@ -1,0 +1,91 @@
+.myPast {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.myPast .pastColumn {
+  flex: 0 0 50%;
+}
+
+.myPast div.pastColumn > h2 {
+  margin: 50px 0;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myPast .pastColumn .entry {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.myPast .pastColumn .entry::before {
+  content: '';
+  height: 100%;
+  left: 9px;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  border-left: 1px solid var(--mainColor01);
+  display: block;
+}
+
+.myPast .pastColumn .entry::after {
+  content: '';
+  height: 15px;
+  left: 0;
+  position: absolute;
+  background: var(--mainColor03);
+  border: 2px solid var(--mainColor01);
+  top: 0;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.myPast .pastColumn .entry .entryContent {
+  margin: 0 20px 0 40px;
+}
+
+.myPast .pastColumn .entry .entryContent .entryHead {
+  text-transform: uppercase;
+}
+
+.myPast .pastColumn .entry .entryContent .entryHead .entryDate {
+  font-family: var(--fontFam01), var(--fontFamIcons);
+  display: block;
+  font-size: 13px;
+  opacity: 0.8;
+  color: var(--textColor01);
+}
+
+.myPast .pastColumn .entry .entryContent .entryHead .entryTitle {
+  padding: 15px 0;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.myPast .pastColumn .entry .entryContent .entryHead .entryTitle .titleSeperator {
+  display: inline-block;
+  width: 10px;
+  background: #555;
+  height: 2px;
+  margin: 0 7px 3px 7px;
+  vertical-align: middle;
+}
+
+.myPast .pastColumn .entry .entryContent .entryHead .entryTitle .lastTitle {
+  font-weight: 600;
+}
+
+.myPast .pastColumn .entry .entryContent p {
+  margin: unset;
+  font-size: 14px;
+  line-height: 22px;
+}

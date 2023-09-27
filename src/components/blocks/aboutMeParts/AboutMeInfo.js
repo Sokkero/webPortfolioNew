@@ -29,8 +29,8 @@ function AboutMeInfo() {
             <div className={styles.myInfoWrapper}>
                 <div className={styles.myInfoColumn}>
                     <ul>
-                        {entriesLeft.map((entry) => (
-                            <li>
+                        {entriesLeft.map((entry, index) => (
+                            <li key={index}>
                                 <h5>
                                     <span>{entry[0]}</span>
                                     {entry[1]}
@@ -41,8 +41,8 @@ function AboutMeInfo() {
                 </div>
                 <div className={styles.myInfoColumn}>
                     <ul>
-                        {entriesRight.map((entry) => (
-                            <li>
+                        {entriesRight.map((entry, index) => (
+                            <li key={index}>
                                 <h5>
                                     <span>{entry[0]}</span>
                                     {entry[1]}

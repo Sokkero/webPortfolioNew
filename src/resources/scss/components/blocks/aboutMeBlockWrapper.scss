@@ -4,7 +4,7 @@
   background-color: var(--textColor02);
   height: 1px;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   max-width: 90vw;
   margin: auto;
 }
@@ -12,6 +12,7 @@
 .aboutMeWrapper {
   background-color: var(--mainColor03);
   width: 100%;
+  height: auto;
   min-height: 100vh;
   scroll-snap-align: start;
 }
