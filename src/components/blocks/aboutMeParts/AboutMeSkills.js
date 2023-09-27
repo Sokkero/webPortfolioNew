@@ -8,7 +8,7 @@ function AboutMeSkills() {
             <h2>Skills</h2>
 
             {AboutMeTexts.mySkillsTexts.skillEntries.map((entry, index) => (
-                <div className={styles.entry}>
+                <div className={styles.entry} key={index}>
                     <span className={styles.skillName}>{entry.skillName}</span>
                     <span className={styles.skillMeter}>
                     <span
