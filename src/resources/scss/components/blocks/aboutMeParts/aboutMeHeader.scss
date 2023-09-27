@@ -1,0 +1,54 @@
+.header {
+  text-align: center;
+  padding: 55px 0;
+  text-transform: uppercase;
+}
+
+.header h2 {
+  color: var(--textColor01);
+  margin: 0 0 10px 0;
+  font-size: 55px;
+}
+
+.header h2 > span {
+  color: var(--mainColor01);
+  font-size: 55px;
+}
+
+div.header > span {
+  color: var(--textColor02);
+  font-size: 15px;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.header > span::before,
+div.header > span::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  top: 11px;
+  width: 30px;
+  background-color: var(--mainColor01);
+}
+
+div.header > span::before {
+  left: -50px;
+}
+
+div.header > span::after {
+  right: -50px;
+}
+
+@media only screen and (max-width: 700px) {
+  div.header > span {
+    white-space: unset;
+    overflow: unset;
+  }
+
+  div.header > span::before,
+  div.header > span::after {
+    display: none;
+  }
+}
