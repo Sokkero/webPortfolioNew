@@ -1,0 +1,81 @@
+.mySkills {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+div.mySkills > h2 {
+  flex: 0 0 100%;
+  padding-top: 50px;
+  margin: 0 0 50px 0;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.mySkills .entry {
+  flex: 0 0 30%;
+}
+
+.mySkills .entry .skillName {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.mySkills .entry .skillMeter {
+  border-radius: 2px;
+  display: block;
+  height: 1px;
+  position: relative;
+  width: 100%;
+  background: #555;
+  margin-bottom: 45px;
+}
+
+.mySkills .entry .skillMeter .skillBar {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  background-color: var(--mainColor01);
+}
+
+.mySkills .entry .skillMeter .skillBox {
+  margin-top: -41px;
+  position: absolute;
+  width: 46px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 31px;
+  text-align: center;
+  font-family: var(--fontFam01);
+  border: 1px solid #ff5d56;
+  color: var(--textColor02);
+}
+
+.mySkills .entry .skillMeter .skillBox::before {
+  content: "";
+  position: absolute;
+  left: 37px;
+  padding: 4px;
+  transform: translateY(33.5px) rotate(45deg) skew(3deg, 3deg) translateX(-27px);
+  background: #222;
+  bottom: 8px;
+  border: 1px solid var(--mainColor01);
+  border-width: 0 1px 1px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .mySkills .entry {
+    flex: 0 0 48%;
+  }
+}

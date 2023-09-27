@@ -106,5 +106,47 @@ export const AboutMeTexts = {
                 },
             ]
         },
+    },
+    mySkillsTexts: {
+        headline: "Skills",
+        // percentage is 20% minimum, otherwise it will look weird
+        skillEntries: [
+            {
+                skillName: "CSS",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            },
+            {
+                skillName: "My skill",
+                percentage: "80%" //In %
+            }
+        ]
     }
 };

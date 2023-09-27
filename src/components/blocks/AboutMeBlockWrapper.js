@@ -3,6 +3,7 @@ import styles from '../../resources/scss/components/blocks/aboutMeBlockWrapper.s
 import AboutMeHeader from "./aboutMeParts/AboutMeHeader";
 import AboutMeInfo from "./aboutMeParts/AboutMeInfo";
 import AboutMePast from "./aboutMeParts/AboutMePast";
+import AboutMeSkills from "./aboutMeParts/AboutMeSkills";
 
 function AboutMeBlockWrapper() {
 	return (
@@ -13,6 +14,7 @@ function AboutMeBlockWrapper() {
 				<span className={styles.seperator}/>
 				{AboutMePast()}
 				<span className={styles.seperator}/>
+				{AboutMeSkills()}
 			</div>
 		</section>
 	);
