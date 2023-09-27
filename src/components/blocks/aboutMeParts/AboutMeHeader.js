@@ -1,14 +1,13 @@
 import React from 'react';
-import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeHeader.scss';
-import {AboutMeTexts} from "../../../resources/texts";
+import styles from '../../../resources/scss/components/parts/blockHeader.scss';
 
-function AboutMeHeader() {
+function BlockHeader({headlineWhite, headlineMainColor, subHeadline}) {
     return (
         <div className={styles.header}>
-            <h2>{AboutMeTexts.headlineWhite}<span>{AboutMeTexts.headlineAccent}</span></h2>
-            <span>{AboutMeTexts.subHeadline}</span>
+            <h2>{headlineWhite}<span>{headlineMainColor}</span></h2>
+            <span>{subHeadline}</span>
         </div>
     );
 }
 
-export default AboutMeHeader;
+export default BlockHeader;

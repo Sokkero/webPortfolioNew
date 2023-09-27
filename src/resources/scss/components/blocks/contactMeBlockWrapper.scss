@@ -1,0 +1,10 @@
+.contactWrapper {
+  background-color: var(--mainColor03);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  scroll-snap-align: start;
+}

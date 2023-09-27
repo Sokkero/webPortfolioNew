@@ -1,9 +1,10 @@
 import React, {useContext} from 'react';
 import styles from '../../resources/scss/components/pageWrapper.scss';
-import NormalNav from "../inputs/normalNav";
-import MobileNav from "../inputs/mobileNav";
+import NormalNav from "../parts/normalNav";
+import MobileNav from "../parts/mobileNav";
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 import AboutMeBlockWrapper from "../blocks/AboutMeBlockWrapper";
+import ContactMeBlockWrapper from "../blocks/ContactMeBlockWrapper";
 import {SizeContext} from "../../Store";
 
 function PageWrapper() {
@@ -13,7 +14,7 @@ function PageWrapper() {
 	return (
 		<div className={styles.wrapper}>
 			{width <= 700 && width < height ? <MobileNav /> : <NormalNav />}
-			<HomeBlockWrapper/>
+			<ContactMeBlockWrapper/>
 			<span className={styles.seperator}/>
 			<AboutMeBlockWrapper />
 			<span className={styles.seperator}/>
