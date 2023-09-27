@@ -7,6 +7,8 @@
   align-items: center;
   color: var(--textColor02);
   padding-bottom: 80px;
+  max-width: 90vw;
+  margin: auto;
 }
 
 .myInfo .imageContainer {
@@ -27,8 +29,8 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  top: 25px;
-  left: 25px;
+  top: 20px;
+  left: 20px;
   box-sizing: border-box;
 }
 
@@ -100,5 +102,17 @@
 @media only screen and (max-width: 700px) {
   .myInfo .myInfoWrapper {
     flex-direction: column;
+  }
+
+  .myInfo .myInfoWrapper .myInfoColumn:first-child ul {
+    margin-bottom: unset;
+  }
+
+  .myInfo .myInfoWrapper .myInfoColumn:first-child ul li:last-child {
+    margin-bottom: unset;
+  }
+
+  .myInfo .myInfoWrapper .myInfoColumn:first-child ul li:last-child h5 {
+    margin-bottom: unset;
   }
 }

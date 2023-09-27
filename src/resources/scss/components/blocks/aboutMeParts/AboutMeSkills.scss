@@ -5,7 +5,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
+  scroll-snap-align: end;
+  max-width: 90vw;
+  margin: auto;
 }
 
 div.mySkills > h2 {
@@ -75,6 +78,10 @@ div.mySkills > h2 {
 }
 
 @media only screen and (max-width: 700px) {
+  .mySkills {
+    justify-content: space-around;
+  }
+
   .mySkills .entry {
     flex: 0 0 48%;
   }

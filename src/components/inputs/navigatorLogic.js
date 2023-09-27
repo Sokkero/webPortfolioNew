@@ -10,8 +10,8 @@ export function MakeSmoothScroll(elements) {
                 e.preventDefault();
                 document.querySelector(elements[n].hash).scrollIntoView({
                     behavior: "smooth",
-                    block: "center",
-                    inline: "center"
+                    block: "start",
+                    inline: "start"
                 });
             });
         }
