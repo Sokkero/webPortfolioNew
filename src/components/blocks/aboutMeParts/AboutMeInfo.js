@@ -2,38 +2,22 @@ import React from 'react';
 import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeInfo.scss';
 import meImg from "../../../resources/images/darkAbout.jpg";
 import ButtonA, {ButtonTypes} from "../../inputs/buttonA";
+import {AboutMeTexts} from "../../../resources/texts";
 
 function AboutMeInfo() {
-
-    const entriesLeft = [
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-    ];
-
-    const entriesRight = [
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-        ["Something", "else entirely"],
-    ];
-
     return (
         <div className={styles.myInfo}>
             <div className={styles.imageContainer}>
-                <img src={meImg} alt={'A picture of me'} />
+                <img src={meImg} alt={AboutMeTexts.myInfoTexts.imageAlt} />
             </div>
             <div className={styles.myInfoWrapper}>
                 <div className={styles.myInfoColumn}>
                     <ul>
-                        {entriesLeft.map((entry, index) => (
+                        {AboutMeTexts.myInfoTexts.leftColumnEntries.map((entry, index) => (
                             <li key={index}>
                                 <h5>
-                                    <span>{entry[0]}</span>
-                                    {entry[1]}
+                                    <span>{entry.firstPart}</span>
+                                    {entry.lastPart}
                                 </h5>
                             </li>
                         ))}
@@ -41,11 +25,11 @@ function AboutMeInfo() {
                 </div>
                 <div className={styles.myInfoColumn}>
                     <ul>
-                        {entriesRight.map((entry, index) => (
+                        {AboutMeTexts.myInfoTexts.rightColumnEntries.map((entry, index) => (
                             <li key={index}>
                                 <h5>
-                                    <span>{entry[0]}</span>
-                                    {entry[1]}
+                                    <span>{entry.firstPart}</span>
+                                    {entry.lastPart}
                                 </h5>
                             </li>
                         ))}
@@ -54,7 +38,7 @@ function AboutMeInfo() {
                 <div className={styles.myInfoBottom}>
                     <ButtonA
                         href={'https://www.google.com/'}
-                        text={"&#xf007; Download my CV"}
+                        text={AboutMeTexts.myInfoTexts.cvBtnText}
                         buttonType={ButtonTypes.DarkButton}
                         isNavigator={false}
                     />

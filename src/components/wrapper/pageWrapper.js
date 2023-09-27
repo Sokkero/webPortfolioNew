@@ -12,7 +12,7 @@ function PageWrapper() {
 
 	return (
 		<div className={styles.wrapper}>
-			{width < 700 && width < height ? <MobileNav /> : <NormalNav />}
+			{width <= 700 && width < height ? <MobileNav /> : <NormalNav />}
 			<HomeBlockWrapper/>
 			<span className={styles.seperator}/>
 			<AboutMeBlockWrapper />

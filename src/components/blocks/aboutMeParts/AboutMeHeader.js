@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeHeader.scss';
+import {AboutMeTexts} from "../../../resources/texts";
 
 function AboutMeHeader() {
     return (
         <div className={styles.header}>
-            <h2>About <span>me</span></h2>
-            <span>Est secundus detrius, cesaris. Est secundus detrius, cesaris.</span>
+            <h2>{AboutMeTexts.headlineWhite}<span>{AboutMeTexts.headlineAccent}</span></h2>
+            <span>{AboutMeTexts.subHeadline}</span>
         </div>
     );
 }
