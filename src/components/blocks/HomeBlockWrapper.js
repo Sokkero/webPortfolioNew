@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../resources/scss/components/blocks/homeBlockWrapper.scss';
 import bgImage from "../../resources/images/fullscreendarkFlipped.jpg"
-import ButtonA, {ButtonTypes} from "../parts/buttonA";
+import {ButtonA, ButtonTypes} from "../parts/buttons";
 import {HomeBlockTexts} from "../../resources/texts";
 
 function HomeBlockWrapper() {

@@ -13,7 +13,7 @@ export const AboutMeTexts = {
     subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
     myInfoTexts: {
         imageAlt: "A picture of me",
-        cvBtnText: "&#xf007; Download my CV",
+        cvBtnText: "&#xf019; Download my CV",
         leftColumnEntries: [
             {
                 firstPart: "Something",

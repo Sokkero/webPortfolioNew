@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import styles from '../../resources/scss/components/parts/buttonA.scss';
+import styles from '../../resources/scss/components/parts/buttons.scss';
 import {MakeSmoothScroll} from "./navigatorLogic";
 
 export const ButtonTypes = {
@@ -7,7 +7,7 @@ export const ButtonTypes = {
     DarkButton: 1
 }
 
-function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
+export function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
     const linkRef = useRef(null);
 
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
@@ -31,4 +31,18 @@ function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
     );
 }
 
-export default ButtonA;
+export function ButtonSubmit({text, name, buttonType, extraStyle}) {
+    let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
+
+    return (
+        <button
+            type={'submit'}
+            name={name}
+            className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}
+        >
+            <span
+                dangerouslySetInnerHTML={{__html: text}}
+            />
+        </button>
+    );
+}

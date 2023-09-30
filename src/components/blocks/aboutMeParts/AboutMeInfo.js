@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeInfo.scss';
 import meImg from "../../../resources/images/darkAbout.jpg";
-import ButtonA, {ButtonTypes} from "../../parts/buttonA";
+import {ButtonA, ButtonTypes} from "../../parts/buttons";
 import {AboutMeTexts} from "../../../resources/texts";
 
 function AboutMeInfo() {
