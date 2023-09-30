@@ -23,7 +23,6 @@
 
 .contactWrapper .content .contactInfoColumn {
   flex: 0 0 33.33%;
-  padding: 0 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -75,7 +74,6 @@
 
 .contactWrapper .content .contactFormColumn {
   flex: 0 0 66.66%;
-  padding: 0 15px;
 }
 
 .contactWrapper .content .contactFormColumn p {
@@ -162,11 +160,34 @@
   .contactWrapper .content {
     min-width: unset;
     width: 75%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactWrapper .content .contactInfoColumn {
+    margin-bottom: 50px;
+  }
+
+  .contactWrapper .content .contactFormColumn form .formRowInputs {
+    column-gap: 10px;
+  }
+
+  .contactWrapper .content .contactFormColumn form .formRowInputs .inputFieldWrapper {
+    flex: 0 0 calc(50% - 10px);
+  }
+
+  .contactWrapper .content .contactFormColumn form .formRowCta,
+  .contactWrapper .content .contactFormColumn form .formRowResponse {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .contactWrapper .content {
     width: 80%;
+  }
+
+  .contactWrapper .content .contactFormColumn form .formRowInputs {
+    flex-direction: column;
   }
 }

@@ -16,6 +16,7 @@ function ContactMeBlockWrapper() {
                 <div className={styles.contactInfoColumn}>
                     <span className={styles.headline}>Olla de magnum turpis</span>
                     <span className={styles.text}><span className={styles.textIcon}>&#xf09a; </span>Olla de magnum turpis</span>
+                    <span className={styles.headline}>Olla de magnum turpis</span>
                     <div className={styles.iconRow}>
                         <span className={styles.socialIcon}>&#xf09a;</span>
                         <span className={styles.socialIcon}>&#xf09a;</span>
