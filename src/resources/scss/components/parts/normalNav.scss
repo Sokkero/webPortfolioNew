@@ -1,6 +1,5 @@
 
 .navWrapper *{
-  font-family: var(--fontFam01);
   color: var(--textColor01);
   font-size: 62.5%;
 }
@@ -154,7 +153,6 @@
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   opacity: .6;
-  font-family: var(--fontFamIcons);
   font-size: 17px;
 }
 

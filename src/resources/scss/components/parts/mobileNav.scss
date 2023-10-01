@@ -1,6 +1,5 @@
 
 .navWrapper *{
-  font-family: var(--fontFam01);
   color: var(--textColor01);
   font-size: 62.5%;
 }
@@ -62,7 +61,6 @@
   height: 16px;
   width: 16px;
   opacity: .6;
-  font-family: var(--fontFamIcons);
   font-size: 17px;
   left: calc(50% - 7.5px);
   top: 11px;
