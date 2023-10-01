@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../resources/scss/components/parts/blockHeader.scss';
+import styles from '../../resources/scss/components/parts/blockHeader.scss';
 
 function BlockHeader({headlineWhite, headlineMainColor, subHeadline}) {
     return (

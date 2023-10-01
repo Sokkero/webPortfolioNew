@@ -107,9 +107,6 @@
   font-size: 14px;
 }
 
-.contactWrapper .content .contactFormColumn form .formRowInputs .inputFieldWrapper input.inputField {
-}
-
 .contactWrapper .content .contactFormColumn form .formRowInputs .inputFieldWrapper::before,
 .contactWrapper .content .contactFormColumn form .formRowText::before {
   content: "\f007";
@@ -139,10 +136,6 @@
 .contactWrapper .content .contactFormColumn form .formRowCta {
   margin-bottom: 20px;
 }
-
-.contactWrapper .content .contactFormColumn form .formRowResponse {
-}
-
 
 @media only screen and (max-width: 1100px) {
   .contactWrapper .content {

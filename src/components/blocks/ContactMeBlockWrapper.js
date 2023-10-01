@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
-import BlockHeader from "./aboutMeParts/AboutMeHeader";
+import BlockHeader from "../parts/blockHeader";
 import {ButtonSubmit, ButtonRound, ButtonTypes} from "../parts/buttons";
 import {ContactMeContent} from "../../resources/content";
 
