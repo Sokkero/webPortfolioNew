@@ -9,22 +9,97 @@
 }
 
 .portfolioWrapper .content {
+  width: 50%;
+  min-width:900px;
+  margin: auto;
+  padding-bottom: 120px;
+  scroll-snap-align: end;
 }
 
 .portfolioWrapper .content ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: unset;
+  margin: unset;
+  list-style: none;
+  gap: 30px;
 }
 
 .portfolioWrapper .content ul li {
+  flex: 0 0 calc(33% - 30px);
+  position: relative;
+  max-width: calc(33% - 30px);
 }
 
 .portfolioWrapper .content ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolioWrapper .content ul li a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: flex;
 }
 
 .portfolioWrapper .content ul li a .hoverDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor01);
+  border-radius: 10px;
+  color: var(--textColor01);
+  font-size: 20px;
+  opacity: 0;
+  transition: 0.3s;
 }
 
-.portfolioWrapper .content ul li a .hoverDiv span {
+.portfolioWrapper .content ul li a .hoverDiv:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolioWrapper .content {
+    width: 75%;
+    min-width: unset;
+  }
+
+  .portfolioWrapper .content ul li {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolioWrapper .content {
+    width: 80%;
+    scroll-snap-align: end;
+  }
+
+  .portfolioWrapper .content ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: unset;
+    margin: unset;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .portfolioWrapper .content ul li {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

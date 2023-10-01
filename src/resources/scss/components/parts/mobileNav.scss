@@ -89,7 +89,8 @@
 .cdStretchyNav ul li:nth-child(1)::after,
 .cdStretchyNav ul li:nth-child(2)::after,
 .cdStretchyNav ul li:nth-child(3)::after,
-.cdStretchyNav ul li:nth-child(4)::after {
+.cdStretchyNav ul li:nth-child(4)::after,
+.cdStretchyNav ul li:nth-child(5)::after {
   content: "";
   position: relative;
   height: 40px;
@@ -98,6 +99,10 @@
   background-color: var(--mainColor01);
   top: 10px;
   right: 0;
+}
+
+.cdStretchyNav ul li:last-child::after {
+  display: none;
 }
 
 .cdStretchyNav ul li a.active::before {

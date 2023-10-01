@@ -6,13 +6,13 @@ import projectImg from "../../resources/images/project.jpg"
 
 function PortfolioBlockWrapper() {
     return (
-        <section id='aboutMeBlock' className={`${styles.portfolioWrapper} contentBlock`}>
-            <BlockHeader
-                headlineWhite={"My "}
-                headlineMainColor={'Portfolio'}
-                subHeadline={"Cum lanista peregrinatione, omnes zirbuses experientia brevis, secundus homoes."}
-            />
+        <section id='portfolioBlock' className={`${styles.portfolioWrapper} contentBlock`}>
             <div className={styles.content}>
+                <BlockHeader
+                    headlineWhite={"My "}
+                    headlineMainColor={'Portfolio'}
+                    subHeadline={"Cum lanista peregrinatione, omnes zirbuses experientia brevis, secundus homoes."}
+                />
                 <ul>
                     <li>
                         <a href={"#"}>
