@@ -129,6 +129,7 @@
   height: 130px;
   padding: 12px 0 15px 49px;
   resize: vertical;
+  font-family: var(--fontFam01), var(--fontFamIcons);
 }
 
 .contactWrapper .content .contactFormColumn form .formRowText::before {
