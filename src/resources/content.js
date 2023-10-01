@@ -1,19 +1,26 @@
+import smallMe from "./images/darkAbout.jpg";
+import bigMe from "./images/fullscreendarkFlipped.jpg"
 
 export const HomeBlockContent = {
+    backgroundImgSrc: bigMe,
     smallHeader: "Greetings!",
     bigHeader: "Nunquam imitari castor.",
     text: "A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine.",
     moreAboutMeBtn: "&#xf007; More about me",
-    portfolioBtn: "&#xf0b1; Portfolio"
+    moreAboutMeBtnTarget: "#aboutMeBlock",
+    portfolioBtn: "&#xf0b1; Portfolio",
+    portfolioBtnTarget: "#portfolioBlock"
 };
 
 export const AboutMeContent = {
     headlineWhite: "About ",
     headlineAccent: "me",
     subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
-    myInfoTexts: {
+    myInfoContent: {
+        imageSrc: smallMe,
         imageAlt: "A picture of me",
         cvBtnText: "&#xf019; Download my CV",
+        cvBtnTarget: "https://www.google.com/",
         leftColumnEntries: [
             {
                 firstPart: "Something",
@@ -59,7 +66,7 @@ export const AboutMeContent = {
             },
         ]
     },
-    myPastTexts: {
+    myPastContent: {
         experienceColumn: {
             headline: "Experience",
             entries: [
@@ -107,7 +114,7 @@ export const AboutMeContent = {
             ]
         },
     },
-    mySkillsTexts: {
+    mySkillsContent: {
         headline: "Skills",
         // percentage is 20% minimum, otherwise it will look weird
         skillEntries: [
@@ -148,5 +155,54 @@ export const AboutMeContent = {
                 percentage: "80%" //In %
             }
         ]
+    }
+};
+
+export const ContactMeContent = {
+    headlineWhite: "Get ",
+    headlineAccent: "in touch",
+    subHeadline: "Heuretess persuadere! Heuretess persuadere! Heuretess persuadere!",
+    leftColumn: {
+        entries: [
+            {
+                header: "Olla de magnum turpis",
+                symbol: "&#xf09a; ",
+                text: "Olla de magnum turpis"
+            },
+            {
+                header: "Olla de magnum turpis",
+                symbol: "&#xf09a; ",
+                text: "Olla de magnum turpis"
+            }
+        ],
+        socialsHeader: "Olla de magnum turpis",
+        socials: [
+            {
+                icon: "&#xf09a;",
+                target: ""
+            },
+            {
+                icon: "&#xf09a;",
+                target: ""
+            },
+            {
+                icon: "&#xf09a;",
+                target: ""
+            },
+            {
+                icon: "&#xf09a;",
+                target: ""
+            }
+        ]
+    },
+    rightColumn: {
+        text: "Cur cobaltum messis? Fidess volare in dexter cirpi! Cur cobaltum messis? Fidess volare in dexter cirpi! Cur cobaltum messis? Fidess volare in dexter cirpi!",
+        form: {
+            nameInputPlaceholder: "YOUR NAME",
+            emailInputPlaceholder: "YOUR EMAIL",
+            textInputPlaceholder: "YOUR MESSAGE",
+            sendButtonText: "&#xf1d8; Send message",
+            responseMessage: "Your response here"
+        }
     }
 };

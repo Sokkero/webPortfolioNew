@@ -29,6 +29,10 @@
   align-items: flex-start;
 }
 
+.contactWrapper .content .contactInfoColumn div {
+  display: contents;
+}
+
 .contactWrapper .content .contactInfoColumn .headline {
   text-transform: capitalize;
   display: block;
@@ -50,6 +54,7 @@
 }
 
 .contactWrapper .content .contactInfoColumn .iconRow {
+  display: block;
 }
 
 .contactWrapper .content .contactInfoColumn .socialIcon {

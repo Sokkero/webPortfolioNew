@@ -7,7 +7,7 @@ function AboutMeSkills() {
         <div className={styles.mySkills}>
             <h2>Skills</h2>
 
-            {AboutMeContent.mySkillsTexts.skillEntries.map((entry, index) => (
+            {AboutMeContent.mySkillsContent.skillEntries.map((entry, index) => (
                 <div className={styles.entry} key={index}>
                     <span className={styles.skillName}>{entry.skillName}</span>
                     <span className={styles.skillMeter}>
