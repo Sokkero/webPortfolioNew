@@ -1,5 +1,5 @@
 
-export const HomeBlockTexts = {
+export const HomeBlockContent = {
     smallHeader: "Greetings!",
     bigHeader: "Nunquam imitari castor.",
     text: "A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine.",
@@ -7,7 +7,7 @@ export const HomeBlockTexts = {
     portfolioBtn: "&#xf0b1; Portfolio"
 };
 
-export const AboutMeTexts = {
+export const AboutMeContent = {
     headlineWhite: "About ",
     headlineAccent: "me",
     subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",

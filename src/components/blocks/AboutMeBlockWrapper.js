@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../resources/scss/components/blocks/aboutMeBlockWrapper.scss';
-import {AboutMeTexts} from "../../resources/texts";
+import {AboutMeContent} from "../../resources/content";
 import BlockHeader from "./aboutMeParts/AboutMeHeader";
 import AboutMeInfo from "./aboutMeParts/AboutMeInfo";
 import AboutMePast from "./aboutMeParts/AboutMePast";
@@ -11,9 +11,9 @@ function AboutMeBlockWrapper() {
 		<section id='aboutMeBlock' className={`${styles.aboutMeWrapper} contentBlock`}>
 			<div className={styles.contentWrapper}>
 				<BlockHeader
-					headlineWhite={AboutMeTexts.headlineWhite}
-					headlineMainColor={AboutMeTexts.headlineAccent}
-					subHeadline={AboutMeTexts.subHeadline}
+					headlineWhite={AboutMeContent.headlineWhite}
+					headlineMainColor={AboutMeContent.headlineAccent}
+					subHeadline={AboutMeContent.subHeadline}
 				/>
 				<AboutMeInfo />
 				<span className={styles.seperator}/>

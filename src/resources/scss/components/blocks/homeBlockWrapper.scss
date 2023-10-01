@@ -49,13 +49,13 @@
 @media only screen and (max-width: 700px) {
   @media only screen and (max-height: 1000px) {
     .homeWrapper {
-      background-position: calc(69%) calc(-30%) !important;
-      background-size: inherit;
+      background-position: calc(69%) calc(-20%) !important;
     }
   }
 
   .homeWrapper {
-    background-position: bottom right;
+    background-position: right 30% bottom -30%;
+    background-size: inherit;
   }
 
   .homeWrapper .contentTable {
@@ -64,7 +64,11 @@
     width: 390px;
   }
 
-  .homeWrapper .contentTable .content .ctaWrapper .aboutMeLink {
-    margin-bottom: 1vh;
+  .homeWrapper .contentTable .content .ctaWrapper .linkElem:first-child {
+    margin-bottom: 10px;
+  }
+
+  .homeWrapper .contentTable .content .ctaWrapper .linkElem:last-child {
+    display: table-cell;
   }
 }

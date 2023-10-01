@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
 import BlockHeader from "./aboutMeParts/AboutMeHeader";
 import {ButtonSubmit, ButtonTypes} from "../parts/buttons";
-import {AboutMeTexts, HomeBlockTexts} from "../../resources/texts";
+import {AboutMeContent, HomeBlockContent} from "../../resources/content";
 
 function ContactMeBlockWrapper() {
     return (

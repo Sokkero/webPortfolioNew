@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeSkills.scss';
-import {AboutMeTexts} from "../../../resources/texts";
+import {AboutMeContent} from "../../../resources/content";
 
 function AboutMeSkills() {
     return (
         <div className={styles.mySkills}>
             <h2>Skills</h2>
 
-            {AboutMeTexts.mySkillsTexts.skillEntries.map((entry, index) => (
+            {AboutMeContent.mySkillsTexts.skillEntries.map((entry, index) => (
                 <div className={styles.entry} key={index}>
                     <span className={styles.skillName}>{entry.skillName}</span>
                     <span className={styles.skillMeter}>

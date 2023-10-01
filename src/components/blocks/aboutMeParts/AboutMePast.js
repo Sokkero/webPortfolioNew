@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMePast.scss';
-import {AboutMeTexts} from "../../../resources/texts";
+import {AboutMeContent} from "../../../resources/content";
 
 function AboutMePast() {
     return (
         <div className={styles.myPast}>
             <div className={styles.pastColumn}>
-                <h2>{AboutMeTexts.myPastTexts.experienceColumn.headline}</h2>
-                {AboutMeTexts.myPastTexts.experienceColumn.entries.map((entry, index) => (
+                <h2>{AboutMeContent.myPastTexts.experienceColumn.headline}</h2>
+                {AboutMeContent.myPastTexts.experienceColumn.entries.map((entry, index) => (
                     <div className={styles.entry} key={index}>
                         <div className={styles.entryContent}>
                             <div className={styles.entryHead}>
@@ -24,8 +24,8 @@ function AboutMePast() {
                 ))}
             </div>
             <div className={styles.pastColumn}>
-                <h2>{AboutMeTexts.myPastTexts.educationColumn.headline}</h2>
-                {AboutMeTexts.myPastTexts.educationColumn.entries.map((entry, index) => (
+                <h2>{AboutMeContent.myPastTexts.educationColumn.headline}</h2>
+                {AboutMeContent.myPastTexts.educationColumn.entries.map((entry, index) => (
                     <div className={styles.entry} key={index}>
                         <div className={styles.entryContent}>
                             <div className={styles.entryHead}>

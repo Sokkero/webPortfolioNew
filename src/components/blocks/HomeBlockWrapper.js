@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../resources/scss/components/blocks/homeBlockWrapper.scss';
 import bgImage from "../../resources/images/fullscreendarkFlipped.jpg"
 import {ButtonA, ButtonTypes} from "../parts/buttons";
-import {HomeBlockTexts} from "../../resources/texts";
+import {HomeBlockContent} from "../../resources/content";
 
 function HomeBlockWrapper() {
 	return (
@@ -10,21 +10,21 @@ function HomeBlockWrapper() {
 			<div className={styles.contentTable}>
 				<div className={styles.content}>
 					<div className={styles.textWrapper}>
-						<h3>{HomeBlockTexts.smallHeader}</h3>
-						<h1>{HomeBlockTexts.bigHeader}</h1>
-						<p>{HomeBlockTexts.text}</p>
+						<h3>{HomeBlockContent.smallHeader}</h3>
+						<h1>{HomeBlockContent.bigHeader}</h1>
+						<p>{HomeBlockContent.text}</p>
 					</div>
 					<div className={styles.ctaWrapper}>
 						<ButtonA
 							href={'#aboutMeBlock'}
-							text={HomeBlockTexts.moreAboutMeBtn}
+							text={HomeBlockContent.moreAboutMeBtn}
 							buttonType={ButtonTypes.LightButton}
 							extraStyle={styles.aboutMeExtraStyle}
 							isNavigator={true}
 						/>
 						<ButtonA
 							href={'#portfolioBlock'}
-							text={HomeBlockTexts.portfolioBtn}
+							text={HomeBlockContent.portfolioBtn}
 							buttonType={ButtonTypes.DarkButton}
 							isNavigator={true}
 						/>
