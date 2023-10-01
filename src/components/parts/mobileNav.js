@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {SpyScrolling, MakeSmoothScroll} from "./navigatorLogic";
+import {BlogContent} from "../../resources/content";
 import styles from '../../resources/scss/components/parts/mobileNav.scss';
 
 function MobileNav() {
@@ -31,7 +32,11 @@ function MobileNav() {
                     <li><a id={`block1`} href="#aboutMeBlock" className={styles.aboutMeLink}><span>About me</span></a></li>
                     <li><a id={`block2`} href="#portfolioBlock" className={styles.portfolioLink}><span>Portfolio</span></a></li>
                     <li><a id={`block3`} href="#contactBlock" className={styles.contactLink}><span>Contact me</span></a></li>
-                    <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
+                    {BlogContent.showBlogPage ?
+                        <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
+                        :
+                        ""
+                    }
                 </ul>
             </nav>
         </header>

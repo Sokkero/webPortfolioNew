@@ -5,7 +5,9 @@ import MobileNav from "../parts/mobileNav";
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';
 import AboutMeBlockWrapper from "../blocks/AboutMeBlockWrapper";
 import ContactMeBlockWrapper from "../blocks/ContactMeBlockWrapper";
+import PortfolioBlockWrapper from "../blocks/PortfolioBlockWrapper";
 import {SizeContext} from "../../Store";
+import {BlogContent} from "../../resources/content";
 
 function PageWrapper() {
 	const width = useContext(SizeContext)[0];
@@ -18,11 +20,17 @@ function PageWrapper() {
 			<span className={styles.seperator}/>
 			<AboutMeBlockWrapper />
 			<span className={styles.seperator}/>
-			<section id='portfolioBlock' className={`${styles.portfolioBlock} ${styles.contentBlock} contentBlock`} />
+			<PortfolioBlockWrapper />
 			<span className={styles.seperator}/>
 			<ContactMeBlockWrapper/>
-			<span className={styles.seperator}/>
-			<section id='blogBlock' className={`${styles.blogBlock} ${styles.contentBlock} contentBlock`} />
+			{BlogContent.showBlogPage ?
+				[
+					<span className={styles.seperator}/>,
+					<section id='blogBlock' className={`${styles.blogBlock} ${styles.contentBlock} contentBlock`} />
+				]
+				:
+				""
+			}
 		</div>
 	);
 }

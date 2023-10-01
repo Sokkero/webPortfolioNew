@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {SpyScrolling, MakeSmoothScroll} from "./navigatorLogic";
 import styles from '../../resources/scss/components/parts/normalNav.scss';
+import {BlogContent} from "../../resources/content";
 
 function NormalNav() {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -49,7 +50,11 @@ function NormalNav() {
                     <li><a id={`block1`} href="#aboutMeBlock" className={styles.aboutMeLink}><span>About me</span></a></li>
                     <li><a id={`block2`} href="#portfolioBlock" className={styles.portfolioLink}><span>Portfolio</span></a></li>
                     <li><a id={`block3`} href="#contactBlock" className={styles.contactLink}><span>Contact me</span></a></li>
-                    <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
+                    {BlogContent.showBlogPage ?
+                        <li><a id={`block4`} href="#blogBlock" className={styles.blogLink}><span>Blog</span></a></li>
+                        :
+                        ""
+                    }
                 </ul>
                 <span aria-hidden="true" className={styles.stretchyNavBg}></span>
             </nav>

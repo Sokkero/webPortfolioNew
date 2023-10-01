@@ -158,6 +158,10 @@ export const AboutMeContent = {
     }
 };
 
+export const PortfolioContent = {
+
+};
+
 export const ContactMeContent = {
     headlineWhite: "Get ",
     headlineAccent: "in touch",
@@ -206,3 +210,7 @@ export const ContactMeContent = {
         }
     }
 };
+
+export const BlogContent = {
+    showBlogPage: false
+}
