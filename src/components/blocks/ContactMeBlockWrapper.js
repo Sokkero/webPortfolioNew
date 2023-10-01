@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
 import BlockHeader from "./aboutMeParts/AboutMeHeader";
-import {ButtonSubmit, ButtonTypes} from "../parts/buttons";
+import {ButtonSubmit, ButtonRound, ButtonTypes} from "../parts/buttons";
 import {ContactMeContent} from "../../resources/content";
 
 function ContactMeBlockWrapper() {
@@ -15,8 +15,8 @@ function ContactMeBlockWrapper() {
             <div className={styles.content}>
                 <div className={styles.contactInfoColumn}>
                     {ContactMeContent.leftColumn.entries.map((entry, index) => (
-                        <div>
-                            <span key={index} className={styles.headline}>{entry.header}</span>
+                        <div key={index}>
+                            <span className={styles.headline}>{entry.header}</span>
                             <span className={styles.text}><span className={styles.textIcon} dangerouslySetInnerHTML={{__html: entry.symbol}}/>{entry.text}</span>
                         </div>
                     ))}
@@ -25,7 +25,12 @@ function ContactMeBlockWrapper() {
                             <span key={0} className={styles.headline}>{ContactMeContent.leftColumn.socialsHeader}</span>,
                             <div key={1} className={styles.iconRow}>
                                 {ContactMeContent.leftColumn.socials.map((entry, index) => (
-                                    <span key={index + 2} className={styles.socialIcon} dangerouslySetInnerHTML={{__html: entry.icon}}/>
+                                    <ButtonRound
+                                        symbol={entry.icon}
+                                        href={entry.target}
+                                        extraStyle={styles.socialIconExtra}
+                                        key={index}
+                                    />
                                 ))}
                             </div>
                         ])

@@ -179,19 +179,19 @@ export const ContactMeContent = {
         socials: [
             {
                 icon: "&#xf09a;",
-                target: ""
+                target: "https://www.google.com/"
             },
             {
                 icon: "&#xf09a;",
-                target: ""
+                target: "https://www.google.com/"
             },
             {
                 icon: "&#xf09a;",
-                target: ""
+                target: "https://www.google.com/"
             },
             {
                 icon: "&#xf09a;",
-                target: ""
+                target: "https://www.google.com/"
             }
         ]
     },

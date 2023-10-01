@@ -7,7 +7,7 @@ export const ButtonTypes = {
     DarkButton: 1
 }
 
-export function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
+export function ButtonA({text, href, buttonType, extraStyle, isNavigator = false, keyNum = -1}) {
     const linkRef = useRef(null);
 
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
@@ -23,6 +23,7 @@ export function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
             href={href}
             className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}
             ref={linkRef}
+            key={keyNum >= 0 ? keyNum : ""}
         >
             <span
                 dangerouslySetInnerHTML={{__html: text}}
@@ -31,7 +32,30 @@ export function ButtonA({text, href, buttonType, extraStyle, isNavigator}) {
     );
 }
 
-export function ButtonSubmit({text, name, buttonType, extraStyle}) {
+export function ButtonRound({symbol, href, extraStyle, isNavigator = false, keyNum = -1}) {
+    const linkRef = useRef(null);
+
+    useEffect(() => {
+        if(isNavigator) {
+            MakeSmoothScroll(linkRef);
+        }
+    }, []);
+
+    return (
+        <a
+            href={href}
+            className={`${styles.roundLink} ${extraStyle}`}
+            ref={linkRef}
+            key={keyNum >= 0 ? keyNum : ""}
+        >
+            <span
+                dangerouslySetInnerHTML={{__html: symbol}}
+            />
+        </a>
+    );
+}
+
+export function ButtonSubmit({text, name, buttonType, extraStyle, keyNum = -1}) {
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
 
     return (
@@ -39,6 +63,7 @@ export function ButtonSubmit({text, name, buttonType, extraStyle}) {
             type={'submit'}
             name={name}
             className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}
+            key={keyNum >= 0 ? keyNum : ""}
         >
             <span
                 dangerouslySetInnerHTML={{__html: text}}

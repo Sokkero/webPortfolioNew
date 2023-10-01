@@ -1,4 +1,23 @@
 
+.roundLink {
+  border: 1px solid var(--mainColor01);
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 36px;
+  border-radius: 50%;
+  color: var(--mainColor01);
+  text-align: center;
+  background: transparent;
+  transition: 0.3s;
+  float: left;
+}
+
+.roundLink:hover {
+  background-color: var(--mainColor01);
+  color: var(--textColor01)
+}
+
 .linkElem {
   cursor: pointer;
   box-shadow: none !important;
