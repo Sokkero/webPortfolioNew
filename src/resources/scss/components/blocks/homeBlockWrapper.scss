@@ -64,11 +64,11 @@
     width: 390px;
   }
 
-  .homeWrapper .contentTable .content .ctaWrapper .linkElem:first-child {
+  .homeWrapper .contentTable .content .ctaWrapper a:first-child {
     margin-bottom: 10px;
   }
 
-  .homeWrapper .contentTable .content .ctaWrapper .linkElem:last-child {
+  .homeWrapper .contentTable .content .ctaWrapper a:last-child {
     display: table-cell;
   }
 }
