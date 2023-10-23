@@ -159,7 +159,10 @@ export const AboutMeContent = {
 };
 
 export const PortfolioContent = {
-
+    headlineWhite: "My ",
+    headlineAccent: "Portfolio",
+    subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
+    projectDummyTitle: "Project"
 };
 
 export const ContactMeContent = {

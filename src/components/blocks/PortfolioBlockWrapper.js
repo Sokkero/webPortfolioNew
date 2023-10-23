@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../../resources/scss/components/blocks/portfolioBlockWrapper.scss';
-import {AboutMeContent} from "../../resources/content";
+import {PortfolioContent} from "../../resources/content";
 import BlockHeader from "../parts/blockHeader";
 import projectImg from "../../resources/images/project.jpg"
 
@@ -9,16 +9,16 @@ function PortfolioBlockWrapper() {
         <section id='portfolioBlock' className={`${styles.portfolioWrapper} contentBlock`}>
             <div className={styles.content}>
                 <BlockHeader
-                    headlineWhite={"My "}
-                    headlineMainColor={'Portfolio'}
-                    subHeadline={"Cum lanista peregrinatione, omnes zirbuses experientia brevis, secundus homoes."}
+                    headlineWhite={PortfolioContent.headlineWhite}
+                    headlineMainColor={PortfolioContent.headlineAccent}
+                    subHeadline={PortfolioContent.subHeadline}
                 />
                 <ul>
                     <li>
                         <a href={"#"}>
                             <img src={projectImg} alt={"Project"}/>
                             <div className={styles.hoverDiv}>
-                                <span>Project</span>
+                                <span>{PortfolioContent.projectDummyTitle}</span>
                             </div>
                         </a>
                     </li>
@@ -26,7 +26,7 @@ function PortfolioBlockWrapper() {
                         <a href={"#"}>
                             <img src={projectImg} alt={"Project"}/>
                             <div className={styles.hoverDiv}>
-                                <span>Project</span>
+                                <span>{PortfolioContent.projectDummyTitle}</span>
                             </div>
                         </a>
                     </li>
@@ -34,7 +34,7 @@ function PortfolioBlockWrapper() {
                         <a href={"#"}>
                             <img src={projectImg} alt={"Project"}/>
                             <div className={styles.hoverDiv}>
-                                <span>Project</span>
+                                <span>{PortfolioContent.projectDummyTitle}</span>
                             </div>
                         </a>
                     </li>
@@ -42,7 +42,7 @@ function PortfolioBlockWrapper() {
                         <a href={"#"}>
                             <img src={projectImg} alt={"Project"}/>
                             <div className={styles.hoverDiv}>
-                                <span>Project</span>
+                                <span>{PortfolioContent.projectDummyTitle}</span>
                             </div>
                         </a>
                     </li>
@@ -50,7 +50,7 @@ function PortfolioBlockWrapper() {
                         <a href={"#"}>
                             <img src={projectImg} alt={"Project"}/>
                             <div className={styles.hoverDiv}>
-                                <span>Project</span>
+                                <span>{PortfolioContent.projectDummyTitle}</span>
                             </div>
                         </a>
                     </li>
