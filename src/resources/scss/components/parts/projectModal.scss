@@ -1,0 +1,38 @@
+
+.modalBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.9);
+  z-index: 10;
+}
+
+.modalBackground .modalBody {
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  width: 800px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background-color: #222;
+}
+
+.modalBackground .modalBody .closeBtn {
+  width: 40px;
+  height: 40px;
+  font-size: 29px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: fixed;
+  left: 100%;
+}
+
+.modalBackground .modalBody .modalContent {
+}

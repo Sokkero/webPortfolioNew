@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../../resources/scss/components/blocks/portfolioBlockWrapper.scss';
-import {PortfolioContent} from "../../resources/content";
+import {PortfolioContent, ProjectContent} from "../../resources/content";
 import BlockHeader from "../parts/blockHeader";
-import projectImg from "../../resources/images/project.jpg"
+import ProjectModal from "../parts/projectModal";
 
 function PortfolioBlockWrapper() {
+    const [currentModal, setCurrentModal] = useState(-1);
+
     return (
         <section id='portfolioBlock' className={`${styles.portfolioWrapper} contentBlock`}>
             <div className={styles.content}>
@@ -14,47 +16,31 @@ function PortfolioBlockWrapper() {
                     subHeadline={PortfolioContent.subHeadline}
                 />
                 <ul>
-                    <li>
-                        <a href={"#"}>
-                            <img src={projectImg} alt={"Project"}/>
-                            <div className={styles.hoverDiv}>
-                                <span>{PortfolioContent.projectDummyTitle}</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"#"}>
-                            <img src={projectImg} alt={"Project"}/>
-                            <div className={styles.hoverDiv}>
-                                <span>{PortfolioContent.projectDummyTitle}</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"#"}>
-                            <img src={projectImg} alt={"Project"}/>
-                            <div className={styles.hoverDiv}>
-                                <span>{PortfolioContent.projectDummyTitle}</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"#"}>
-                            <img src={projectImg} alt={"Project"}/>
-                            <div className={styles.hoverDiv}>
-                                <span>{PortfolioContent.projectDummyTitle}</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={"#"}>
-                            <img src={projectImg} alt={"Project"}/>
-                            <div className={styles.hoverDiv}>
-                                <span>{PortfolioContent.projectDummyTitle}</span>
-                            </div>
-                        </a>
-                    </li>
+                    {ProjectContent.map((entry, index) => (
+                        <li key={index}>
+                            <a
+                                href={"#"}
+                                onClick={() => {
+                                    setCurrentModal(index);
+                                }}
+                            >
+                                <img src={entry.images[0]} alt={"Project"}/>
+                                <div className={styles.hoverDiv}>
+                                    <span>{entry.title}</span>
+                                </div>
+                            </a>
+                        </li>
+                    ))}
                 </ul>
+
+                {
+                    currentModal >= 0 ?
+                        <ProjectModal
+                            projectContent={ProjectContent[currentModal]}
+                            callbackFunc={setCurrentModal}
+                        /> :
+                        ""
+                }
             </div>
         </section>
     );

@@ -1,5 +1,6 @@
 import smallMe from "./images/darkAbout.jpg";
 import bigMe from "./images/fullscreendarkFlipped.jpg"
+import projectImg from "./images/project.jpg"
 
 export const HomeBlockContent = {
     backgroundImgSrc: bigMe,
@@ -164,6 +165,44 @@ export const PortfolioContent = {
     subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
     projectDummyTitle: "Project"
 };
+
+export const ProjectContent = [
+    {
+        title: "Project title 1",
+        type: "Project Type",
+        Technologies: "Technologies",
+        Description: "Project Description",
+        images: [projectImg]
+    },
+    {
+        title: "Project title 2",
+        type: "Project Type",
+        Technologies: "Technologies",
+        Description: "Project Description",
+        images: [projectImg]
+    },
+    {
+        title: "Project title 3",
+        type: "Project Type",
+        Technologies: "Technologies",
+        Description: "Project Description",
+        images: [projectImg]
+    },
+    {
+        title: "Project title 4",
+        type: "Project Type",
+        Technologies: "Technologies",
+        Description: "Project Description",
+        images: [projectImg]
+    },
+    {
+        title: "Project title 5",
+        type: "Project Type",
+        Technologies: "Technologies",
+        Description: "Project Description",
+        images: [projectImg]
+    }
+]
 
 export const ContactMeContent = {
     headlineWhite: "Get ",
