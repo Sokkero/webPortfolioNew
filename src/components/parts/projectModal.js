@@ -12,9 +12,32 @@ function ProjectModal({projectContent, callbackFunc}) {
                 >
                     &#xf00d;
                 </a>
-                <div className={styles.modalContent}>
+                <span>{projectContent.title}</span>
+                <div className={styles.carouselSlider}>
+                    <a
+                        className={styles.prevBtn}
+                        href={'#'}
+                        onClick={callbackFunc}
+                    >
+                        &#xf104;
+                    </a>
+                    <a
+                        className={styles.nextBtn}
+                        href={'#'}
+                        onClick={callbackFunc}
+                    >
+                        &#xf105;
+                    </a>
                     <img src={projectContent.images[0]} />
-                    <span>{projectContent.title}</span>
+                </div>
+                <div className={styles.modalContent}>
+                    <ul>
+                        <li>Entry 1</li>
+                        <li>Entry 2</li>
+                        <li>Entry 3</li>
+                        <li>Entry 4</li>
+                        <li>Entry 5</li>
+                    </ul>
                 </div>
             </div>
         </div>
