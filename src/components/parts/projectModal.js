@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../resources/scss/components/parts/projectModal.scss';
+import ImageCarousel from "./imageCarousel";
 
 function ProjectModal({projectContent, callbackFunc}) {
     return (
@@ -12,32 +13,11 @@ function ProjectModal({projectContent, callbackFunc}) {
                 >
                     &#xf00d;
                 </a>
-                <span>{projectContent.title}</span>
+                <span className={styles.modalTitle}>{projectContent.title}</span>
                 <div className={styles.carouselSlider}>
-                    <a
-                        className={styles.prevBtn}
-                        href={'#'}
-                        onClick={callbackFunc}
-                    >
-                        &#xf104;
-                    </a>
-                    <a
-                        className={styles.nextBtn}
-                        href={'#'}
-                        onClick={callbackFunc}
-                    >
-                        &#xf105;
-                    </a>
-                    <img src={projectContent.images[0]} />
+                    <ImageCarousel images={projectContent.images}/>
                 </div>
                 <div className={styles.modalContent}>
-                    <ul>
-                        <li>Entry 1</li>
-                        <li>Entry 2</li>
-                        <li>Entry 3</li>
-                        <li>Entry 4</li>
-                        <li>Entry 5</li>
-                    </ul>
                 </div>
             </div>
         </div>

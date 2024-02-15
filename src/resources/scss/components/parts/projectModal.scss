@@ -13,12 +13,12 @@
   position: absolute;
   top: 70px;
   bottom: 70px;
-  width: 800px;
   left: 50%;
   border-radius: 10px;
   transform: translateX(-50%);
-  background-color: #222;
+  background-color: var(--mainColor03);
   overflow-y: scroll;
+  min-width: 500px;
 }
 
 .modalBackground .modalBody .closeBtn {
@@ -28,16 +28,23 @@
   text-align: center;
   margin: auto;
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--textColor01);
+  border: 2px solid var(--textColor01);
   border-radius: 50%;
   position: fixed;
   right: 10px;
   top: 10px;
+  transition: 0.3s;
 }
 
-.modalBackground .modalBody span {
-  color: #fff;
+.modalBackground .modalBody .closeBtn:hover
+{
+  color: var(--mainColor01);
+  border-color: var(--mainColor01);
+}
+
+.modalBackground .modalBody .modalTitle {
+  color: var(--textColor01);
   width: 100%;
   text-align: center;
   display: block;
@@ -61,8 +68,8 @@
   text-align: center;
   margin: auto;
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--textColor01);
+  border: 2px solid var(--textColor01);
   border-radius: 50%;
   position: fixed;
   left: 100%;
@@ -75,8 +82,8 @@
   text-align: center;
   margin: auto;
   text-decoration: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--textColor01);
+  border: 2px solid var(--textColor01);
   border-radius: 50%;
   position: fixed;
   left: 100%;

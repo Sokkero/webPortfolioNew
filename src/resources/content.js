@@ -1,6 +1,8 @@
 import smallMe from "./images/darkAbout.jpg";
 import bigMe from "./images/fullscreendarkFlipped.jpg"
-import projectImg from "./images/project.jpg"
+import projectImg1 from "./images/project1.jpg"
+import projectImg2 from "./images/project2.jpg"
+import projectImg3 from "./images/project3.jpg"
 
 export const HomeBlockContent = {
     backgroundImgSrc: bigMe,
@@ -172,35 +174,35 @@ export const ProjectContent = [
         type: "Project Type",
         Technologies: "Technologies",
         Description: "Project Description",
-        images: [projectImg]
+        images: [projectImg1, projectImg2, projectImg3]
     },
     {
         title: "Project title 2",
         type: "Project Type",
         Technologies: "Technologies",
         Description: "Project Description",
-        images: [projectImg]
+        images: [projectImg1, projectImg2, projectImg3]
     },
     {
         title: "Project title 3",
         type: "Project Type",
         Technologies: "Technologies",
         Description: "Project Description",
-        images: [projectImg]
+        images: [projectImg1, projectImg2, projectImg3]
     },
     {
         title: "Project title 4",
         type: "Project Type",
         Technologies: "Technologies",
         Description: "Project Description",
-        images: [projectImg]
+        images: [projectImg1, projectImg2, projectImg3]
     },
     {
         title: "Project title 5",
         type: "Project Type",
         Technologies: "Technologies",
         Description: "Project Description",
-        images: [projectImg]
+        images: [projectImg1, projectImg2, projectImg3]
     }
 ]
 
