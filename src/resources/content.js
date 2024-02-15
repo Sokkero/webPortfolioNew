@@ -171,38 +171,177 @@ export const PortfolioContent = {
 export const ProjectContent = [
     {
         title: "Project title 1",
-        type: "Project Type",
-        Technologies: "Technologies",
-        Description: "Project Description",
-        images: [projectImg1, projectImg2, projectImg3]
+        images: [projectImg1, projectImg2, projectImg3,projectImg1, projectImg2, projectImg3,projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
     },
     {
         title: "Project title 2",
-        type: "Project Type",
-        Technologies: "Technologies",
-        Description: "Project Description",
-        images: [projectImg1, projectImg2, projectImg3]
+        images: [projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
     },
     {
         title: "Project title 3",
-        type: "Project Type",
-        Technologies: "Technologies",
-        Description: "Project Description",
-        images: [projectImg1, projectImg2, projectImg3]
+        images: [projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
     },
     {
         title: "Project title 4",
-        type: "Project Type",
-        Technologies: "Technologies",
-        Description: "Project Description",
-        images: [projectImg1, projectImg2, projectImg3]
+        images: [projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
     },
     {
         title: "Project title 5",
-        type: "Project Type",
-        Technologies: "Technologies",
-        Description: "Project Description",
-        images: [projectImg1, projectImg2, projectImg3]
+        images: [projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
+    },
+    {
+        title: "Project title 6",
+        images: [projectImg1, projectImg2, projectImg3],
+        listEntries: [
+            {
+                text: "<b>&#xf007; Something:</b> else1"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else2"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else3"
+            },
+            {
+                text: "<b>&#xf007; Something:</b> else4"
+            }
+        ],
+        description: "Project Description",
+        buttons: [
+            {
+                text: "test1",
+                url: "https://www.google.de/"
+            },
+            {
+                text: "test2",
+                url: "https://www.google.de/"
+            }
+        ]
     }
 ]
 

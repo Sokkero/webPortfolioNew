@@ -126,6 +126,10 @@
   display: block;
 }
 
-.modalBackground .modalBody .modalContent .modalButton {
+.modalBackground .modalBody .modalContent .modalButtonContainer {
   margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }

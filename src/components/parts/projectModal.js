@@ -20,31 +20,24 @@ function ProjectModal({projectContent, callbackFunc}) {
                 </div>
                 <div className={styles.modalContent}>
                     <ul>
-                        <li>
-                            <h5><b>&#xf007; Something:</b> else in a very very long text, this is ridiculous, im not even sure if I spelled that word correctly but who gives a shit honestly</h5>
-                        </li>
-                        <li>
-                            <h5><b>&#xf007; Something:</b> else</h5>
-                        </li>
-                        <li>
-                            <h5><b>&#xf007; Something:</b> else</h5>
-                        </li>
-                        <li>
-                            <h5><b>&#xf007; Something:</b> else</h5>
-                        </li>
-                        <li>
-                            <h5><b>&#xf007; Something:</b> else</h5>
-                        </li>
+                        {projectContent.listEntries.map((entry, index) => (
+                            <li key={index}>
+                                <h5 dangerouslySetInnerHTML={{__html: entry.text}}/>
+                            </li>
+                        ))}
                     </ul>
-                    <span className={styles.projectText}>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </span>
-                    <ButtonA
-                        text={"Test"}
-                        href={"https://www.google.com/"}
-                        buttonType={ButtonTypes.LightButton}
-                        extraStyle={styles.modalButton}
-                    />
+                    <span className={styles.projectText}>{projectContent.description}</span>
+                    <div className={styles.modalButtonContainer}>
+                        {projectContent.buttons.map((entry, index) => (
+                            <ButtonA
+                                text={entry.text}
+                                href={entry.url}
+                                buttonType={ButtonTypes.LightButton}
+                                keyNum={index}
+                                key={index}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
