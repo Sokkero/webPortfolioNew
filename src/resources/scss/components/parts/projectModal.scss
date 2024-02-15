@@ -35,9 +35,9 @@
   border-radius: 50%;
   position: sticky;
   display: block;
-  left: 93%;
-  top: 3%;
-  transition: 0.3s;
+  left: calc(clamp(500px, 50vw, 1100px) - 100px);
+  top: 3vh;
+  transition: color 0.3s;
 }
 
 .modalBackground .modalBody .closeBtn:hover
@@ -132,4 +132,14 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1100px) {
+  .modalBackground .modalBody .carouselSlider {
+    max-width: 100%;
+  }
+
+  .modalBackground .modalBody .modalContent {
+    max-width: calc(100% * 0.8 - 2rem);
+  }
 }
