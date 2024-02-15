@@ -18,6 +18,8 @@
   transform: translateX(-50%);
   background-color: var(--mainColor03);
   overflow-y: scroll;
+  width: 50vw;
+  max-width: 1100px;
   min-width: 500px;
 }
 
@@ -31,9 +33,10 @@
   color: var(--textColor01);
   border: 2px solid var(--textColor01);
   border-radius: 50%;
-  position: fixed;
-  right: 10px;
-  top: 10px;
+  position: sticky;
+  display: block;
+  left: 93%;
+  top: 3%;
   transition: 0.3s;
 }
 
