@@ -7,7 +7,7 @@ export const ButtonTypes = {
     DarkButton: 1
 }
 
-export function ButtonA({text, href, buttonType, extraStyle, isNavigator = false, keyNum = -1}) {
+export function ButtonA({text, href, buttonType, extraStyle = "", isNavigator = false, keyNum = -1}) {
     const linkRef = useRef(null);
 
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
@@ -32,7 +32,7 @@ export function ButtonA({text, href, buttonType, extraStyle, isNavigator = false
     );
 }
 
-export function ButtonRound({symbol, href, extraStyle, isNavigator = false, keyNum = -1}) {
+export function ButtonRound({symbol, href, extraStyle = "", isNavigator = false, keyNum = -1}) {
     const linkRef = useRef(null);
 
     useEffect(() => {
@@ -55,7 +55,7 @@ export function ButtonRound({symbol, href, extraStyle, isNavigator = false, keyN
     );
 }
 
-export function ButtonSubmit({text, name, buttonType, extraStyle, keyNum = -1}) {
+export function ButtonSubmit({text, name, buttonType, extraStyle = "", keyNum = -1}) {
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
 
     return (
