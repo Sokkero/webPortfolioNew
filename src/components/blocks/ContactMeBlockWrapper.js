@@ -1,10 +1,27 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
 import BlockHeader from "../parts/blockHeader";
 import {ButtonSubmit, ButtonRound, ButtonTypes} from "../parts/buttons";
 import {ContactMeContent} from "../../resources/content";
 
 function ContactMeBlockWrapper() {
+    const formRef = useRef(null);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(ContactMeContent.emailService.serviceId, ContactMeContent.emailService.templateId, formRef.current, {publicKey: ContactMeContent.emailService.publicKey})
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    }
+
     return (
         <section id='contactBlock' className={`${styles.contactWrapper} contentBlock`}>
             <BlockHeader
@@ -40,13 +57,13 @@ function ContactMeBlockWrapper() {
                 </div>
                 <div className={styles.contactFormColumn}>
                     <p>{ContactMeContent.rightColumn.text}</p>
-                    <form>
+                    <form ref={formRef} onSubmit={sendEmail}>
                         <div className={styles.formRowInputs}>
                             <div className={styles.inputFieldWrapper}>
-                                <input className={styles.inputField} id="name" name="name" type="text" placeholder={ContactMeContent.rightColumn.form.nameInputPlaceholder} autoComplete="name" />
+                                <input className={styles.inputField} id="name" name="from_name" type="text" placeholder={ContactMeContent.rightColumn.form.nameInputPlaceholder} autoComplete="name" />
                             </div>
                             <div className={styles.inputFieldWrapper}>
-                                <input className={styles.inputField} id="email" name="email" type="text" placeholder={ContactMeContent.rightColumn.form.emailInputPlaceholder} autoComplete="email" />
+                                <input className={styles.inputField} id="email" name="from_email" type="text" placeholder={ContactMeContent.rightColumn.form.emailInputPlaceholder} autoComplete="email" />
                             </div>
                         </div>
                         <div className={styles.formRowText}>

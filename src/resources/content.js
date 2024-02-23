@@ -317,6 +317,13 @@ export const ProjectContent = [
 ]
 
 export const ContactMeContent = {
+    emailService: {
+        publicKey: "jCPZSDU8mMul65CQG",
+        serviceId: "service_hp4jedd",
+        templateId: "template_2zeudr6",
+        blockHeadless: true,
+        requestThrottle: 10000
+    },
     headlineWhite: "Get ",
     headlineAccent: "in touch",
     subHeadline: "Heuretess persuadere! Heuretess persuadere! Heuretess persuadere!",

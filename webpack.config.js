@@ -28,8 +28,13 @@ module.exports = function(mode) {
 				},
 				{
 					test: /\.(js|jsx)$/,
-					exclude: /node_modules/,
-					use: ['babel-loader'],
+					use: {
+						loader: 'babel-loader',
+						options: {
+							presets: ['@babel/preset-env', '@babel/preset-react'],
+							plugins: ['@babel/plugin-proposal-nullish-coalescing-operator']
+						}
+					}
 				},
 				{
 					test: /\.(png|jpe?g|gif|ico|svg|ttf)$/i,
