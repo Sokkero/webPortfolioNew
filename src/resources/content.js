@@ -367,7 +367,7 @@ export const ContactMeContent = {
             emailInputPlaceholder: "YOUR EMAIL",
             textInputPlaceholder: "YOUR MESSAGE",
             sendButtonText: "&#xf1d8; Send message",
-            responseMessage: "Your response here"
+            successMessage: "Email Send successfully, I will get back to you as soon as I can!"
         }
     }
 };

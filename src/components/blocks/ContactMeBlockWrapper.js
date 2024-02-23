@@ -1,12 +1,20 @@
-import React, {useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
 import BlockHeader from "../parts/blockHeader";
 import {ButtonSubmit, ButtonRound, ButtonTypes} from "../parts/buttons";
 import {ContactMeContent} from "../../resources/content";
 
+const ResponseType = {
+    NONE: 0,
+    SUCCESS: 1,
+    ERROR: 2
+}
+
 function ContactMeBlockWrapper() {
     const formRef = useRef(null);
+    const [response, setResponse] = useState(ResponseType.NONE);
+    const [error, setError] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -14,10 +22,12 @@ function ContactMeBlockWrapper() {
         emailjs.sendForm(ContactMeContent.emailService.serviceId, ContactMeContent.emailService.templateId, formRef.current, {publicKey: ContactMeContent.emailService.publicKey})
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    setResponse(ResponseType.SUCCESS);
+                    formRef.current.reset();
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    setResponse(ResponseType.ERROR);
+                    setError(error);
                 },
             );
     }
@@ -60,14 +70,36 @@ function ContactMeBlockWrapper() {
                     <form ref={formRef} onSubmit={sendEmail}>
                         <div className={styles.formRowInputs}>
                             <div className={styles.inputFieldWrapper}>
-                                <input className={styles.inputField} id="name" name="from_name" type="text" placeholder={ContactMeContent.rightColumn.form.nameInputPlaceholder} autoComplete="name" />
+                                <input
+                                    className={styles.inputField}
+                                    id="name"
+                                    name="from_name"
+                                    type="text"
+                                    placeholder={ContactMeContent.rightColumn.form.nameInputPlaceholder}
+                                    autoComplete="name"
+                                    required={true}
+                                />
                             </div>
                             <div className={styles.inputFieldWrapper}>
-                                <input className={styles.inputField} id="email" name="from_email" type="text" placeholder={ContactMeContent.rightColumn.form.emailInputPlaceholder} autoComplete="email" />
+                                <input
+                                    className={styles.inputField}
+                                    id="email"
+                                    name="from_email"
+                                    type="email"
+                                    placeholder={ContactMeContent.rightColumn.form.emailInputPlaceholder}
+                                    autoComplete="email"
+                                    required={true}
+                                />
                             </div>
                         </div>
                         <div className={styles.formRowText}>
-                            <textarea className={styles.inputField} id="comment" name="message" placeholder={ContactMeContent.rightColumn.form.textInputPlaceholder}></textarea>
+                            <textarea
+                                className={styles.inputField}
+                                id="comment"
+                                name="message"
+                                placeholder={ContactMeContent.rightColumn.form.textInputPlaceholder}
+                                required={true}
+                            />
                         </div>
                         <div className={styles.formRowCta}>
                             <ButtonSubmit
@@ -76,9 +108,11 @@ function ContactMeBlockWrapper() {
                                 text={ContactMeContent.rightColumn.form.sendButtonText}
                             />
                         </div>
-                        <div className={styles.formRowResponse}>
-                            <p>{ContactMeContent.rightColumn.form.responseMessage}</p>
-                        </div>
+                        {response !== ResponseType.NONE ? (
+                            <div className={styles.formRowResponse}>
+                                <p>{response === ResponseType.SUCCESS ? ContactMeContent.rightColumn.form.successMessage : error}</p>
+                            </div>
+                        ) : ''}
                     </form>
                 </div>
             </div>
