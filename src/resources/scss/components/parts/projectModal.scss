@@ -58,26 +58,12 @@
 .modalBackground .modalBody .carouselSlider {
   max-width: 85%;
   max-height: 50vh;
-  margin: auto;
   display: block;
-  margin-bottom: 25px;
+  margin: auto auto 25px;
 }
 
+.modalBackground .modalBody .carouselSlider .prevBtn,
 .modalBackground .modalBody .carouselSlider .nextBtn {
-  width: 40px;
-  height: 40px;
-  font-size: 29px;
-  text-align: center;
-  margin: auto;
-  text-decoration: none;
-  color: var(--textColor01);
-  border: 2px solid var(--textColor01);
-  border-radius: 50%;
-  position: fixed;
-  left: 100%;
-}
-
-.modalBackground .modalBody .carouselSlider .prevBtn {
   width: 40px;
   height: 40px;
   font-size: 29px;
@@ -141,5 +127,12 @@
 
   .modalBackground .modalBody .modalContent {
     max-width: calc(100% * 0.8 - 2rem);
+  }
+}
+
+@media only screen and (max-width: 700px)
+{
+  .modalBackground .modalBody .closeBtn {
+    left: calc(clamp(500px, 50vw, 1100px) - 70px);
   }
 }

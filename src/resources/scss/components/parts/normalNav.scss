@@ -20,8 +20,6 @@
   border-radius: 30px;
   background: var(--mainColor04);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-transition: height 0.2s, box-shadow 0.2s;
-  -moz-transition: height 0.2s, box-shadow 0.2s;
   transition: height 0.2s, box-shadow 0.2s;
 }
 .cdStretchyNav.navIsVisible .stretchyNavBg {
@@ -60,13 +58,7 @@
   top: 50%;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  -webkit-transition: background-color 0.2s;
-  -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 .cdNavTrigger span::after,
@@ -74,41 +66,22 @@
   content: "";
   top: 0;
   left: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
 .cdNavTrigger span::before {
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  -o-transform: translateY(-6px);
   transform: translateY(-6px);
 }
 .cdNavTrigger span::after {
-  -webkit-transform: translateY(6px);
-  -moz-transform: translateY(6px);
-  -ms-transform: translateY(6px);
-  -o-transform: translateY(6px);
   transform: translateY(6px);
 }
 .navIsVisible .cdNavTrigger span {
   background-color: transparent;
 }
 .navIsVisible .cdNavTrigger span::before {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .navIsVisible .cdNavTrigger span::after {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .cdStretchyNav ul {
@@ -117,8 +90,6 @@
   list-style: none;
   padding: 50px 0 0;
   visibility: hidden;
-  -webkit-transition: visibility 0.3s;
-  -moz-transition: visibility 0.3s;
   transition: visibility 0.3s;
   text-align: left;
 }
@@ -147,10 +118,6 @@
   left: 22px;
   top: 8px;
   text-align: center;
-  -webkit-transform: translateY(-50%) scale(0);
-  -moz-transform: translateY(-50%) scale(0);
-  -ms-transform: translateY(-50%) scale(0);
-  -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   opacity: .6;
   font-size: 17px;
@@ -179,36 +146,20 @@
   height: 20px;
   top: 50%;
   left: 54px;
-  -webkit-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -moz-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -ms-transform: translateX(3px) translateY(-50%) scaleY(0);
-  -o-transform: translateX(3px) translateY(-50%) scaleY(0);
   transform: translateX(3px) translateY(-50%) scaleY(0);
   background-color: var(--textColor01);
 }
 .cdStretchyNav ul span {
   display: block;
   opacity: 0;
-  -webkit-transform: translateX(-25px);
-  -moz-transform: translateX(-25px);
-  -ms-transform: translateX(-25px);
-  -o-transform: translateX(-25px);
   transform: translateX(-25px);
 }
 .cdStretchyNav.navIsVisible ul {
   visibility: visible;
 }
 .cdStretchyNav.navIsVisible ul a::after {
-  -webkit-transform: translateY(-50%) scale(1);
-  -moz-transform: translateY(-50%) scale(1);
-  -ms-transform: translateY(-50%) scale(1);
-  -o-transform: translateY(-50%) scale(1);
   transform: translateY(-50%) scale(1);
-  -webkit-animation: scaleIn 0.15s backwards;
-  -moz-animation: scaleIn 0.15s backwards;
   animation: scaleIn 0.15s backwards;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 .cdStretchyNav.navIsVisible ul a.active {
@@ -218,13 +169,7 @@
   opacity: 1;
 }
 .cdStretchyNav.navIsVisible ul a.active::before {
-  -webkit-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -moz-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -ms-transform: translateX(3px) translateY(-50%) scaleY(1);
-  -o-transform: translateX(3px) translateY(-50%) scaleY(1);
   transform: translateX(3px) translateY(-50%) scaleY(1);
-  -webkit-transition: -webkit-transform 0.15s 0.3s;
-  -moz-transition: -moz-transform 0.15s 0.3s;
   transition: transform 0.15s 0.3s;
   background-color: var(--mainColor01);
 }
@@ -235,115 +180,47 @@
 
 .cdStretchyNav.navIsVisible ul span {
   opacity: 1;
-  -webkit-transform: translateX(0);
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
   transform: translateX(0);
-  -webkit-animation: slideIn 0.15s backwards;
-  -moz-animation: slideIn 0.15s backwards;
   animation: slideIn 0.15s backwards;
-  -webkit-transition: -webkit-transform 0.2s;
-  -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
 .cdStretchyNav.navIsVisible ul li:first-of-type a::after,
 .cdStretchyNav.navIsVisible ul li:first-of-type span {
-  -webkit-animation-delay: 50ms;
-  -moz-animation-delay: 50ms;
   animation-delay: 50ms;
 }
 .cdStretchyNav.navIsVisible ul li:nth-of-type(2) a::after,
 .cdStretchyNav.navIsVisible ul li:nth-of-type(2) span {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 .cdStretchyNav.navIsVisible ul li:nth-of-type(3) a::after,
 .cdStretchyNav.navIsVisible ul li:nth-of-type(3) span {
-  -webkit-animation-delay: 0.15s;
-  -moz-animation-delay: 0.15s;
   animation-delay: 0.15s;
 }
 .cdStretchyNav.navIsVisible ul li:nth-of-type(4) a::after,
 .cdStretchyNav.navIsVisible ul li:nth-of-type(4) span {
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .cdStretchyNav.navIsVisible ul li:nth-of-type(5) a::after,
 .cdStretchyNav.navIsVisible ul li:nth-of-type(5) span {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
   animation-delay: 0.25s;
 }
-@-webkit-keyframes scaleIn {
-  from {
-    -webkit-transform: translateY(-50%) scale(0);
-  }
-  to {
-    -webkit-transform: translateY(-50%) scale(1);
-  }
-}
-@-moz-keyframes scaleIn {
-  from {
-    -moz-transform: translateY(-50%) scale(0);
-  }
-  to {
-    -moz-transform: translateY(-50%) scale(1);
-  }
-}
+
 @keyframes scaleIn {
   from {
-    -webkit-transform: translateY(-50%) scale(0);
-    -moz-transform: translateY(-50%) scale(0);
-    -ms-transform: translateY(-50%) scale(0);
-    -o-transform: translateY(-50%) scale(0);
     transform: translateY(-50%) scale(0);
   }
   to {
-    -webkit-transform: translateY(-50%) scale(1);
-    -moz-transform: translateY(-50%) scale(1);
-    -ms-transform: translateY(-50%) scale(1);
-    -o-transform: translateY(-50%) scale(1);
     transform: translateY(-50%) scale(1);
   }
 }
-@-webkit-keyframes slideIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-25px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes slideIn {
-  from {
-    opacity: 0;
-    -moz-transform: translateX(-25px);
-  }
-  to {
-    opacity: 1;
-    -moz-transform: translateX(0);
-  }
-}
+
 @keyframes slideIn {
   from {
     opacity: 0;
-    -webkit-transform: translateX(-25px);
-    -moz-transform: translateX(-25px);
-    -ms-transform: translateX(-25px);
-    -o-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
     transform: translateX(0);
   }
 }

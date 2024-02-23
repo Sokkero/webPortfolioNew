@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   background-color: transparent;
 }
 
@@ -93,100 +93,52 @@
 
 @keyframes slideRightIn {
   from {
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   to {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
     transform: translateX(0%);
   }
 }
 
 @keyframes slideLeftIn {
   from {
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%);
   }
   to {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
     transform: translateX(0%);
   }
 }
 
 @keyframes slideRightOut {
   from {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
     transform: translateX(0%);
   }
   to {
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
 
 @keyframes slideLeftOut {
   from {
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
     transform: translateX(0%);
   }
   to {
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
 
 .rightIn {
-  -webkit-animation: slideRightIn .5s 1 forwards;
-  -moz-animation: slideRightIn .5s 1 forwards;
-  -ms-animation: slideRightIn .5s 1 forwards;
-  -o-animation: slideRightIn .5s 1 forwards;
   animation: slideRightIn .5s 1 forwards;
 }
 
 .leftIn {
-  -webkit-animation: slideLeftIn .5s 1 forwards;
-  -moz-animation: slideLeftIn .5s 1 forwards;
-  -ms-animation: slideLeftIn .5s 1 forwards;
-  -o-animation: slideLeftIn .5s 1 forwards;
   animation: slideLeftIn .5s 1 forwards;
 }
 
 .rightOut {
-  -webkit-animation: slideRightOut .5s 1 forwards;
-  -moz-animation: slideRightOut .5s 1 forwards;
-  -ms-animation: slideRightOut .5s 1 forwards;
-  -o-animation: slideRightOut .5s 1 forwards;
   animation: slideRightOut .5s 1 forwards;
 }
 
 .leftOut{
-  -webkit-animation: slideLeftOut .5s 1 forwards;
-  -moz-animation: slideLeftOut .5s 1 forwards;
-  -ms-animation: slideLeftOut .5s 1 forwards;
-  -o-animation: slideLeftOut .5s 1 forwards;
   animation: slideLeftOut .5s 1 forwards;
 }

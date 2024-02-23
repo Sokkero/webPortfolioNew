@@ -11,14 +11,13 @@
 .contactWrapper .content {
   width: 45%;
   min-width: 1000px;
-  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
   color: var(--textColor01);
-  margin-bottom: 100px;
+  margin: auto auto 100px;
 }
 
 .contactWrapper .content .contactInfoColumn {
@@ -100,8 +99,7 @@
   box-shadow: none !important;
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
-  padding-left: 49px;
+  padding: .375rem .75rem .375rem 49px;
   line-height: 1.5;
   box-sizing: border-box;
   font-size: 14px;

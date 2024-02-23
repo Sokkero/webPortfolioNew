@@ -19,11 +19,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: unset;
   margin: unset;
   list-style: none;
-  gap: 30px;
+  gap: 50px;
 }
 
 .portfolioWrapper .content ul li {
