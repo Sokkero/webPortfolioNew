@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: flex-start;
   color: var(--textColor01);
-  margin: auto auto 100px;
+  margin: auto auto 0;
 }
 
 .contactWrapper .content .contactInfoColumn {
@@ -168,5 +168,9 @@
 
   .contactWrapper .content .contactFormColumn form .formRowInputs {
     flex-direction: column;
+  }
+
+  .contactWrapper .content .contactFormColumn form .formRowCta {
+    margin-bottom: 120px;
   }
 }
