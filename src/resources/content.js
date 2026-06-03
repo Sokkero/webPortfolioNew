@@ -221,7 +221,7 @@ export const ProjectContent = [
 				text: "<b>Scope:</b> Solo | Personal project"
 			},
 		],
-		aiUsage: "This project utilized AI for research and learning purposes. All code was and will be written by myself without any AI generated content.",
+		aiUsage: "This project utilized AI for research and learning purposes. All code was and will be written by myself without any AI-generated content.",
 		description: "A from-scratch 3D game engine built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
 		buttons: [
 			{
@@ -250,8 +250,8 @@ export const ProjectContent = [
 				text: "<b>Scope:</b> Solo | Indie game with plans of release"
 			},
 		],
-		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI generated code was used to create \"template\" classes and setup code structures.",
-		description: "A mobile-first roguelike dungeon crawler built in Godot 4 with GDScript, inspired by Wizardry Variants Daphne, Shattered Pixel Dungeon, and Exanima. Features procedurally-structured, grid-based dungeons with turn-based movement, custom A* pathfinding, and dynamic tile, wall, and door systems — all rendered in a clean low-poly style and targeting Android and iOS.",
+		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI-generated code was used to create \"template\" classes and setup code structures.",
+		description: "A mobile-first roguelike dungeon crawler built in Godot 4 with GDScript, inspired by Wizardry Variants Daphne, Shattered Pixel Dungeon, and Exanima. Features procedurally structured, grid-based dungeons with turn-based movement, custom A* pathfinding, and dynamic tile, wall, and door systems — all rendered in a clean low-poly style and targeting Android and iOS.",
 		buttons: [
 			{
 				text: "GitHub Repo",
@@ -279,7 +279,7 @@ export const ProjectContent = [
 				text: "<b>Scope:</b> App with plans of appstore release with subscription feature"
 			},
 		],
-		aiUsage: "This project heavily utilizes AI. Most of the code was planned and written by the AI agent claude. Design and feature planning was done by hand without AI.",
+		aiUsage: "This project heavily utilizes AI. Most of the code was planned and written by the AI agent Claude. Design and feature planning was done by hand without AI.",
 		description: "A local-first React Native (Expo) mobile app that helps couples decide what to eat. Both partners swipe through a shared set of meals Tinder-style, and the app surfaces the dishes they both liked. Works fully offline on SQLite, with an optional Firebase layer for cloud backup and real-time household sync via invite codes. Bilingual (EN/DE), with categories, ingredients, dark mode, and ZIP export/import. (Private repo — in active development ahead of a planned commercial release.)",
 		buttons: []
 	},
@@ -366,7 +366,7 @@ export const ProjectContent = [
 			},
 		],
 		aiUsage: "",
-		description: "This project was my final assignment in computer science at my graduating class at school and had its main emphasis on Microsoft Access (Visual Basic). We were allowed to choose a project by ourselves under the condition that our teacher approved of our choice. Since Visual Basic and Microsoft Access specifically is not a \"videogame-friendly environment\", I was told that my project would not be realistic to succeed at my level of experience and expertise. Non-the less I was determined to make it work and managed to succeed. Everything in this project was developed by myself and programmed solely within Microsoft Access in Visual Basic. I am aware that there are bugs and problems that could easily be fixed, but I do not want to alter the code for sentimental reasons as it would no longer be my first real game I ever really created by myself.",
+		description: "This project was my final computer science assignment in my graduating year at school, with its main emphasis on Microsoft Access (Visual Basic). We were allowed to choose a project by ourselves under the condition that our teacher approved of our choice. Since Visual Basic and Microsoft Access specifically are not a \"videogame-friendly environment\", I was told that it would be unrealistic for my project to succeed at my level of experience and expertise. Nonetheless, I was determined to make it work and managed to succeed. Everything in this project was developed by myself and programmed solely within Microsoft Access in Visual Basic. I am aware that there are bugs and problems that could easily be fixed, but I do not want to alter the code for sentimental reasons, as it would no longer be the first real game I ever created by myself.",
 		buttons: [
 			{
 				text: "Download game",
