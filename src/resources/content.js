@@ -6,9 +6,9 @@ import projectImg3 from "./images/project3.jpg";
 
 export const HomeBlockContent = {
 	backgroundImgSrc: bigMe,
-	smallHeader: "Greetings!",
-	bigHeader: "Nunquam imitari castor.",
-	text: "A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine. A falsis, xiphias domesticus pulchritudine.",
+	smallHeader: "Hello and welcome to my portfolio!",
+	bigHeader: "My name is Paul Sohns",
+	text: "I am a software developer with a big focus on videogames who loves creating cool games almost as much as I love playing them!",
 	moreAboutMeBtn: "&#xf007; More about me",
 	moreAboutMeBtnTarget: "#aboutMeBlock",
 	portfolioBtn: "&#xf0b1; Portfolio",
@@ -18,7 +18,7 @@ export const HomeBlockContent = {
 export const AboutMeContent = {
 	headlineWhite: "About ",
 	headlineAccent: "me",
-	subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
+	subHeadline: "A little something about me, how I got here and my skills",
 	myInfoContent: {
 		imageSrc: smallMe,
 		imageAlt: "A picture of me",
@@ -26,46 +26,38 @@ export const AboutMeContent = {
 		cvBtnTarget: "https://www.google.com/",
 		leftColumnEntries: [
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Full name",
+				lastPart: "Paul Sohns"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Born in",
+				lastPart: "Hannover, Germany"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Nationality",
+				lastPart: "German"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
-			},
-			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Favorite genres",
+				lastPart: "Shooter, RPG, Adventure"
 			},
 		],
 		rightColumnEntries: [
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Birthday",
+				lastPart: "01.02.2001"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Current location",
+				lastPart: "Hamburg, Germany"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "Languages",
+				lastPart: "German, English"
 			},
 			{
-				firstPart: "Something",
-				lastPart: "else entirely"
-			},
-			{
-				firstPart: "Something",
-				lastPart: "else entirely"
+				firstPart: "All time favorite game",
+				lastPart: "Super Mario Sunshine"
 			},
 		]
 	},
@@ -74,22 +66,16 @@ export const AboutMeContent = {
 			headline: "Experience",
 			entries: [
 				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
+					date: "01.08.2024 - 31.06.2026",
+					firstHeadline: "Junior Developer",
+					lastHeadline: "Innogames",
+					text: "After my apprenticeship I was offered a junior developer position as a Forge of Empires Mobile developer. It is here that I gathered most of my C++ knowledge, learned most of my development skills and fell in love with C++ and low level programming as a whole. I got to work with cocos2dx, learning lots about GLSL shaders and OpenGL."
 				},
 				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
-				},
-				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
+					date: "01.07.2026 - Now",
+					firstHeadline: "Regular Developer",
+					lastHeadline: "Innogames",
+					text: "I am currently working as a Regular Developer at Forge of Empires Mobile."
 				},
 			]
 		},
@@ -97,22 +83,22 @@ export const AboutMeContent = {
 			headline: "Education",
 			entries: [
 				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
+					date: "2017 - 2020",
+					firstHeadline: "Abitur",
+					lastHeadline: "BBS Papenburg",
+					text: "I completed my Abitur in computer technologies. The \"Abitur\" is the general qualification for university entrance in germany."
 				},
 				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
+					date: "2020 - 2021",
+					firstHeadline: "FSJ",
+					lastHeadline: "HÖB, Hist.-Ökol. Bildungsstätte",
+					text: "The FSJ is a german program that enables young adults to voluntarily work in social, educational, or healthcare institutions while gaining practical experience and supporting the community."
 				},
 				{
-					date: "01.01.2001 - 31.12.2024",
-					firstHeadline: "First Part",
-					lastHeadline: "Last Part",
-					text: "Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis? Domesticus lixas ducunt ad canis. Cur coordinatae messis?"
+					date: "01.08.2021 - 31.07.24",
+					firstHeadline: "Apprenticeship",
+					lastHeadline: "InnoGames",
+					text: "I started my career as a software developer here as an apprentice. I was taught the foundation of professional software engineering, teamwork, processes, and production workflows. During this time I worked on various projects within the company, including the games landing pages, Forge of Empires Mobile and Sunrise Village. I finished the apprenticeship with a grade of 87%."
 				},
 			]
 		},
@@ -122,41 +108,71 @@ export const AboutMeContent = {
 		// percentage is 20% minimum, otherwise it will look weird
 		skillEntries: [
 			{
-				skillName: "CSS",
+				skillName: "Basic dev skills",
+				hint: "How comfortable and familiar I am with basic development tools, services and workflows such as git, agile, jenkins, bitbucket, gitlab, github, zsh, etc.",
+				percentage: "100%" //In %
+			},
+			{
+				skillName: "AI",
+				hint: "How familiar and comfortable I am working with AI tools such as claude, github copilot, typingmind, etc.",
+				percentage: "100%" //In %
+			},
+			{
+				skillName: "Web development",
+				hint: "How confident I am in working on web pages, including HTML, CSS, JavaScript, React, web hosting and SEO",
+				percentage: "100%" //In %
+			},
+			{
+				skillName: "OpenGL 3.3+",
+				hint: "How confident I am in my ability to create and/or work on an existing rendering pipeline.",
+				percentage: "90%" //In %
+			},
+			{
+				skillName: "Godot",
+				hint: "How confident I am in my ability to produce a playable, smooth and fun game using Godot.",
+				percentage: "85%" //In %
+			},
+			{
+				skillName: "Unity",
+				hint: "How confident I am in my ability to produce a playable, smooth and fun game using Unity.",
+				percentage: "75%" //In %
+			},
+		]
+	},
+	myLanguagesContent: {
+		headline: "Language proficiencies",
+		// percentage is 20% minimum, otherwise it will look weird
+		languageEntries: [
+			{
+				skillName: "C++",
+				hint: "How confident I am in my ability to achieve a set goal using C++. As C++ is a huge field, I am ofcourse in no way claiming to know everything about C++",
+				percentage: "100%" //In %
+			},
+			{
+				skillName: "Python",
+				hint: "How confident I am in my ability to achieve a set goal using python",
+				percentage: "90%" //In %
+			},
+			{
+				skillName: "TypeScript",
+				hint: "How confident I am in my ability to achieve a set goal using TypeScript",
+				percentage: "90%" //In %
+			},
+			{
+				skillName: "PHP",
+				hint: "How confident I am in my ability to achieve a set goal using PHP",
 				percentage: "80%" //In %
 			},
 			{
-				skillName: "My skill",
+				skillName: "GLSL",
+				hint: "How confident I am in my ability to write and understand GLSL shader code",
 				percentage: "80%" //In %
 			},
 			{
-				skillName: "My skill",
-				percentage: "80%" //In %
+				skillName: "C#",
+				hint: "How confident I am in my ability to achieve a set goal using C#",
+				percentage: "75%" //In %
 			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			},
-			{
-				skillName: "My skill",
-				percentage: "80%" //In %
-			}
 		]
 	}
 };
@@ -164,7 +180,7 @@ export const AboutMeContent = {
 export const PortfolioContent = {
 	headlineWhite: "My ",
 	headlineAccent: "Portfolio",
-	subHeadline: "Est secundus detrius, cesaris. Est secundus detrius, cesaris.",
+	subHeadline: "A list of my personal projects.",
 	projectDummyTitle: "Project"
 };
 
@@ -198,122 +214,6 @@ export const ProjectContent = [
 			}
 		]
 	},
-	{
-		title: "Project title 3",
-		images: [projectImg1, projectImg2, projectImg3],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else2"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else3"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else4"
-			}
-		],
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-			{
-				text: "test2",
-				url: "https://www.google.de/"
-			}
-		]
-	},
-	{
-		title: "Project title 4",
-		images: [projectImg1, projectImg2, projectImg3],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else2"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else3"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else4"
-			}
-		],
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-			{
-				text: "test2",
-				url: "https://www.google.de/"
-			}
-		]
-	},
-	{
-		title: "Project title 5",
-		images: [projectImg1, projectImg2, projectImg3],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else2"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else3"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else4"
-			}
-		],
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-			{
-				text: "test2",
-				url: "https://www.google.de/"
-			}
-		]
-	},
-	{
-		title: "Project title 6",
-		images: [projectImg1, projectImg2, projectImg3],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else2"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else3"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else4"
-			}
-		],
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-			{
-				text: "test2",
-				url: "https://www.google.de/"
-			}
-		]
-	}
 ]
 
 export const ContactMeContent = {
@@ -326,42 +226,28 @@ export const ContactMeContent = {
 	},
 	headlineWhite: "Get ",
 	headlineAccent: "in touch",
-	subHeadline: "Heuretess persuadere! Heuretess persuadere! Heuretess persuadere!",
+	subHeadline: "Got any questions, requests or offers for me? Send me a message through this form!",
 	leftColumn: {
 		entries: [
-			{
-				header: "Olla de magnum turpis",
-				symbol: "&#xf09a; ",
-				text: "Olla de magnum turpis"
-			},
-			{
-				header: "Olla de magnum turpis",
-				symbol: "&#xf09a; ",
-				text: "Olla de magnum turpis"
-			}
 		],
-		socialsHeader: "Olla de magnum turpis",
+		socialsHeader: "Find me here:",
 		socials: [
 			{
-				icon: "&#xf09a;",
-				target: "https://www.google.com/"
+				icon: "&#xf0e1;",
+				target: "https://www.linkedin.com/in/paul-sohns-05058b208/"
 			},
 			{
-				icon: "&#xf09a;",
-				target: "https://www.google.com/"
+				icon: "&#xf09b;",
+				target: "https://github.com/Sokkero"
 			},
 			{
-				icon: "&#xf09a;",
-				target: "https://www.google.com/"
+				icon: "&#xf1b6;",
+				target: "https://steamcommunity.com/id/sokkero"
 			},
-			{
-				icon: "&#xf09a;",
-				target: "https://www.google.com/"
-			}
 		]
 	},
 	rightColumn: {
-		text: "Cur cobaltum messis? Fidess volare in dexter cirpi! Cur cobaltum messis? Fidess volare in dexter cirpi! Cur cobaltum messis? Fidess volare in dexter cirpi!",
+		text: "This form uses EmailJS to deliver the message. Your name, email and message content will not be saved or cached anywhere but in the email sent to me.",
 		form: {
 			nameInputPlaceholder: "YOUR NAME",
 			emailInputPlaceholder: "YOUR EMAIL",

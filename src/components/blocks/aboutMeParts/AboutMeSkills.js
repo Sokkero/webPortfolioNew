@@ -3,27 +3,47 @@ import styles from '../../../resources/scss/components/blocks/aboutMeParts/about
 import {AboutMeContent} from "../../../resources/content";
 
 function AboutMeSkills() {
-    return (
-        <div className={styles.mySkills}>
-            <h2>Skills</h2>
+	return (
+		<div className={styles.mySkills}>
+			<h2>{AboutMeContent.mySkillsContent.headline}</h2>
 
-            {AboutMeContent.mySkillsContent.skillEntries.map((entry, index) => (
-                <div className={styles.entry} key={index}>
-                    <span className={styles.skillName}>{entry.skillName}</span>
-                    <span className={styles.skillMeter}>
-                    <span
-                        className={styles.skillBar}
-                        style={{width: entry.percentage}}
-                    />
-                    <span
-                        className={styles.skillBox}
-                        style={{right: `calc((100% - ${entry.percentage}) - 23px)`}}
-                    >{entry.percentage}</span>
-                </span>
-                </div>
-            ))}
-        </div>
-    );
+			{AboutMeContent.mySkillsContent.skillEntries.map((entry, index) => (
+				<div className={styles.entry} key={index}>
+					<span className={styles.skillName}>{entry.skillName}</span>
+					<span className={styles.skillMeter}>
+						<span
+							className={styles.skillBar}
+							style={{width: entry.percentage}}
+						/>
+						<span
+							className={styles.skillBox}
+							style={{right: `calc((100% - ${entry.percentage}) - 23px)`}}
+						>{entry.percentage}</span>
+					</span>
+				</div>
+			))}
+
+			<span className={styles.seperator}/>
+			
+			<h2>{AboutMeContent.myLanguagesContent.headline}</h2>
+
+			{AboutMeContent.myLanguagesContent.languageEntries.map((entry, index) => (
+				<div className={styles.entry} key={index}>
+					<span className={styles.skillName}>{entry.skillName}</span>
+					<span className={styles.skillMeter}>
+						<span
+							className={styles.skillBar}
+							style={{width: entry.percentage}}
+						/>
+						<span
+							className={styles.skillBox}
+							style={{right: `calc((100% - ${entry.percentage}) - 23px)`}}
+						>{entry.percentage}</span>
+					</span>
+				</div>
+			))}
+		</div>
+	);
 }
 
 export default AboutMeSkills;

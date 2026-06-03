@@ -10,6 +10,16 @@
   margin: auto;
 }
 
+.seperator {
+  display: block;
+  background-color: var(--textColor02);
+  height: 1px;
+  width: 100%;
+  opacity: 0.3;
+  max-width: 90vw;
+  margin: auto;
+}
+
 div.mySkills > h2 {
   flex: 0 0 100%;
   padding-top: 50px;
