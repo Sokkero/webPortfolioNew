@@ -34,11 +34,59 @@ div.mySkills > h2 {
 }
 
 .mySkills .entry .skillName {
-  display: block;
+  display: inline-block;
+  position: relative;
   margin-bottom: 18px;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+  cursor: help;
+}
+
+.mySkills .entry .skillName .hint {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  z-index: 10;
+  width: max-content;
+  max-width: 260px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: #222;
+  border: 1px solid var(--mainColor01);
+  color: var(--textColor02);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: none;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  pointer-events: none;
+}
+
+.mySkills .entry .skillName .hint::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 18px;
+  width: 8px;
+  height: 8px;
+  margin-top: -5px;
+  background: #222;
+  border: 1px solid var(--mainColor01);
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.mySkills .entry:hover .hint,
+.mySkills .entry:focus-within .hint {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .mySkills .entry .skillMeter {
