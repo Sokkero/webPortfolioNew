@@ -1,7 +1,8 @@
-import smallMe from "./images/darkAbout.jpg";
-import bigMe from "./images/fullscreendarkFlipped.jpg";
-import exampleImg from "./images/example.jpg";
-import exampleVid from "./images/example.mov";
+import smallMe from "./assets/darkAbout.jpg";
+import bigMe from "./assets/fullscreendarkFlipped.jpg";
+import exampleImg from "./assets/example.jpg";
+import exampleVid from "./assets/example.mov";
+import webPortoflio from "./assets/webPortfolio.png";
 
 export const HomeBlockContent = {
 	backgroundImgSrc: bigMe,
@@ -190,6 +191,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -206,6 +208,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -222,6 +225,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -232,12 +236,13 @@ export const ProjectContent = [
 	},
 	{
 		title: "This website",
-		images: [exampleImg, exampleVid],
+		images: [webPortoflio],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>&#xf007; AI usage:</b> ~10% for the polishing "
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -254,6 +259,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -270,6 +276,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -286,6 +293,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -302,6 +310,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{
@@ -318,6 +327,7 @@ export const ProjectContent = [
 				text: "<b>&#xf007; Something:</b> else1"
 			},
 		],
+		aiUsage: "",
 		description: "Project Description",
 		buttons: [
 			{

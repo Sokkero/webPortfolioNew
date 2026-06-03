@@ -26,6 +26,10 @@ function ProjectModal({projectContent, callbackFunc}) {
                             </li>
                         ))}
                     </ul>
+                    <div className={styles.aiUsage}>
+                        <span className={styles.aiUsageLabel}>&#xf05a; AI usage disclaimer</span>
+                        <span dangerouslySetInnerHTML={{__html: projectContent.aiUsage || "No AI tools were used during the creation of this project."}}/>
+                    </div>
                     <span className={styles.projectText}>{projectContent.description}</span>
                     <div className={styles.modalButtonContainer}>
                         {projectContent.buttons.map((entry, index) => (
