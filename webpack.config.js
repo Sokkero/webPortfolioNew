@@ -45,6 +45,10 @@ module.exports = function(mode) {
 						},
 					],
 				},
+				{
+					test: /\.(mp4|webm|ogg|mov)$/i,
+					use: ['file-loader'],
+				},
 			],
 		},
 		plugins: [HTMLWebpackPluginConfig],

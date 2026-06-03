@@ -3,6 +3,7 @@ import bigMe from "./images/fullscreendarkFlipped.jpg";
 import projectImg1 from "./images/project1.jpg";
 import projectImg2 from "./images/project2.jpg";
 import projectImg3 from "./images/project3.jpg";
+import exampleVid from "./images/example.mov";
 
 export const HomeBlockContent = {
 	backgroundImgSrc: bigMe,
@@ -184,21 +185,12 @@ export const PortfolioContent = {
 
 export const ProjectContent = [
 	{
-		title: "Project title 2",
-		images: [projectImg1, projectImg2, projectImg3],
+		title: "My little engine",
+		images: [projectImg1, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
 			},
-			{
-				text: "<b>&#xf007; Something:</b> else2"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else3"
-			},
-			{
-				text: "<b>&#xf007; Something:</b> else4"
-			}
 		],
 		description: "Project Description",
 		buttons: [
@@ -206,10 +198,134 @@ export const ProjectContent = [
 				text: "test1",
 				url: "https://www.google.de/"
 			},
+		]
+	},
+	{
+		title: "Dungeon Crawler",
+		images: [projectImg1, exampleVid],
+		listEntries: [
 			{
-				text: "test2",
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
 				url: "https://www.google.de/"
-			}
+			},
+		]
+	},
+	{
+		title: "MealSwipe",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "This website",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "Dwarf Island",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "VBA - Tetris",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "EinDateMitMir",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "Pokemon card pricer",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
+		]
+	},
+	{
+		title: "TikTok Bot",
+		images: [projectImg1, exampleVid],
+		listEntries: [
+			{
+				text: "<b>&#xf007; Something:</b> else1"
+			},
+		],
+		description: "Project Description",
+		buttons: [
+			{
+				text: "test1",
+				url: "https://www.google.de/"
+			},
 		]
 	},
 ]

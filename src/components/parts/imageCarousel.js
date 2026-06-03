@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../../resources/scss/components/parts/imageCarousel.module.scss';
 
+const VIDEO_EXT = /\.(mp4|webm|ogg|mov)$/i;
+
 function ImageCarousel({images}) {
     const [current, setCurrent] = React.useState(0);
     const imageSlides = document.getElementsByClassName(styles.slideImage);
@@ -54,13 +56,23 @@ function ImageCarousel({images}) {
             <div className={styles.galleryTrack}>
                 {
                     images.map((image, index) => {
-                        return <img
+                        const slideStyle = (index === current) ? { transform:"translateX(0%)" } : { transform:"translateX(100%)" };
+                        return VIDEO_EXT.test(image)
+                            ? <video
                                     className={styles.slideImage}
-                                    style={ (index === current) ? { transform:"translateX(0%)" } : { transform:"translateX(100%)" }}
+                                    style={slideStyle}
+                                    key={index}
+                                    src={image}
+                                    controls
+                                    playsInline
+                              />
+                            : <img
+                                    className={styles.slideImage}
+                                    style={slideStyle}
                                     alt={"Some image"}
                                     key={index}
                                     src={image}
-                        />
+                              />
                     })
                 }
             </div>

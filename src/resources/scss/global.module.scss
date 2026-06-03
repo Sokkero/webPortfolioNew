@@ -7,6 +7,7 @@
 :global(html, body) {
 	width: 100%;
 	height: 100vh;
+	background-color: var(--mainColor01);
 	overflow: hidden;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
