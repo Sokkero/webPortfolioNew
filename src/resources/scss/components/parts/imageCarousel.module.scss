@@ -2,10 +2,19 @@
 .galleryContainer {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
   background-color: transparent;
+}
+
+.galleryStage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .buttonPrev,
@@ -47,8 +56,7 @@
 }
 
 .galleryFooter {
-  position: absolute;
-  bottom: 5%;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
@@ -56,7 +64,7 @@
 
 .bubbleOuter {
   cursor: pointer;
-  border : 3px solid var(--mainColor02);
+  border : 3px solid var(--mainColor05);
   border-radius: 8px;
   transition: 0.3s;
   box-shadow: 0 0 15px 1px rgba(0,0,0,0.5);

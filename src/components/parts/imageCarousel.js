@@ -51,9 +51,10 @@ function ImageCarousel({images}) {
 
     return (
         <div className={styles.galleryContainer}>
-            <span className={styles.buttonPrev} onClick={prevImage}>&#xf104;</span>
-            <span className={styles.buttonNext} onClick={nextImage}>&#xf105;</span>
-            <div className={styles.galleryTrack}>
+            <div className={styles.galleryStage}>
+                <span className={styles.buttonPrev} onClick={prevImage}>&#xf104;</span>
+                <span className={styles.buttonNext} onClick={nextImage}>&#xf105;</span>
+                <div className={styles.galleryTrack}>
                 {
                     images.map((image, index) => {
                         const slideStyle = (index === current) ? { transform:"translateX(0%)" } : { transform:"translateX(100%)" };
@@ -75,6 +76,7 @@ function ImageCarousel({images}) {
                               />
                     })
                 }
+                </div>
             </div>
             <div className={styles.galleryFooter}>
                 {

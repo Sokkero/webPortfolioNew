@@ -1,8 +1,6 @@
 import smallMe from "./images/darkAbout.jpg";
 import bigMe from "./images/fullscreendarkFlipped.jpg";
-import projectImg1 from "./images/project1.jpg";
-import projectImg2 from "./images/project2.jpg";
-import projectImg3 from "./images/project3.jpg";
+import exampleImg from "./images/example.jpg";
 import exampleVid from "./images/example.mov";
 
 export const HomeBlockContent = {
@@ -186,7 +184,7 @@ export const PortfolioContent = {
 export const ProjectContent = [
 	{
 		title: "My little engine",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -202,7 +200,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "Dungeon Crawler",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -218,7 +216,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "MealSwipe",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -234,7 +232,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "This website",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -250,7 +248,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "Dwarf Island",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -266,7 +264,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "VBA - Tetris",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -282,7 +280,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "EinDateMitMir",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -298,7 +296,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "Pokemon card pricer",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
@@ -314,7 +312,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "TikTok Bot",
-		images: [projectImg1, exampleVid],
+		images: [exampleImg, exampleVid],
 		listEntries: [
 			{
 				text: "<b>&#xf007; Something:</b> else1"
