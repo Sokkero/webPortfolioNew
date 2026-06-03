@@ -51,8 +51,56 @@
 .slideImage {
   aspect-ratio: 168/100;
   position: absolute;
-  background-size: cover;
+  object-fit: contain;
   width: 100%;
+}
+
+img.slideImage {
+  cursor: zoom-in;
+}
+
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .9);
+  z-index: 20;
+  cursor: zoom-out;
+}
+
+.fullscreenImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.fullscreenClose {
+  position: absolute;
+  top: 3vh;
+  right: 3vw;
+  width: 40px;
+  height: 40px;
+  font-size: 29px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--textColor01);
+  border: 2px solid var(--textColor01);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.fullscreenClose:hover {
+  color: var(--mainColor01);
+  border-color: var(--mainColor01);
 }
 
 .galleryFooter {

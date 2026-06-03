@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import styles from '../../resources/scss/components/parts/imageCarousel.module.scss';
 
 const VIDEO_EXT = /\.(mp4|webm|ogg|mov)$/i;
 
 function ImageCarousel({images}) {
     const [current, setCurrent] = React.useState(0);
+    const [fullscreen, setFullscreen] = React.useState(null);
     const imageSlides = document.getElementsByClassName(styles.slideImage);
     const bubbles = document.getElementsByClassName(styles.bubbleOuter);
 
@@ -73,6 +75,7 @@ function ImageCarousel({images}) {
                                     alt={"Some image"}
                                     key={index}
                                     src={image}
+                                    onClick={() => setFullscreen(image)}
                               />
                     })
                 }
@@ -87,6 +90,21 @@ function ImageCarousel({images}) {
                     })
                 }
             </div>
+            {
+                fullscreen &&
+                ReactDOM.createPortal(
+                    <div className={styles.fullscreenOverlay} onClick={() => setFullscreen(null)}>
+                        <span className={styles.fullscreenClose} onClick={() => setFullscreen(null)}>&#xf00d;</span>
+                        <img
+                            className={styles.fullscreenImage}
+                            alt={"Fullscreen image"}
+                            src={fullscreen}
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                    </div>,
+                    document.body
+                )
+            }
         </div>
     );
 }
