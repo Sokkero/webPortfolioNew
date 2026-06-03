@@ -8,7 +8,7 @@ export const HomeBlockContent = {
 	backgroundImgSrc: bigMe,
 	smallHeader: "Hello and welcome to my portfolio!",
 	bigHeader: "My name is Paul Sohns",
-	text: "I am a software developer with a big focus on videogames who loves creating cool games almost as much as I love playing them!",
+	text: "I'm a software developer with a strong focus on video games — I love building cool games almost as much as I love playing them!",
 	moreAboutMeBtn: "&#xf007; More about me",
 	moreAboutMeBtnTarget: "#aboutMeBlock",
 	portfolioBtn: "&#xf0b1; Portfolio",
@@ -22,8 +22,6 @@ export const AboutMeContent = {
 	myInfoContent: {
 		imageSrc: smallMe,
 		imageAlt: "A picture of me",
-		cvBtnText: "&#xf019; Download my CV",
-		cvBtnTarget: "https://www.google.com/",
 		leftColumnEntries: [
 			{
 				firstPart: "Full name",
@@ -66,15 +64,15 @@ export const AboutMeContent = {
 			headline: "Experience",
 			entries: [
 				{
-					date: "01.08.2024 - 31.06.2026",
+					date: "01.08.2024 - 30.06.2026",
 					firstHeadline: "Junior Developer",
-					lastHeadline: "Innogames",
-					text: "After my apprenticeship I was offered a junior developer position as a Forge of Empires Mobile developer. It is here that I gathered most of my C++ knowledge, learned most of my development skills and fell in love with C++ and low level programming as a whole. I got to work with cocos2dx, learning lots about GLSL shaders and OpenGL."
+					lastHeadline: "InnoGames",
+					text: "After my apprenticeship I was offered a junior developer position as a Forge of Empires Mobile developer. This is where I gained most of my C++ knowledge, developed my core engineering skills, and fell in love with C++ and low-level programming. I got to work with cocos2d-x, learning a lot about GLSL shaders and OpenGL."
 				},
 				{
 					date: "01.07.2026 - Now",
 					firstHeadline: "Regular Developer",
-					lastHeadline: "Innogames",
+					lastHeadline: "InnoGames",
 					text: "I am currently working as a Regular Developer at Forge of Empires Mobile."
 				},
 			]
@@ -86,19 +84,19 @@ export const AboutMeContent = {
 					date: "2017 - 2020",
 					firstHeadline: "Abitur",
 					lastHeadline: "BBS Papenburg",
-					text: "I completed my Abitur in computer technologies. The \"Abitur\" is the general qualification for university entrance in germany."
+					text: "I completed my Abitur in computer technologies. The \"Abitur\" is the general qualification for university entrance in Germany."
 				},
 				{
 					date: "2020 - 2021",
 					firstHeadline: "FSJ",
 					lastHeadline: "HÖB, Hist.-Ökol. Bildungsstätte",
-					text: "The FSJ is a german program that enables young adults to voluntarily work in social, educational, or healthcare institutions while gaining practical experience and supporting the community."
+					text: "The FSJ is a German program that enables young adults to voluntarily work in social, educational, or healthcare institutions while gaining practical experience and supporting the community."
 				},
 				{
-					date: "01.08.2021 - 31.07.24",
+					date: "01.08.2021 - 31.07.2024",
 					firstHeadline: "Apprenticeship",
 					lastHeadline: "InnoGames",
-					text: "I started my career as a software developer here as an apprentice. I was taught the foundation of professional software engineering, teamwork, processes, and production workflows. During this time I worked on various projects within the company, including the games landing pages, Forge of Empires Mobile and Sunrise Village. I finished the apprenticeship with a grade of 87%."
+					text: "I started my career as a software developer here as an apprentice. I was taught the foundation of professional software engineering, teamwork, processes, and production workflows. During this time I worked on various projects within the company, including the company's game landing pages, Forge of Empires Mobile and Sunrise Village. I finished the apprenticeship with a grade of 87%."
 				},
 			]
 		},
@@ -109,12 +107,12 @@ export const AboutMeContent = {
 		skillEntries: [
 			{
 				skillName: "Basic dev skills",
-				hint: "How comfortable and familiar I am with basic development tools, services and workflows such as git, agile, jenkins, bitbucket, gitlab, github, zsh, etc.",
+				hint: "How comfortable and familiar I am with basic development tools, services and workflows such as Git, Agile, Jenkins, Bitbucket, GitLab, GitHub, zsh, etc.",
 				percentage: "100%" //In %
 			},
 			{
 				skillName: "AI",
-				hint: "How familiar and comfortable I am working with AI tools such as claude, github copilot, typingmind, etc.",
+				hint: "How familiar and comfortable I am working with AI tools such as Claude, GitHub Copilot, TypingMind, etc.",
 				percentage: "100%" //In %
 			},
 			{
@@ -145,12 +143,12 @@ export const AboutMeContent = {
 		languageEntries: [
 			{
 				skillName: "C++",
-				hint: "How confident I am in my ability to achieve a set goal using C++. As C++ is a huge field, I am ofcourse in no way claiming to know everything about C++",
+				hint: "How confident I am in my ability to achieve a set goal using C++. As C++ is a huge field, I am of course in no way claiming to know all of it.",
 				percentage: "100%" //In %
 			},
 			{
 				skillName: "Python",
-				hint: "How confident I am in my ability to achieve a set goal using python",
+				hint: "How confident I am in my ability to achieve a set goal using Python",
 				percentage: "90%" //In %
 			},
 			{
@@ -253,7 +251,7 @@ export const ContactMeContent = {
 			emailInputPlaceholder: "YOUR EMAIL",
 			textInputPlaceholder: "YOUR MESSAGE",
 			sendButtonText: "&#xf1d8; Send message",
-			successMessage: "Email Send successfully, I will get back to you as soon as I can!"
+			successMessage: "Email sent successfully, I will get back to you as soon as I can!"
 		}
 	}
 };

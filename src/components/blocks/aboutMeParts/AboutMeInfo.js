@@ -34,14 +34,6 @@ function AboutMeInfo() {
 						))}
 					</ul>
 				</div>
-				<div className={styles.myInfoBottom}>
-					<ButtonA
-						href={AboutMeContent.myInfoContent.cvBtnTarget}
-						text={AboutMeContent.myInfoContent.cvBtnText}
-						buttonType={ButtonTypes.DarkButton}
-						isNavigator={false}
-					/>
-				</div>
 			</div>
 		</div>
 	);
