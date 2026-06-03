@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMePast.scss';
+import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMePast.module.scss';
 import {AboutMeContent} from "../../../resources/content";
 
 function AboutMePast() {

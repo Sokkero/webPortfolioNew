@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeSkills.scss';
+import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeSkills.module.scss';
 import {AboutMeContent} from "../../../resources/content";
 
 function AboutMeSkills() {

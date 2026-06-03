@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../resources/scss/components/parts/imageCarousel.scss';
+import styles from '../../resources/scss/components/parts/imageCarousel.module.scss';
 
 function ImageCarousel({images}) {
     const [current, setCurrent] = React.useState(0);

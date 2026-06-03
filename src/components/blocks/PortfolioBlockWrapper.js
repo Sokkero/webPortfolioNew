@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from '../../resources/scss/components/blocks/portfolioBlockWrapper.scss';
+import styles from '../../resources/scss/components/blocks/portfolioBlockWrapper.module.scss';
 import {PortfolioContent, ProjectContent} from "../../resources/content";
 import BlockHeader from "../parts/blockHeader";
 import ProjectModal from "../parts/projectModal";

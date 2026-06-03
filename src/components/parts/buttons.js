@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import styles from '../../resources/scss/components/parts/buttons.scss';
+import styles from '../../resources/scss/components/parts/buttons.module.scss';
 import {MakeSmoothScroll} from "./navigatorLogic";
 
 export const ButtonTypes = {

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {SpyScrolling, MakeSmoothScroll} from "./navigatorLogic";
 import {BlogContent} from "../../resources/content";
-import styles from '../../resources/scss/components/parts/mobileNav.scss';
+import styles from '../../resources/scss/components/parts/mobileNav.module.scss';
 
 function MobileNav() {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../resources/scss/components/blocks/homeBlockWrapper.scss';
+import styles from '../../resources/scss/components/blocks/homeBlockWrapper.module.scss';
 import {ButtonA, ButtonTypes} from "../parts/buttons";
 import {HomeBlockContent} from "../../resources/content";
 

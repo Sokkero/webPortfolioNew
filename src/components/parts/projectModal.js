@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../resources/scss/components/parts/projectModal.scss';
+import styles from '../../resources/scss/components/parts/projectModal.module.scss';
 import ImageCarousel from "./imageCarousel";
 import {ButtonA, ButtonTypes} from "./buttons";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeInfo.scss';
+import styles from '../../../resources/scss/components/blocks/aboutMeParts/aboutMeInfo.module.scss';
 import {ButtonA, ButtonTypes} from "../../parts/buttons";
 import {AboutMeContent} from "../../../resources/content";
 

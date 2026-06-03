@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import styles from '../../resources/scss/components/pageWrapper.scss';
+import styles from '../../resources/scss/components/pageWrapper.module.scss';
 import NormalNav from "../parts/normalNav";
 import MobileNav from "../parts/mobileNav";
 import HomeBlockWrapper from '../blocks/HomeBlockWrapper';

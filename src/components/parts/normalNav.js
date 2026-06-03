@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {SpyScrolling, MakeSmoothScroll} from "./navigatorLogic";
-import styles from '../../resources/scss/components/parts/normalNav.scss';
+import styles from '../../resources/scss/components/parts/normalNav.module.scss';
 import {BlogContent} from "../../resources/content";
 
 function NormalNav() {

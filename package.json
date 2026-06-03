@@ -3,6 +3,7 @@
 	"description": "New portfolio design testing",
 	"author": "Paul Sohns",
 	"version": "0.1.0",
+	"homepage": ".",
 	"main": "index.js",
 	"private": true,
 	"license": "ISC",

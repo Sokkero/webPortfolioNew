@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
-import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.scss';
+import styles from '../../resources/scss/components/blocks/contactMeBlockWrapper.module.scss';
 import BlockHeader from "../parts/blockHeader";
 import {ButtonSubmit, ButtonRound, ButtonTypes} from "../parts/buttons";
 import {ContactMeContent} from "../../resources/content";

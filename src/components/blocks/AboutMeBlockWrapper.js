@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../resources/scss/components/blocks/aboutMeBlockWrapper.scss';
+import styles from '../../resources/scss/components/blocks/aboutMeBlockWrapper.module.scss';
 import {AboutMeContent} from "../../resources/content";
 import BlockHeader from "../parts/blockHeader";
 import AboutMeInfo from "./aboutMeParts/AboutMeInfo";
