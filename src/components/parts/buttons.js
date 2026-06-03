@@ -7,7 +7,7 @@ export const ButtonTypes = {
     DarkButton: 1
 }
 
-export function ButtonA({text, href, buttonType, extraStyle = "", isNavigator = false, keyNum = -1}) {
+export function ButtonA({text, href, buttonType, extraStyle = "", isNavigator = false, keyNum = -1, download = false}) {
     const linkRef = useRef(null);
 
     let buttonClass = buttonType === ButtonTypes.LightButton ? styles.lightButton : styles.darkButton;
@@ -21,6 +21,7 @@ export function ButtonA({text, href, buttonType, extraStyle = "", isNavigator = 
     return (
         <a
             href={href}
+            download={download}
             className={`${styles.linkElem} ${buttonClass} ${extraStyle}`}
             ref={linkRef}
             key={keyNum >= 0 ? keyNum : ""}

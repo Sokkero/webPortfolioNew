@@ -37,6 +37,8 @@
   display: block;
   left: calc(clamp(500px, 50vw, 1100px) - 100px);
   top: 3vh;
+  z-index: 11;
+  background-color: var(--mainColor03);
   transition: color 0.3s;
 }
 

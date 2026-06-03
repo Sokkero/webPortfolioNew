@@ -49,6 +49,17 @@ module.exports = function(mode) {
 					test: /\.(mp4|webm|ogg|mov)$/i,
 					use: ['file-loader'],
 				},
+				{
+					test: /\.(zip|accdb|pdf|rar|7z)$/i,
+					use: [
+						{
+							loader: 'file-loader',
+							options: {
+								name: '[name].[ext]'
+							}
+						}
+					],
+				},
 			],
 		},
 		plugins: [HTMLWebpackPluginConfig],

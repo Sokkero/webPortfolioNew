@@ -36,6 +36,7 @@ function ProjectModal({projectContent, callbackFunc}) {
                             <ButtonA
                                 text={entry.text}
                                 href={entry.url}
+                                download={entry.download || false}
                                 buttonType={ButtonTypes.LightButton}
                                 keyNum={index}
                                 key={index}

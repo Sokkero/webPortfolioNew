@@ -1,8 +1,26 @@
 import smallMe from "./assets/darkAbout.jpg";
 import bigMe from "./assets/fullscreendarkFlipped.jpg";
 import exampleImg from "./assets/example.jpg";
-import exampleVid from "./assets/example.mov";
-import webPortoflio from "./assets/webPortfolio.png";
+import wip from "./assets/projects/wip.png"
+
+import webPortoflio from "./assets/projects/webPortfolio.png";
+
+import engine1 from "./assets/projects/engine1.png";
+import engine2 from "./assets/projects/engine.gif";
+import engine3 from "./assets/projects/engine2.png";
+import engine4 from "./assets/projects/engine3.png";
+
+import mealswipe1 from "./assets/projects/mealswipe1.jpg";
+import mealswipe2 from "./assets/projects/mealswipe2.jpg";
+import mealswipe3 from "./assets/projects/mealswipe3.jpg";
+import mealswipe4 from "./assets/projects/mealswipe4.mp4";
+
+import dwarfIsland1 from "./assets/projects/dwarfIsland1.png";
+import dwarfIsland2 from "./assets/projects/dwarfIsland2.png";
+
+import tetris1 from "./assets/projects/tetris1.png";
+import tetrisCode from "./assets/rawFiles/TetrisCode.zip";
+import tetrisGame from "./assets/rawFiles/TetrisGame.accdb";
 
 export const HomeBlockContent = {
 	backgroundImgSrc: bigMe,
@@ -185,154 +203,180 @@ export const PortfolioContent = {
 export const ProjectContent = [
 	{
 		title: "My little engine",
-		images: [exampleImg, exampleVid],
+		images: [engine1, engine2, engine4, engine3],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>Status:</b> Work in progress"
+			},
+			{
+				text: "<b>Type:</b> From-scratch game engine"
+			},
+			{
+				text: "<b>Languages:</b> Modern C++ & GLSL"
+			},
+			{
+				text: "<b>Tech Stack:</b> OpenGL, GLFW, CMake"
+			},
+			{
+				text: "<b>Scope:</b> Solo | Personal project"
 			},
 		],
-		aiUsage: "",
-		description: "Project Description",
+		aiUsage: "This project utilized AI for research and learning purposes. All code was and will be written by myself without any AI generated content.",
+		description: "A from-scratch 3D game engine built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
 		buttons: [
 			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "GitHub Repo",
+				url: "https://github.com/Sokkero/openGL-engine"
 			},
 		]
 	},
 	{
 		title: "Dungeon Crawler",
-		images: [exampleImg, exampleVid],
+		images: [wip],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>Status:</b> Work in progress"
+			},
+			{
+				text: "<b>Type:</b> Mobile game"
+			},
+			{
+				text: "<b>Languages:</b> GDScript"
+			},
+			{
+				text: "<b>Tech Stack:</b> Godot 4"
+			},
+			{
+				text: "<b>Scope:</b> Solo | Indie game with plans of release"
 			},
 		],
-		aiUsage: "",
-		description: "Project Description",
+		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI generated code was used to create \"template\" classes and setup code structures.",
+		description: "A mobile-first roguelike dungeon crawler built in Godot 4 with GDScript, inspired by Wizardry Variants Daphne, Shattered Pixel Dungeon, and Exanima. Features procedurally-structured, grid-based dungeons with turn-based movement, custom A* pathfinding, and dynamic tile, wall, and door systems — all rendered in a clean low-poly style and targeting Android and iOS.",
 		buttons: [
 			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "GitHub Repo",
+				url: "https://github.com/Sokkero/dungeonCrawler"
 			},
 		]
 	},
 	{
 		title: "MealSwipe",
-		images: [exampleImg, exampleVid],
+		images: [mealswipe1, mealswipe2, mealswipe3, mealswipe4],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>Status:</b> Active, version 1.1.1 released internally"
+			},
+			{
+				text: "<b>Type:</b> Mobile app"
+			},
+			{
+				text: "<b>Languages:</b> JavaScript"
+			},
+			{
+				text: "<b>Tech Stack:</b> React Native + Expo, SQLite, Firebase"
+			},
+			{
+				text: "<b>Scope:</b> App with plans of appstore release with subscription feature"
 			},
 		],
-		aiUsage: "",
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-		]
+		aiUsage: "This project heavily utilizes AI. Most of the code was planned and written by the AI agent claude. Design and feature planning was done by hand without AI.",
+		description: "A local-first React Native (Expo) mobile app that helps couples decide what to eat. Both partners swipe through a shared set of meals Tinder-style, and the app surfaces the dishes they both liked. Works fully offline on SQLite, with an optional Firebase layer for cloud backup and real-time household sync via invite codes. Bilingual (EN/DE), with categories, ingredients, dark mode, and ZIP export/import. (Private repo — in active development ahead of a planned commercial release.)",
+		buttons: []
 	},
 	{
 		title: "This website",
 		images: [webPortoflio],
 		listEntries: [
 			{
-				text: "<b>&#xf007; AI usage:</b> ~10% for the polishing "
+				text: "<b>Status:</b> Live"
+			},
+			{
+				text: "<b>Type:</b> Personal website"
+			},
+			{
+				text: "<b>Languages:</b> JavaScript & SCSS"
+			},
+			{
+				text: "<b>Tech Stack:</b> React, Webpack, EmailJS"
+			},
+			{
+				text: "<b>Scope:</b> Solo | Personal project"
 			},
 		],
-		aiUsage: "",
-		description: "Project Description",
+		aiUsage: "AI was only utilized towards the end of the development process for polishing, generating texts and spell checking.",
+		description: "A custom-built personal portfolio site made from scratch in React, with no UI framework or site builder. Styled with modular SCSS and bundled via a hand-configured Webpack setup, it features a fully responsive layout, dark aesthetic, an image/video project gallery, and a working contact form powered by EmailJS. Designed and developed end-to-end by myself as a showcase of both my work and my front-end craft.",
 		buttons: [
 			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "You're already here!",
+				url: ""
+			},
+			{
+				text: "GitHub repo",
+				url: "https://github.com/Sokkero/webPortfolioNew"
 			},
 		]
 	},
 	{
 		title: "Dwarf Island",
-		images: [exampleImg, exampleVid],
+		images: [dwarfIsland1, dwarfIsland2],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>Status:</b> Abandoned due to a lack of interest"
+			},
+			{
+				text: "<b>Type:</b> Desktop game"
+			},
+			{
+				text: "<b>Languages:</b> C#"
+			},
+			{
+				text: "<b>Tech Stack:</b> Unity3d"
+			},
+			{
+				text: "<b>Scope:</b> Solo | Personal project"
 			},
 		],
 		aiUsage: "",
-		description: "Project Description",
+		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project was ultimately abandoned around three years ago, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about.",
 		buttons: [
 			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "GitHub repo",
+				url: "https://github.com/Sokkero/DIgame"
 			},
 		]
 	},
 	{
 		title: "VBA - Tetris",
-		images: [exampleImg, exampleVid],
+		images: [tetris1],
 		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
+				text: "<b>Status:</b> Done"
+			},
+			{
+				text: "<b>Type:</b> Joke game"
+			},
+			{
+				text: "<b>Languages:</b> Visual Basic"
+			},
+			{
+				text: "<b>Tech Stack:</b> Microsoft Access"
+			},
+			{
+				text: "<b>Scope:</b> Abitur finals project"
 			},
 		],
 		aiUsage: "",
-		description: "Project Description",
+		description: "This project was my final assignment in computer science at my graduating class at school and had its main emphasis on Microsoft Access (Visual Basic). We were allowed to choose a project by ourselves under the condition that our teacher approved of our choice. Since Visual Basic and Microsoft Access specifically is not a \"videogame-friendly environment\", I was told that my project would not be realistic to succeed at my level of experience and expertise. Non-the less I was determined to make it work and managed to succeed. Everything in this project was developed by myself and programmed solely within Microsoft Access in Visual Basic. I am aware that there are bugs and problems that could easily be fixed, but I do not want to alter the code for sentimental reasons as it would no longer be my first real game I ever really created by myself.",
 		buttons: [
 			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "Download game",
+				url: tetrisGame,
+				download: "tetrisgame.accdb"
 			},
-		]
-	},
-	{
-		title: "EinDateMitMir",
-		images: [exampleImg, exampleVid],
-		listEntries: [
 			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-		],
-		aiUsage: "",
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-		]
-	},
-	{
-		title: "Pokemon card pricer",
-		images: [exampleImg, exampleVid],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-		],
-		aiUsage: "",
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
-			},
-		]
-	},
-	{
-		title: "TikTok Bot",
-		images: [exampleImg, exampleVid],
-		listEntries: [
-			{
-				text: "<b>&#xf007; Something:</b> else1"
-			},
-		],
-		aiUsage: "",
-		description: "Project Description",
-		buttons: [
-			{
-				text: "test1",
-				url: "https://www.google.de/"
+				text: "Download code",
+				url: tetrisCode,
+				download: "TetrisCode.zip"
 			},
 		]
 	},
