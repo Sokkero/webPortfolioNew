@@ -3,7 +3,7 @@ import bigMe from "./assets/fullscreendarkFlipped.jpg";
 import exampleImg from "./assets/example.jpg";
 import wip from "./assets/projects/wip.png"
 
-import webPortoflio from "./assets/projects/webPortfolio.png";
+import webPortfolio from "./assets/projects/webPortfolio.png";
 
 import engine1 from "./assets/projects/engine1.png";
 import engine2 from "./assets/projects/engine.gif";
@@ -108,7 +108,7 @@ export const AboutMeContent = {
 					date: "2020 - 2021",
 					firstHeadline: "FSJ",
 					lastHeadline: "HÖB, Hist.-Ökol. Bildungsstätte",
-					text: "The FSJ is a German program that enables young adults to voluntarily work in social, educational, or healthcare institutions while gaining practical experience and supporting the community."
+					text: "The FSJ is a German voluntary service year in which young adults work in social, educational, or healthcare institutions, gaining practical experience while supporting their community."
 				},
 				{
 					date: "01.08.2021 - 31.07.2024",
@@ -247,7 +247,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Godot 4"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Indie game with plans of release"
+				text: "<b>Scope:</b> Solo | Indie game planned for release"
 			},
 		],
 		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI-generated code was used to create \"template\" classes and setup code structures.",
@@ -285,7 +285,7 @@ export const ProjectContent = [
 	},
 	{
 		title: "This website",
-		images: [webPortoflio],
+		images: [webPortfolio],
 		listEntries: [
 			{
 				text: "<b>Status:</b> Live"
@@ -311,7 +311,7 @@ export const ProjectContent = [
 				url: ""
 			},
 			{
-				text: "GitHub repo",
+				text: "GitHub Repo",
 				url: "https://github.com/Sokkero/webPortfolioNew"
 			},
 		]
@@ -330,7 +330,7 @@ export const ProjectContent = [
 				text: "<b>Languages:</b> C#"
 			},
 			{
-				text: "<b>Tech Stack:</b> Unity3d"
+				text: "<b>Tech Stack:</b> Unity"
 			},
 			{
 				text: "<b>Scope:</b> Solo | Personal project"
@@ -340,7 +340,7 @@ export const ProjectContent = [
 		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project was ultimately abandoned around three years ago, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about.",
 		buttons: [
 			{
-				text: "GitHub repo",
+				text: "GitHub Repo",
 				url: "https://github.com/Sokkero/DIgame"
 			},
 		]
@@ -362,7 +362,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Microsoft Access"
 			},
 			{
-				text: "<b>Scope:</b> Abitur finals project"
+				text: "<b>Scope:</b> Solo | Abitur finals project"
 			},
 		],
 		aiUsage: "",
