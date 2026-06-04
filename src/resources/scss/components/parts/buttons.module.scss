@@ -33,6 +33,7 @@
   overflow: hidden;
   display: inline-block;
   position: relative;
+  isolation: isolate;
   letter-spacing: .5px;
   border: none;
   font-family: var(--fontFam01), var(--fontFamIcons);
