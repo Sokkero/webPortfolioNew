@@ -206,10 +206,10 @@ export const ProjectContent = [
 		images: [engine1, engine2, engine4, engine3],
 		listEntries: [
 			{
-				text: "<b>Status:</b> Work in progress"
+				text: "<b>Status:</b> Active, my main project"
 			},
 			{
-				text: "<b>Type:</b> From-scratch game engine"
+				text: "<b>Type:</b> Game engine for academic purposes"
 			},
 			{
 				text: "<b>Languages:</b> Modern C++ & GLSL"
@@ -218,11 +218,11 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> OpenGL, GLFW, CMake"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Personal project"
+				text: "<b>Scope:</b> Fully working game engine from scratch with little to no external libraries"
 			},
 		],
-		aiUsage: "This project utilized AI for research and learning purposes. All code was and will be written by myself without any AI-generated content.",
-		description: "A from-scratch 3D game engine built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
+		aiUsage: "This project utilized soley AI for research and learning purposes. All code was and will be written by myself without any AI-generated content.",
+		description: "A from-scratch 3D game engine made for academic purposes. It is deliberatly made as a library only game engine (no engine GUI) to ensure the development and usage is non project specific and teaches the inner workings of game engines and OpenGl. The engine is built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
 		buttons: [
 			{
 				text: "GitHub Repo",
@@ -235,7 +235,7 @@ export const ProjectContent = [
 		images: [wip],
 		listEntries: [
 			{
-				text: "<b>Status:</b> Work in progress"
+				text: "<b>Status:</b> Active"
 			},
 			{
 				text: "<b>Type:</b> Mobile game"
@@ -247,7 +247,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Godot 4"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Indie game planned for release"
+				text: "<b>Scope:</b> Rogue like mobile game à la \"Shattered Pixel Dungeon\""
 			},
 		],
 		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI-generated code was used to create \"template\" classes and setup code structures.",
@@ -288,7 +288,7 @@ export const ProjectContent = [
 		images: [webPortfolio],
 		listEntries: [
 			{
-				text: "<b>Status:</b> Live"
+				text: "<b>Status:</b> Completed & Live"
 			},
 			{
 				text: "<b>Type:</b> Personal website"
@@ -300,7 +300,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> React, Webpack, EmailJS"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Personal project"
+				text: "<b>Scope:</b> Professional portfolio website"
 			},
 		],
 		aiUsage: "AI was only utilized towards the end of the development process for polishing, generating texts and spell checking.",
@@ -321,7 +321,7 @@ export const ProjectContent = [
 		images: [dwarfIsland1, dwarfIsland2],
 		listEntries: [
 			{
-				text: "<b>Status:</b> Abandoned due to a lack of interest"
+				text: "<b>Status:</b> Discontinued"
 			},
 			{
 				text: "<b>Type:</b> Desktop game"
@@ -333,15 +333,23 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Unity"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Personal project"
+				text: "<b>Scope:</b> Single player adventure game à la Stardew Valley"
 			},
 		],
 		aiUsage: "",
-		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project was ultimately abandoned around three years ago, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about.",
+		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project was ultimately abandoned around three years ago, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about. The project reached its first milestone (fully working procedural terrain and vegetation generation), but was abandoned due to the project's overambitious scope.",
 		buttons: [
 			{
 				text: "GitHub Repo",
 				url: "https://github.com/Sokkero/DIgame"
+			},
+			{
+				text: "Noise tech demo",
+				url: "https://github.com/Sokkero/noiseTesting-TechDemo"
+			},
+			{
+				text: "Presentation of my learnings",
+				url: "https://www.reddit.com/r/gamedev/comments/vd4uox/i_held_a_presentation_at_my_company_about_my/"
 			},
 		]
 	},
@@ -350,7 +358,7 @@ export const ProjectContent = [
 		images: [tetris1],
 		listEntries: [
 			{
-				text: "<b>Status:</b> Done"
+				text: "<b>Status:</b> Completed"
 			},
 			{
 				text: "<b>Type:</b> Joke game"
@@ -362,7 +370,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Microsoft Access"
 			},
 			{
-				text: "<b>Scope:</b> Solo | Abitur finals project"
+				text: "<b>Scope:</b> Tetris running in Microsoft Access"
 			},
 		],
 		aiUsage: "",
