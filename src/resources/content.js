@@ -221,8 +221,8 @@ export const ProjectContent = [
 				text: "<b>Scope:</b> Fully working game engine from scratch with little to no external libraries"
 			},
 		],
-		aiUsage: "This project utilized soley AI for research and learning purposes. All code was and will be written by myself without any AI-generated content.",
-		description: "A from-scratch 3D game engine made for academic purposes. It is deliberatly made as a library only game engine (no engine GUI) to ensure the development and usage is non project specific and teaches the inner workings of game engines and OpenGl. The engine is built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
+		aiUsage: "This project utilized AI solely for research and learning purposes. All code was and will be written by myself without any AI-generated content.",
+		description: "A from-scratch 3D game engine built for academic purposes. It is deliberately designed as a library-only game engine (no editor GUI) so that development and usage are not project-specific, teaching the inner workings of game engines and OpenGL. The engine is built in modern C++ using OpenGL and GLFW. Designed as a deep-dive into engine architecture, it implements a complete render pipeline with instanced rendering, custom shader and geometry handling, and synchronized CPU/GPU data structures. The engine features a modular, component-based architecture — including a singleton-managed lifecycle, scene and object management, user input handling, and an in-engine debug UI. Built with CMake.",
 		buttons: [
 			{
 				text: "GitHub Repo",
@@ -247,7 +247,7 @@ export const ProjectContent = [
 				text: "<b>Tech Stack:</b> Godot 4"
 			},
 			{
-				text: "<b>Scope:</b> Rogue like mobile game à la \"Shattered Pixel Dungeon\""
+				text: "<b>Scope:</b> Roguelike mobile game à la \"Shattered Pixel Dungeon\""
 			},
 		],
 		aiUsage: "This project utilized AI mainly for research and learning purposes. Most code was written by myself. AI-generated code was used to create \"template\" classes and setup code structures.",
@@ -337,7 +337,7 @@ export const ProjectContent = [
 			},
 		],
 		aiUsage: "",
-		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project was ultimately abandoned around three years ago, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about. The project reached its first milestone (fully working procedural terrain and vegetation generation), but was abandoned due to the project's overambitious scope.",
+		description: "Dwarf Island was an experimental game project centered around procedural island generation. The core goal was to generate unique, explorable islands at runtime, combining terrain shaping, environmental placement, and gameplay systems into a cohesive world-generation pipeline. While the project reached its first milestone — fully working procedural terrain and vegetation generation — it was ultimately abandoned around three years ago due to its overambitious scope. Still, it represents an important milestone in my development journey and showcases my work on procedural content generation, one of the areas of game programming I am most passionate about.",
 		buttons: [
 			{
 				text: "GitHub Repo",
