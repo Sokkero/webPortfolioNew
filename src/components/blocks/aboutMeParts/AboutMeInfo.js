@@ -7,7 +7,7 @@ function AboutMeInfo() {
 	return (
 		<div className={styles.myInfo}>
 			<div className={styles.imageContainer}>
-				<img src={AboutMeContent.myInfoContent.imageSrc} alt={AboutMeContent.myInfoContent.imageAlt} />
+				<img src={AboutMeContent.myInfoContent.imageSrc} alt={AboutMeContent.myInfoContent.imageAlt} width={500} height={500} />
 			</div>
 			<div className={styles.myInfoWrapper}>
 				<div className={styles.myInfoColumn}>

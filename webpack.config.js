@@ -37,7 +37,7 @@ module.exports = function(mode) {
 					}
 				},
 				{
-					test: /\.(png|jpe?g|gif|ico|svg|ttf)$/i,
+					test: /\.(png|jpe?g|ico|svg)$/i,
 					use: [
 						'file-loader',
 						{
@@ -46,7 +46,8 @@ module.exports = function(mode) {
 					],
 				},
 				{
-					test: /\.(mp4|webm|ogg|mov)$/i,
+					// Already-optimized assets (images, fonts, media): copy as-is, don't re-encode.
+					test: /\.(webp|gif|woff2?|eot|ttf|otf|mp4|webm|ogg|mov)$/i,
 					use: ['file-loader'],
 				},
 				{

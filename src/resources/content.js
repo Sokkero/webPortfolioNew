@@ -1,24 +1,23 @@
-import smallMe from "./assets/darkAbout.jpg";
-import bigMe from "./assets/fullscreendarkFlipped.jpg";
-import exampleImg from "./assets/example.jpg";
-import wip from "./assets/projects/wip.png"
+import smallMe from "./assets/darkAbout.webp";
+import bigMe from "./assets/fullscreendarkFlipped.webp";
+import wip from "./assets/projects/webp/wip.webp"
 
-import webPortfolio from "./assets/projects/webPortfolio.png";
+import webPortfolio from "./assets/projects/webp/webPortfolio.webp";
 
-import engine1 from "./assets/projects/engine1.png";
-import engine2 from "./assets/projects/engine.gif";
-import engine3 from "./assets/projects/engine2.png";
-import engine4 from "./assets/projects/engine3.png";
+import engine1 from "./assets/projects/webp/engine1.webp";
+import engine2 from "./assets/projects/webp/engine.mp4";
+import engine3 from "./assets/projects/webp/engine2.webp";
+import engine4 from "./assets/projects/webp/engine3.webp";
 
-import mealswipe1 from "./assets/projects/mealswipe1.jpg";
-import mealswipe2 from "./assets/projects/mealswipe2.jpg";
-import mealswipe3 from "./assets/projects/mealswipe3.jpg";
-import mealswipe4 from "./assets/projects/mealswipe4.mp4";
+import mealswipe1 from "./assets/projects/webp/mealswipe1.webp";
+import mealswipe2 from "./assets/projects/webp/mealswipe2.webp";
+import mealswipe3 from "./assets/projects/webp/mealswipe3.webp";
+import mealswipe4 from "./assets/projects/webp/mealswipe4.mp4";
 
-import dwarfIsland1 from "./assets/projects/dwarfIsland1.png";
-import dwarfIsland2 from "./assets/projects/dwarfIsland2.png";
+import dwarfIsland1 from "./assets/projects/webp/dwarfIsland1.webp";
+import dwarfIsland2 from "./assets/projects/webp/dwarfIsland2.webp";
 
-import tetris1 from "./assets/projects/tetris1.png";
+import tetris1 from "./assets/projects/webp/tetris1.webp";
 import tetrisCode from "./assets/rawFiles/TetrisCode.zip";
 import tetrisGame from "./assets/rawFiles/TetrisGame.accdb";
 
